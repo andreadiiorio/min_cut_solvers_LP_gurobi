@@ -1,0 +1,12 @@
+core PL part completato, non testato
+da testare
+	-prufer code e tree infoltimento
+	-PL sol ...
+		MAIN TODO validità sol --> passare da soluzione PL (archi selezionati con d_uv = 1 a archi selezionati in graph non orientato ? 
+			?? ci sarà sempre matching perfetto coppia di archi selezionati <-> arco grafo nn orientato ?)
+			? grafo non connesso ??no party ??
+
+	last...	
+		graph print con evidenziazione archi selezionati ... nx python lib :)
+	
+	-larger tests
