@@ -4,11 +4,19 @@ import copy
 from random import choice,seed
 
 #basic graph rappresentation by Adjacency Lists and python built-in data types
+
 #Edges rappresentation via tuple (naming reflect this: edge e: 1->2; 1 is the tail of the edge
 EDGE_TAIL_INDEX=0	#edge tail index in edge tuple
 EDGE_HEAD_INDEX=1	#edge head index in edge tuple
 EDGE_WEIGHT_INDEX=2	#edge weight index
 DEFAULT_EDGE_WEIGHT=1
+#special ID for terminal nodes
+SUPER_SOURCE_NODE_ID=-2
+SUPER_DEST_NODE_ID=-1
+#INF=float("inf")	#PYTHON INF -> NOT SUPPORTED BY GUROBI
+INF=999999
+#from gurobipy import GRB
+#INF=GRB.INFINITY	#NEEDED GUROBYPY IMPORTED
 class Graph:
 	def __init__(self,**argsDict):
 	#non default init of graph by calling the constructor with kwargs named in same way of graph class attributes
@@ -30,19 +38,20 @@ class Graph:
 			self.nodes.update(nodesNew)
 		elif type(nodesNew)==type(list()): #otherwise add empty nodes (un connected) from passed list nodesNew
 			for n in nodesNew:
-				self.nodes[n]=list() #add nodes as unconnected
+				self.nodes[n]=list() #add nodes as unconnected (empty list of neighbors)
 		else:
 			raise Exception("invild type for newly added nodes")
 
 	def addEdges(self,edgesNew):
 		#edge to add to graph are rappresented by a list of tuples of newly (ordinatlly) connected nodes, e.g. [(1,2),(4,1)
+		#edges added in adj lists of interested nodes 
+
 		# print(self.nodes)
 		# print("adding edges:",edgesNew)
 		#update adj list in place
 		for e in edgesNew:
 			#eNodeTail=e[EDGE_TAIL_INDEX]
 			#eNodeHead=e[EDGE_HEAD_INDEX]
-
 			self.nodes[e[EDGE_TAIL_INDEX]].append(e[EDGE_HEAD_INDEX])
 			if not self.directed:	#update adj list for un directed graphs
 				self.nodes[e[EDGE_HEAD_INDEX]].append(e[EDGE_TAIL_INDEX])
@@ -87,15 +96,15 @@ class Graph:
 			for n1 in neigh:
 				edge=(n, n1, DEFAULT_EDGE_WEIGHT)
 				if n==SUPER_SOURCE_NODE_ID or n1==SUPER_DEST_NODE_ID:
-					edge=(n, n1, float("inf"))
+					edge=(n, n1, INF)
 				edges.append(edge)
 		return edges
 
 	def build_incidentMatrix(self,printFlag=True):
 		EDGE_EXIT_NODE=1
 		EDGE_ENTER_NODE=-1
-		ss_col_index=-2
-		sd_col_index=-1
+		ss_row_index=-2
+		sd_row_index=-1
 		#build edges list on the fly
 		edges=self.extractEdges()
 		#0 init matrix shallow copy fully avoiding
@@ -112,9 +121,9 @@ class Graph:
 			edgeDst=edgeTuple[EDGE_HEAD_INDEX]
 			#handle super source and super dest nodes in incident matrix
 			if edgeSrc == SUPER_SOURCE_NODE_ID:
-				edgeSrc=ss_col_index
+				edgeSrc=ss_row_index
 			if edgeDst == SUPER_DEST_NODE_ID:
-				edgeDst=sd_col_index
+				edgeDst=sd_row_index
 
 			incidentMatrix[edgeSrc][edgeID]=EDGE_EXIT_NODE
 			incidentMatrix[edgeDst][edgeID]=EDGE_ENTER_NODE
@@ -135,12 +144,13 @@ class Graph:
 
 	def directizeGraph(self):
 		#return a new copy of the current undirect graph as direct
-		#the newly created direct graph will have twice the current edges with reverse src and dst
+		#because adj list are already doble naigable for each edge in un directed graph, this op will just return a deep copy of curr graph with directed flag setted
+
 		if self.directed:
 			raise Exception("already direct graph")
 		directedGraph=copy.deepcopy(self)
 		directedGraph.directed=True
-		edgesToAdd=list()
+		#edgesToAdd=list()
 		#  #create reverse edges with same cost to add to undirect graph
 		# for edge in directedGraph.EDGEEE:
 		# 	newEdge=(edge[EDGE_HEAD_INDEX],edge[EDGE_TAIL_INDEX],edge[EDGE_WEIGHT_INDEX])
@@ -150,19 +160,28 @@ class Graph:
 		# directedGraph.addEdges(edgesToAdd)
 		return directedGraph
 
-#special ID for terminal nodes
-SUPER_SOURCE_NODE_ID=-83
-SUPER_DEST_NODE_ID=-84
+def addLocalTerminalNodes(graph,src,dst):
+	#add terminal nodes to a specific nodes in the directed graph
+	#attach a source to node src and a dest to dst
 
-def addTerminalNodes(graph):
+	terminalNodesToAdd=[SUPER_SOURCE_NODE_ID,SUPER_DEST_NODE_ID]
+	edgesToAdd=list()
+	edgesToAdd.append((SUPER_SOURCE_NODE_ID,src,INF)) #fake edge between fake super source and other nodes
+	edgesToAdd.append((dst,SUPER_DEST_NODE_ID,INF)) #fake edge between fake super source and other nodes
+	
+	graph.addNodes(terminalNodesToAdd)
+	graph.addEdges(edgesToAdd)
+	
+
+def addGlobalTerminalNodes(graph):
 	#add terminal nodes to a directed graph, a super source and a source sink (S*,T*)
 	#these special nodes will be connected with every other nodes in the graph with an edge s,v or u,t of inifinity cost (python float('inf'))
 	#also defined special 
 	terminalNodesToAdd=[SUPER_SOURCE_NODE_ID,SUPER_DEST_NODE_ID]
 	edgesToAdd=list()
 	for nodeID in graph.nodes:
-		newEdge_sv=(SUPER_SOURCE_NODE_ID,nodeID,float("inf")) #fake edge between fake super source and other nodes
-		newEdge_ut=(nodeID,SUPER_DEST_NODE_ID,float("inf")) #fake edge between fake super source and other nodes
+		newEdge_sv=(SUPER_SOURCE_NODE_ID,nodeID,INF) #fake edge between fake super source and other nodes
+		newEdge_ut=(nodeID,SUPER_DEST_NODE_ID,INF) #fake edge between fake super source and other nodes
 		edgesToAdd.append(newEdge_sv)
 		edgesToAdd.append(newEdge_ut)
 	graph.addNodes(terminalNodesToAdd)
@@ -281,6 +300,7 @@ def graphTickennerRand(graph,nodesN,edgesN,MAX_TRIES_NUM=20):
 #####	GRAPH WRITE VIEW LOGIC ON GUI OF NETWORKX
 import matplotlib.pyplot as plt
 import networkx as nx
+from time import sleep
 drawn=0
 def drawGraph(graph):
 
@@ -303,7 +323,8 @@ def drawGraph(graph):
 	nx.draw(g,with_labels=True)
 	drawn += 1
 	print("drawn", drawn)
-	plt.show()
+	plt.show(block=False)
+
 	return g
 
 # g.add_edge(e[EDGE_TAIL_INDEX],e[EDGE_HEAD_INDEX],color=colo,weight=e[EDGE_WEIGHT_INDEX])
@@ -328,7 +349,7 @@ def drawGraphColored(graph):
 	for e in edges:
 		edgesHeadTailList.append(e[:-1])  # exclude nested weight field
 		edgesWeightList.append(e[-1])
-		if e[EDGE_WEIGHT_INDEX]==float("inf"):
+		if e[EDGE_WEIGHT_INDEX]==INF:
 			fakeEdges.append(e)
 
 	g.add_edges_from(edgesHeadTailList)
@@ -336,7 +357,7 @@ def drawGraphColored(graph):
 	plt.subplot()			#like a base canva
 	nodesPositions = nx.spring_layout(g)  # positions for all nodes
 	# nodesPositions = nx.shell_layout(g)  # positions for all nodes
-	firstTrueNodeIndex=nodesIDSorted.index(SUPER_SOURCE_NODE_ID)+1
+	firstTrueNodeIndex=nodesIDSorted.index(SUPER_SOURCE_NODE_ID)+2
 	# nx.draw_networkx_nodes(g,nodesPositions,nodesIDSorted[firstTrueNodeIndex:],node_color="g")
 	# nx.draw_networkx_nodes(g,nodesPositions,nodesIDSorted[:firstTrueNodeIndex],node_color="b")
 	# nx.draw_networkx_edges(g,nodesPositions,edgesHeadTailList,edge_color="b")
@@ -379,15 +400,21 @@ if __name__=="__main__":  	#TODO debug switch  see below
 	print("prufer code tree tickened")
 	pruferTreeGraph.build_incidentMatrix()
 	gTreePruferExtended=drawGraph(pruferTreeGraph)
+	
+	# stoer_wagner min cut with networknx lib
+	cutVal,nodesParti=nx.stoer_wagner(gTreePruferExtended)
+	print(cutVal)
+	print(nodesParti)
+	sleep(2)
+	#DIRECTIZE AND TERMINALS ASS
+	#pruferTreeGraphDirectized= pruferTreeGraph.directizeGraph()
+	#print("prufer code tree tickened directized")
+	#pruferTreeGraphDirectized.build_incidentMatrix()
 
-	pruferTreeGraphDirectized= pruferTreeGraph.directizeGraph()
-	print("prufer code tree tickened directized")
-	pruferTreeGraphDirectized.build_incidentMatrix()
-
-	addTerminalNodes(pruferTreeGraphDirectized)
-	print("prufer code tree tickened directized with terminal nodes")
-	pruferTreeGraphDirectized.build_incidentMatrix()
-	drawGraphColored(pruferTreeGraphDirectized)
+	#addGlobalTerminalNodes(pruferTreeGraphDirectized)
+	#print("prufer code tree tickened directized with terminal nodes")
+	#pruferTreeGraphDirectized.build_incidentMatrix()
+	#drawGraphColored(pruferTreeGraphDirectized)
 #main()		#TODO SWITHCK, see above 
 
 
