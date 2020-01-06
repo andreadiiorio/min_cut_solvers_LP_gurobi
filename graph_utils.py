@@ -1,9 +1,11 @@
 #!/usr/bin/env python2.7
 #utils classes and functions used by the min cut problem solver
-import copy
-from random import choice,seed
-
 #basic graph rappresentation by Adjacency Lists and python built-in data types
+#some utils function to well support mincut solvers 
+
+import copy
+from random import choice,seed,uniform
+
 
 #Edges rappresentation via tuple (naming reflect this: edge e: 1->2; 1 is the tail of the edge
 EDGE_TAIL_INDEX=0	#edge tail index in edge tuple
@@ -13,6 +15,7 @@ DEFAULT_EDGE_WEIGHT=1
 #special ID for terminal nodes
 SUPER_SOURCE_NODE_ID=-2
 SUPER_DEST_NODE_ID=-1
+CONTRACT_CHR_SEP="_"
 #INF=float("inf")	#PYTHON INF -> NOT SUPPORTED BY GUROBI
 INF=999999
 #from gurobipy import GRB
@@ -73,7 +76,47 @@ class Graph:
 				dstNodeAdjList.remove(srcNodeID)
 				self.nodes[dstNodeID]=dstNodeAdjList	#updated adj list of dst Node
 
-				
+	def pickRandEdge(self):
+		#return a uniformly picked random edge
+		return choice(self.extractEdges())	#TODO FASTER!!!!!!!!
+
+	def contractEdge(self,e):
+		#for each edge in edgesToContract:  contract edge removing the edge and merge Heat and Tail nodes in a new node
+		#old tail and head node with ID X,Y will be deletted and new node with ID like 'X_Y' will be added as a new node
+		#return number of new contracted node's neighboors
+		eTail=e[EDGE_TAIL_INDEX]
+		eHead=e[EDGE_HEAD_INDEX]
+		newNodeID=str(eTail)+CONTRACT_CHR_SEP+str(eHead)
+		print("contracting\t",eTail," ",eHead," -> ",newNodeID)
+		#remove old contracted nodes
+		eTailNeigh=self.nodes.pop(eTail,list())
+		eHeadNeigh=self.nodes.pop(eHead,list())
+		
+		#merge contracted nodes adj lists 		#TODO FASTER WITH DICT BUILD ??
+		for neigh2 in eHeadNeigh:
+			if neigh2 not in eTailNeigh:
+				eTailNeigh.append(neigh2)
+		#RESTRUCT OTHER NODE ADJ LIST WITH THE NEW NODE
+		alreadyRenamed=False
+		for node,neighboors in self.nodes.items():
+			if eTail in neighboors:
+				oldContractedNodeIndx=neighboors.index(eTail)
+				self.nodes[node][oldContractedNodeIndx]=newNodeID #IN PLACE ADJ LIST MODIFY TOWRARDS NEW CONTRACTED NODE
+				alreadyRenamed=True
+			if eHead in neighboors:
+				oldContractedNodeIndx=neighboors.index(eHead)
+				if not alreadyRenamed: 
+					self.nodes[node][oldContractedNodeIndx]=newNodeID #IN PLACE ADJ LIST MODIFY TOWRARDS NEW CONTRACTED NODE
+				else:	#avoid incosistence in adj list -> if already renamed old tail Node -> new Node ==> head has to be removed from adj List
+					self.nodes[node].pop(oldContractedNodeIndx)
+		#finally insert the contracted node
+		eTailNeigh.remove(eTail)
+		eTailNeigh.remove(eHead)
+		self.nodes[newNodeID]=eTailNeigh		
+		#debug
+		print(self.nodes)
+		return len(eTailNeigh)
+	
 	def _delNodes(self,nodesIDs):
 		#remove a list of nodesIDs from graph
 		edgesToRemove=list()
@@ -92,11 +135,12 @@ class Graph:
 		#extract edges from graph in form of list of tuples
 		#like (TAIL,HEAD,WEIGHT)
 		edges = list()
-		for n, neigh in list(self.nodes.items()):
+		for n, neigh in self.nodes.items():
 			for n1 in neigh:
-				edge=(n, n1, DEFAULT_EDGE_WEIGHT)
 				if n==SUPER_SOURCE_NODE_ID or n1==SUPER_DEST_NODE_ID:
 					edge=(n, n1, INF)
+				else:
+					edge=(n, n1, DEFAULT_EDGE_WEIGHT)
 				edges.append(edge)
 		return edges
 
@@ -159,6 +203,45 @@ class Graph:
 		#
 		# directedGraph.addEdges(edgesToAdd)
 		return directedGraph
+	
+	def __str__(self):
+		return str(self.nodes)
+
+def uniformRandomEdgeAdjList(nodesAdjList,nodesDegree):
+	#pick uniformiformly random edge from graph adjacent list
+	# nodesAdjList nodes field of graph: nodeID -> neighboorsNodeIDList
+	# nodesDegree  dict nodeID -> degree, with special item "TOT"-> sum of all nodes degreea
+	#first pick node in adj list basing of nodes degree
+	#node with high degree will be more likelly chosen
+
+	#random weighted edge tail selection
+	#for each node in adj list will be allocated a range [a,b) and a uniform number picked n will discriminate the node s.t. n in node range
+	#will be returned edge in classic defined form ignoring if node is SSRC or SDST
+	rndEdgeTail=rndEdgeHead=None
+	RANGE_START=0
+	RANGE_END=100
+	range_len=RANGE_END-RANGE_START
+	nodeStartRange=RANGE_START	#will hold actual node range start
+	randomUniformPick=uniform(RANGE_START,RANGE_END)
+
+	nodesPickRanges=list()	#list of [(rangeStart,rangeEnd,nodeID),...] where rangeEnd is NotIncluded in nodeID pick range
+	totDegree=float(nodesDegree["TOT"])
+	# alloc for each node range for random weighted pick in a list
+	for nodeID,degree in nodesDegree.items():
+		nodeRangeLen=(degree/totDegree)*range_len
+		#alloc for node range (nodeStartRange,nodeStartRange+nodeRangeLen)
+		nodesPickRanges.append((nodeStartRange,nodeStartRange+nodeRangeLen,nodeID))
+		nodeStartRange+=nodeRangeLen
+	
+	# detect witch node is discriminated by randomUniformPick checking nodes pick ranges
+	for n in nodesPickRanges:
+		if n[0] <= randomUniformPick and randomUniformPick < n[1]:	#founded edge tail node
+			rndEdgeTail=n[2]
+			break
+	#now pick edge head simply with uniform choice among rndEdgeTail adj list
+	rndEdgeHead=choice(nodesAdjList[rndEdgeTail])
+	return (rndEdgeTail,rndEdgeHead,1)
+
 
 def addLocalTerminalNodes(graph,src,dst):
 	#add terminal nodes to a specific nodes in the directed graph
@@ -302,12 +385,7 @@ import matplotlib.pyplot as plt
 import networkx as nx
 from time import sleep
 drawn=0
-def drawGraph(graph):
-
-	#try draw graph by nxgraph python lib
-	#return nx.Graph obj 
-	global drawn
-
+def getNetworkxGraph(graph):
 	g=nx.Graph()	
 	if graph.directed:	#overwrite  g for direct graphs
 		g=nx.DiGraph()
@@ -319,6 +397,13 @@ def drawGraph(graph):
 		edgesHeadTailList.append(e[:-1]) #exclude nested weight field
 		edgesWeightList.append(e[-1])
 	g.add_edges_from(edgesHeadTailList)
+	return g
+
+def drawGraph(graph):
+	global drawn
+	#try draw graph by nxgraph python lib
+	#return nx.Graph obj 
+	g=getNetworkxGraph(graph)
 	plt.subplot()
 	nx.draw(g,with_labels=True)
 	drawn += 1
