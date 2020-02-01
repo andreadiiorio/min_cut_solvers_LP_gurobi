@@ -1,0 +1,60 @@
+
+LOGGING TEST WITH:
+startN_100_rebuildsN_3_edgeTickenning_10_nodesStep_4_edgeStep_-1_statisticsIter_100.log
+
+
+
+exploring min cut solver algoritm with a graph of 100 with variable num of edges
+
+
+1/e fail prob iterations:  4950
+graph with num nodes=  100  with this num of iteration of rand Algo:  4950
+4950.0 495
+iteration : 0 
+
+
+@stoer_wagner_minCut	minCutval=  5  graph: Nodes= 100 Edges= 595 	elapsed= 0.06663201899937121 	 randGraphIndex:  0
+Academic license - for non-commercial use only
+@minCutLPIterative2	minCutVal=  5  graph: Nodes= 100 Edges= 595 	elapsed= 3.5597944780001853 	 randGraphIndex:  0
+@randMinCut-untilOpt	graph: Nodes= 100 Edges= 595 	elapsed AVG,DEV_STD= (0.05472353544997532, 0.056146478552387025) 	 randGraphIndex:  0 	iteration to reach Optimal AVG,DEV,MAX:  (5.87, 6.038019275199175, 33)
+iteration : 1 
+
+
+@stoer_wagner_minCut	minCutval=  14  graph: Nodes= 100 Edges= 1091 	elapsed= 0.10568573599994124 	 randGraphIndex:  1
+@minCutLPIterative2	minCutVal=  14  graph: Nodes= 100 Edges= 1091 	elapsed= 6.4799932910009375 	 randGraphIndex:  1
+@randMinCut-untilOpt	graph: Nodes= 100 Edges= 1091 	elapsed AVG,DEV_STD= (0.1017758875099571, 0.0837331631640203) 	 randGraphIndex:  1 	iteration to reach Optimal AVG,DEV,MAX:  (6.93, 5.689357422309472, 27)
+iteration : 2 
+
+
+@stoer_wagner_minCut	minCutval=  21  graph: Nodes= 100 Edges= 1587 	elapsed= 0.14979866899921035 	 randGraphIndex:  2
+@minCutLPIterative2	minCutVal=  21  graph: Nodes= 100 Edges= 1587 	elapsed= 9.339029112001299 	 randGraphIndex:  2
+@randMinCut-untilOpt	graph: Nodes= 100 Edges= 1587 	elapsed AVG,DEV_STD= (0.2487623322900072, 0.25203389974965446) 	 randGraphIndex:  2 	iteration to reach Optimal AVG,DEV,MAX:  (12.42, 12.610064923454493, 61)
+iteration : 3 
+
+
+@stoer_wagner_minCut	minCutval=  30  graph: Nodes= 100 Edges= 2083 	elapsed= 0.19327966600030777 	 randGraphIndex:  3
+@minCutLPIterative2	minCutVal=  30  graph: Nodes= 100 Edges= 2083 	elapsed= 12.245954220001295 	 randGraphIndex:  3
+@randMinCut-untilOpt	graph: Nodes= 100 Edges= 2083 	elapsed AVG,DEV_STD= (0.8650120144699395, 0.8712275206006924) 	 randGraphIndex:  3 	iteration to reach Optimal AVG,DEV,MAX:  (34.33, 34.57711481148866, 165)
+iteration : 4 
+
+
+@stoer_wagner_minCut	minCutval=  39  graph: Nodes= 100 Edges= 2579 	elapsed= 0.24513385299906076 	 randGraphIndex:  4
+@minCutLPIterative2	minCutVal=  39  graph: Nodes= 100 Edges= 2579 	elapsed= 15.191720907998388 	 randGraphIndex:  4
+@randMinCut-untilOpt	graph: Nodes= 100 Edges= 2579 	elapsed AVG,DEV_STD= (1.1612432799099952, 1.1110910273107024) 	 randGraphIndex:  4 	iteration to reach Optimal AVG,DEV,MAX:  (38.08, 36.41752269987567, 203)
+iteration : 5 
+
+
+@stoer_wagner_minCut	minCutval=  48  graph: Nodes= 100 Edges= 3075 	elapsed= 0.30114553200110095 	 randGraphIndex:  5
+@minCutLPIterative2	minCutVal=  48  graph: Nodes= 100 Edges= 3075 	elapsed= 18.078226753999843 	 randGraphIndex:  5
+@randMinCut-untilOpt	graph: Nodes= 100 Edges= 3075 	elapsed AVG,DEV_STD= (1.397410441099928, 1.3604829207604006) 	 randGraphIndex:  5 	iteration to reach Optimal AVG,DEV,MAX:  (38.87, 37.9488371682749, 213)
+iteration : 6 
+
+
+@stoer_wagner_minCut	minCutval=  59  graph: Nodes= 100 Edges= 3571 	elapsed= 0.38239782200071204 	 randGraphIndex:  6
+@minCutLPIterative2	minCutVal=  59  graph: Nodes= 100 Edges= 3571 	elapsed= 21.07107088900011 	 randGraphIndex:  6
+@randMinCut-untilOpt	graph: Nodes= 100 Edges= 3571 	elapsed AVG,DEV_STD= (1.8900639419399523, 2.01446085834491) 	 randGraphIndex:  6 	iteration to reach Optimal AVG,DEV,MAX:  (45.8, 48.82953237870738, 259)
+iteration : 7 
+
+
+@stoer_wagner_minCut	minCutval=  63  graph: Nodes= 100 Edges= 3861 	elapsed= 0.4145838719996391 	 randGraphIndex:  7
+@minCutLPIterative2	minCutVal=  63  graph: Nodes= 100 Edges= 3861 	elapsed= 23.37964323199958 	 randGraphIndex:  7

@@ -3,7 +3,7 @@
 #basic graph rappresentation by Adjacency Lists and python built-in data types
 #some utils function to well support mincut solvers 
 
-import copy
+from copy import copy,deepcopy
 from random import choice,seed,uniform,shuffle
 
 
@@ -77,7 +77,7 @@ class Graph:
 				self.nodes[dstNodeID]=dstNodeAdjList	#updated adj list of dst Node
 
 
-	def pickUniformRandEdge(self):
+	def pickUniformRandomEdge(self):
 		#return a uniformly picked random edge with a trivial selection among all possible edges
 		return choice(self.extractEdges())
 
@@ -95,7 +95,7 @@ class Graph:
 			nodesDegree,totDegrees=_computeNodesDegree(self)
 		rndEdgeTail=rndEdgeHead=None
 		RANGE_START=0
-		RANGE_END=100
+		RANGE_END=1000
 		range_len=RANGE_END-RANGE_START
 		nodeStartRange=RANGE_START	#will hold actual node's range start
 		
@@ -118,7 +118,6 @@ class Graph:
 		rndEdgeHead=choice(self.nodes[rndEdgeTail])
 		return (rndEdgeTail,rndEdgeHead,1)
 
-
 	def contractEdge(self,e):
 		#contract edge e removing the edge and merge Head  and Tail nodes in a new node
 		#old tail and head node with ID X,Y will be deletted and new node with ID like 'X_Y' will be added as a new node
@@ -137,6 +136,8 @@ class Graph:
 				eTailNeigh.append(neigh2)
 		eTailNeigh.remove(eTail)	
 		eTailNeigh.remove(eHead)
+
+
 		#RESTRUCT OTHER NODEs ADJ LIST WITH THE NEW NODE
 		for node,neighboors in self.nodes.items():
 			alreadyRenamed=False
@@ -155,6 +156,37 @@ class Graph:
 		#debug
 		#print("contracted\t",eTail," ",eHead," -> ",newNodeID\t graphResoult: ",self)	
 		return len(eTailNeigh)
+
+	def contractEdgeQuick(self,e):	#TODO RENAME AND REDOC
+		#only for undirected graph
+		#contract edge e removing the edge and merge Head  and Tail nodes in a new node
+		#old tail and head node with ID X,Y will be deletted and new node with ID like 'X_Y' will be added as a new node
+		#exploited undirecton of graph for other nodes update
+		#return number of new contracted node's neighboors
+		eTail=e[EDGE_TAIL_INDEX]
+		eHead=e[EDGE_HEAD_INDEX]
+		#build new node ID as concatenation of composing IDs in tuple
+		newNode=contractEdgeMergeIDs(eTail,eHead)
+		#merge contracted nodes adj lists 		#TODO FASTER WITH DICT BUILD ??
+		#print("CONTRACT",e[:-1],"-->",newNode," graph before  ",self)
+		eTailNeigh=self.nodes.pop(eTail,list())
+		eTailNeigh.extend(self.nodes.pop(eHead,list()))
+		#remove self loop
+		newNodeNeigh=list()
+		for x in eTailNeigh:
+			if x!=eTail and x!=eHead: newNodeNeigh.append(x)
+		del(eTailNeigh)
+		#RESTRUCT OTHER NODEs ADJ LIST WITH THE NEW NODE CREATED
+		for node, neighboors in self.nodes.items():
+			for i in range(len(neighboors)):
+				n=neighboors[i]
+				if eTail==n or eHead==n:
+					#self.nodes[node][i]=newNode	#update
+					neighboors[i]=newNode
+		#finally insert the contracted node with merged neighboors list
+		self.nodes[newNode]=newNodeNeigh
+		#print("contracted\t",eTail," ",eHead," -> ",newNodeID\t graphResoult: ",self)	#TODO DEBUG
+		return len(newNodeNeigh)
 	
 	def _delNodes(self,nodesIDs):
 		#remove a list of nodesIDs from graph
@@ -231,7 +263,7 @@ class Graph:
 		#because adj list are already doble naigable for each edge in un directed graph, this op will just return a deep copy of curr graph with directed flag setted
 
 		if self.directed:	raise Exception("already direct graph")
-		directedGraph=copy.deepcopy(self)
+		directedGraph=deepcopy(self)
 		directedGraph.directed=True
 		#edgesToAdd=list()
 		#  #create reverse edges with same cost to add to undirect graph
@@ -250,6 +282,19 @@ class Graph:
 		else:
 			outStr+="Undirected\t"
 		return outStr+str(self.nodes)
+
+def contractEdgeMergeIDs(eTail,eHead):
+	newNodeIDs=list()
+	if type(eTail)==int:
+		newNodeIDs.append(eTail)
+	else:
+		newNodeIDs.extend(eTail)
+	if type(eHead)==int:
+		newNodeIDs.append(eHead)
+	else:
+		newNodeIDs.extend(eHead)
+	newNodeID=tuple(newNodeIDs)
+	return newNodeID
 
 def _computeNodesDegree(graph):
 	#return nodes degree dict, tot degree of all nodes in graph
@@ -290,13 +335,12 @@ def addGlobalTerminalNodes(graph):
 	
 
 
-
 def genTreePath(nodesN):
 	#generate a random tree with nodesN nodes as a random path among nodes
 	#return tuple (nodeIDs,edges list)
 	treeNodesIDs=list(range(nodesN))
 	treeEdges=list()
-	nodesDeepCopy=copy.deepcopy(treeNodesIDs)
+	nodesDeepCopy=deepcopy(treeNodesIDs)
 	node=choice(nodesDeepCopy)	#select random root among nodes IDs
 	nodesDeepCopy.remove(node)
 
@@ -366,42 +410,37 @@ def pruferCodeGenTree(treeSize=1,logPrint=False):
 		pruferTreeGraph.build_incidentMatrix()
 	return pruferTreeGraph
 
-def graphTickennerRand(graph,edgesN,nodesN=0,residualTry=20):
-	#make the input graph "tickenner" by adding nodesN and edgesN randomly
-	#return tuple of ( newly added nodes num, newly added edges num )
-
-	#Adding nodes
-	firstNewNodeID=1+max(list(graph.nodes.keys()))
-	newNodesIDs=list(range(firstNewNodeID,firstNewNodeID+nodesN))
-	graph.addNodes(newNodesIDs)
-
+def graphTickennerRand(graph,edgesN,residualTry=30):
+	#make the input graph "tickenner" by adding  edgesN randomly
+	
+	edgesNumActual=len(graph.extractEdges())
 	#adding edges
-	#for a limited num of times, try select a pair of nodes and add edge if not already exist
-	newEdgesToAdd=list()
 	nodesIDs=list(graph.nodes.keys())
-	while residualTry>= 0 and edgesN>=0:
+	maxEdgesNum=int(len(nodesIDs)*(len(nodesIDs)-1)*(0.5))
+	e=0
+	while residualTry>= 0 and edgesN>=e and (edgesNumActual+e)<=maxEdgesNum :
 		edgeTailNode=choice(nodesIDs)
-		edgeHeadNode=choice(nodesIDs)
+		nodesIDsCopy=copy(nodesIDs)	#quick shallow copy
+		nodesIDsCopy.remove(edgeTailNode) #avoid useless self edge
+		edgeHeadNode=choice(nodesIDsCopy)
 		newPossibleEdge=(edgeTailNode,edgeHeadNode,DEFAULT_EDGE_WEIGHT)
 		#eventually new possible edge may not be added to the graph if already in
-		if edgeHeadNode in graph.nodes[edgeTailNode] or edgeTailNode==edgeHeadNode or newPossibleEdge in newEdgesToAdd:
-			residualTry-=1
+		if edgeHeadNode in graph.nodes[edgeTailNode]:
+			residualTry-=1	#avoid unlucky endless loop
 			continue
-
+		residualTry=30
 		graph.addEdges([(edgeTailNode,edgeHeadNode,DEFAULT_EDGE_WEIGHT)])	#single insert
-		edgesN-=1
+		e+=1
 
-	#batch insert
-	#newEdgesToAdd.append((edgeTailNode,edgeHeadNode,DEFAULT_EDGE_WEIGHT))
-	#graph.addEdges(newEdgesToAdd)
 	
 	
-	#print("Added ",len(newNodesIDs)," nodes and ",len(newEdgesToAdd)," edges to the graph")
-	return (len(newNodesIDs),len(newEdgesToAdd))
+	return e
 		
 
 #####	GRAPH WRITE VIEW LOGIC ON GUI OF NETWORKX
-GUI_GRAPH=True
+from os import environ
+# GUI_GRAPH=True
+GUI_GRAPH=environ.get("GUI_GRAPH")!=None and len(environ["GUI_GRAPH"])>0
 from networkx import stoer_wagner
 from networkx import Graph as Graph_nx
 from networkx import DiGraph as DiGraph_nx

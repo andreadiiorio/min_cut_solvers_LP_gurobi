@@ -1,0 +1,16 @@
+Grafi casuali generati a partire da un albero casuale (prufer code) infoltiti progressivamente con archi casuali fino ad avvicinarsi ad un grafo completo.
+3 set di grafi casuali a partire da 7,40,100 nodi progressivamente infolti 
+tutte le statistiche sono calcolate da vettori di 100 misurazioni dei parametri rilevanti per l'algoritmo randomizzato
+./startN_7_rebuildsN_3_edgeTickenning_10_nodesStep_4_edgeStep_-1_statisticsIter_100.log
+./startN_40_rebuildsN_3_edgeTickenning_10_nodesStep_4_edgeStep_-1_statisticsIter_100.log
+./startN_100_rebuildsN_3_edgeTickenning_10_nodesStep_4_edgeStep_-1_statisticsIter_100.log	- *
+
+*usato come riferimento temporale per l'algoritmo iterativo basato sulla programmazione lineare un suo rilassamento che valuta il modello di PL per n-1 iterazioni dove il nodo s è fissato e viene fatto variare solo il nodo t
+
+a partire da set di grafi casuali generati come sopra a partire da 11,12,25 nodi, progressivamente infoltiti per 50 volte fino ad avvicinarsi al numero massimo di archi possibile.
+calcolati test di normalità ed eventualmente intervalli di confidenza riguardo ad alcuni parametri riguardanti il numero di iterazioni necessarie all'algoritmo randomizzato per raggiungere l'ottimo. 
+tutte le statistiche sono calcolate da vettori di 50 misurazioni dei parametri rilevanti per l'algoritmo randomizzato
+./normalTests/startN_11_rebuildsN_1_edgeTickenning_50_nodesStep_4_edgeStep_-1_statisticsIter_50.log
+./normalTests/normalTestAndConfidenceInterval.log
+./normalTests/startN_12_rebuildsN_4_edgeTickenning_50_nodesStep_4_edgeStep_-1_statisticsIter_50.log
+./normalTests/startN_25_rebuildsN_4_edgeTickenning_50_nodesStep_4_edgeStep_-1_statisticsIter_50.log

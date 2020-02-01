@@ -144,10 +144,10 @@ def _dumpAllVarsSolution(model,dumpJustSelected=False):
 
 
 def minCutLPIterative(graph):
-	#search minimal cut with a LP script runned over a graph in witch has been selected a source and a dest 
-	#and undirected edges has been substituited with couple of directed edges
-	#iterativelly evaluate min cut relative to all possible nodes pair n1,n2 s.t. n1!=n2 in graph nodes
-	#return min cut as list of edges 
+	"""search minimal cut with a LP script runned over a graph in witch has been selected a source and a dest 
+	and undirected edges has been substituited with couple of directed edges
+	iterativelly evaluate min cut relative to all possible unordered nodes pair n1,n2 
+	return min cut as list of edges """
 
 	if graph.directed==False:	#make sure the graph has been directized
 		graph=graph.directizeGraph()
@@ -155,17 +155,13 @@ def minCutLPIterative(graph):
 	nodes=list(graph.nodes.keys())
 	minCut=graph.extractEdges()	#init min cut with worst solution, enhanced during the iterations
 	
-	#TODO ALL ORDERED COUPLES
-	#for n1 in nodes:
-	#	for n2 in nodes:
-	#		if n1 != n2:
 	n=0,len(nodes)
 	for x in range(len(nodes)):			#all n(n-1)/2 non ordered couples
 		for y in range(x+1,len(nodes)):
 			n1=nodes[x]
 			n2=nodes[y]
 
-			#remove teminal nodes for pl script input  
+			##remove teminal nodes for pl script input -for trevisan lp model- 
 			#nodesNoTerminal=copy(graph.nodes) #shallow copy enough, just ref.s modified
 			#nodesNoTerminal.pop(n1)
 			#nodesNoTerminal.pop(n2)
@@ -175,7 +171,34 @@ def minCutLPIterative(graph):
 				minCut=minCutEdges
 				##print("FOUNDED NEW MINCUT from src/dst: ",(n1,n2)," of size: ",len(minCut))
 	return minCut
-					
+
+def minCutLPIterative2(graph):
+	"""search minimal cut with a LP script runned over a graph in witch has been selected a source and a dest 
+	and undirected edges has been substituited with couple of directed edges
+	iterativelly evaluate min cut relative to all possible nodes pair s,t, where s is fixed and t!=s
+	return min cut as list of edges """
+
+	if graph.directed==False:	#make sure the graph has been directized
+		graph=graph.directizeGraph()
+
+	nodes=list(graph.nodes.keys())
+	minCut=graph.extractEdges()	#init min cut with worst solution, enhanced during the iterations
+	
+	n=0,len(nodes)
+	for x in range(1,len(nodes)):			
+			s=nodes[0]
+			t=nodes[x]
+
+			##remove teminal nodes for pl script input -for trevisan lp model- 
+			#nodesNoTerminal=copy(graph.nodes) #shallow copy enough, just ref.s modified
+			#nodesNoTerminal.pop(n1)
+			#nodesNoTerminal.pop(n2)
+			minCutEdges=solveMinCutLP(graph.nodes,graph.extractEdges(),s,t)
+			##print("New cut with src/dst node pair: ",(n1,n2),"\t:",minCutEdges)
+			if len(minCut)>len(minCutEdges):	#either new min cut founded or first one
+				minCut=minCutEdges
+				##print("FOUNDED NEW MINCUT from src/dst: ",(n1,n2)," of size: ",len(minCut))
+	return minCut
 
 #import networkx as nx
 #from networknx import stoer_wagner,Graph,DiGraph
@@ -197,53 +220,66 @@ def _computeNodesDegree(graph):
 		totDegrees+=len(neighboors)
 	return nodesDegree,totDegrees
 
-def randMinCut(graph,iterations=1):
+dbgC=0
+def randMinCut(graph,iterations=1,OUTPUT_MODE_PARTITION=True):
 	#get min cut of a undirected graph by rand algo
 	#randomly contract edges in the graph getting a cut
 	#run this algo for  the given num of iteration, returning the best,minimal cost solution
-	#return edge list of the best founded min cut
+	#return edge list of the best founded min cut 
 	
 	##print("RAND MIN CUT OVER:\t", graph)
+	#global dbgC
 
-	bestMinCut=graph.extractEdges()	#start with max cut possible and enhance the solution during iterations
+	bestCutVal=float("inf")
 	contractedEdges=list()
 	#build nodesDegree for quick uniform rand edge pick
 	nodesDegree,totDegrees=_computeNodesDegree(graph)
-
 	for i in range(iterations):	#iterativelly run the random  algoritm keeping the best solution
+		#print(str(bestCutVal)+" "+str(dbgC),end="\t")
+		#dbgC+=1
+
 		cutEdges=list()
 		nodesDegreeCopy=deepcopy(nodesDegree)	#TODO ACTUALLY ENOUGH SHALLOW COPY
 		totDegreesCopy=totDegrees
 		graphContracted=deepcopy(graph)	#copy of src graph for contractions 
 		for i in range (len(graph.nodes) -2 ): #n-2 edges contraction result in the graph with 2 residual nodes
 			#PICK UNIFORMLY A RANDOM EDGE 
-			#e=graphContracted.pickRandEdge()
+			###e=graphContracted.pickUniformRandomEdge()
 			e=graphContracted.pickUniformRandomEdgeQuick(nodesDegreeCopy,totDegreesCopy)
-			d=graphContracted.contractEdge(e)		#EDGE CONTRACT
-			nodesDegreeCopy[str(e[EDGE_TAIL_INDEX])+CONTRACT_CHR_SEP+str(e[EDGE_HEAD_INDEX])]=d
-			#update degreas dict
+			d=graphContracted.contractEdgeQuick(e)		#EDGE CONTRACT
+			nodesDegreeCopy[contractEdgeMergeIDs(e[EDGE_TAIL_INDEX],e[EDGE_HEAD_INDEX])]=d
 			d-=nodesDegreeCopy.pop(e[EDGE_TAIL_INDEX])
 			d-=nodesDegreeCopy.pop(e[EDGE_HEAD_INDEX])
-			totDegreesCopy+=d #update tot degree with degree of new contracted node - degree of parent nodes
+
+			totDegreesCopy+=d
 		
 		#here only 2 node remained
-		#Extract graph cut node partition 
-		##print("resoulting contracted graph: ",graphContracted)
-		node=list(graphContracted.nodes.keys())[0]	#get 1 of remaining node after contractions
-		if type(node)==type(0):		#node hasn't been contrated in this iteration
-			nodesDeContracted=[node]
-		else: 				
-			nodesDeContracted=node.split(CONTRACT_CHR_SEP) #str list of nodes contracted 
-		#extract cut edges
-		for n in nodesDeContracted:
-			nodeID=int(n)
-			nOldNeighs=graph.nodes[nodeID]
-			for nodeID2 in nOldNeighs:
-				cutEdges.append((nodeID,nodeID2,1))
-		if len(cutEdges)< len(bestMinCut):
-			bestMinCut=cutEdges
+		#nodesParti1,2 will hold a lists of nodes that constitute the graph partition
+		residualNodes=list(graphContracted.nodes.keys())
+		nodeParti0=residualNodes[0]
+		nodeParti1=residualNodes[1]
+		#if one side of partition is a single node substitute with a list of itself
+		if type(residualNodes[0])==int: nodeParti0=[residualNodes[0]]
+		if type(residualNodes[1])==int: nodeParti1=[residualNodes[1]]
+		
+		#exit here if requested just partition identified by the founded cut
+		
+		cutVal=len(graphContracted.nodes[residualNodes[0]])
+		newCut=(nodeParti0,cutVal)
+		if OUTPUT_MODE_PARTITION == False:	#compute cut edges and ovveride outCut thanks to python polymorifsm
+			for nodeID1 in nodeParti0:
+				for nodeID2 in graph.nodes[nodeID1]:
+					#select only edges cross partition from the source graph
+					if nodeID2 in nodeParti1: cutEdges.append((nodeID1,nodeID2,1))
+			cutVal=len(cutEdges)
+			newCut=cutEdges		
+		#update current optimal solution
+		if cutVal <= bestCutVal:
+			bestCutVal=cutVal
+			outCut=newCut
+			#print(cutVal,end="\t")
 			##print("@randMinCut founded newMinCut: ",bestMinCut," at iteration: ",i)
-	return bestMinCut
+	return outCut	
 
 
 
@@ -287,7 +323,11 @@ def main():				#TODO DEBUG SWITCH
 	print("@@MINCUT TIME DELTAS:  iterativePL-rand=",abs(minCutIterativeTime-randMinCutTime)," stoerWagner-rand=",abs(randMinCutTime-minCutStoerWagnerTime),"  iterative-stoerWagner=",abs(minCutIterativeTime-minCutStoerWagnerTime))
 
 
-
 if __name__=="__main__":
-	main()
-	#input()
+	#main()
+
+	pruferTreeGraph = pruferCodeGenTree(15, True)
+	newNodes, newEdges = graphTickennerRand(pruferTreeGraph, 32)
+	cut=randMinCut(pruferTreeGraph,5,False)
+	drawGraphMinCut(pruferTreeGraph,cut)
+	print("END")

@@ -1,0 +1,2041 @@
+
+LOGGING TEST WITH:
+startN_10_rebuildsN_7_edgeTickenning_50_nodesStep_5_edgeStep_-1_statisticsIter_50.log
+
+
+
+exploring min cut solver algoritm with a graph of 10 with variable num of edges
+
+
+1/e fail prob iterations:  45
+graph with num nodes=  10  with this num of iteration of rand Algo:  45
+45.0 0
+iteration : 0 
+
+
+@stoer_wagner_minCut	minCutval=  1  graph: Nodes= 10 Edges= 10 	elapsed= 0.00048263799999404 	 randGraphIndex:  0
+@ NormaltestResult(statistic=31.339120466840484, pvalue=1.5660169441638527e-07) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 10 	elapsed AVG,DEV_STD= (0.00016186793993256288, 8.085830280624258e-05) 	 randGraphIndex:  0 	iteration to reach Optimal AVG,DEV,MAX:  (1.44, 0.7329003050503234, 4)
+iteration : 1 
+
+
+@stoer_wagner_minCut	minCutval=  1  graph: Nodes= 10 Edges= 11 	elapsed= 0.0005236889992374927 	 randGraphIndex:  1
+@ NormaltestResult(statistic=17.724028879488873, pvalue=0.00014166939207104894) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 11 	elapsed AVG,DEV_STD= (0.0002635458600525453, 0.00016454868853314257) 	 randGraphIndex:  1 	iteration to reach Optimal AVG,DEV,MAX:  (2.14, 1.3554124306434765, 7)
+iteration : 2 
+
+
+@stoer_wagner_minCut	minCutval=  1  graph: Nodes= 10 Edges= 12 	elapsed= 0.0006039840000084951 	 randGraphIndex:  2
+@ NormaltestResult(statistic=22.804476601225915, pvalue=1.117045400572451e-05) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 12 	elapsed AVG,DEV_STD= (0.00046387542002776174, 0.0003519920036204239) 	 randGraphIndex:  2 	iteration to reach Optimal AVG,DEV,MAX:  (3.7, 2.7048708898230696, 13)
+iteration : 3 
+
+
+@stoer_wagner_minCut	minCutval=  2  graph: Nodes= 10 Edges= 13 	elapsed= 0.0004507140001805965 	 randGraphIndex:  3
+@ NormaltestResult(statistic=37.804399995147804, pvalue=6.178440166524286e-09) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 13 	elapsed AVG,DEV_STD= (0.00022533424003995606, 0.0001543077873742148) 	 randGraphIndex:  3 	iteration to reach Optimal AVG,DEV,MAX:  (1.72, 1.2128563015309215, 7)
+iteration : 4 
+
+
+@stoer_wagner_minCut	minCutval=  2  graph: Nodes= 10 Edges= 14 	elapsed= 0.0005583550000665127 	 randGraphIndex:  4
+@ NormaltestResult(statistic=30.681145716067803, pvalue=2.1760749948055512e-07) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 14 	elapsed AVG,DEV_STD= (0.00029901671992774934, 0.00025883860031586695) 	 randGraphIndex:  4 	iteration to reach Optimal AVG,DEV,MAX:  (2.32, 2.0146402930061935, 10)
+iteration : 5 
+
+
+@stoer_wagner_minCut	minCutval=  2  graph: Nodes= 10 Edges= 15 	elapsed= 0.0005177570001251297 	 randGraphIndex:  5
+@ NormaltestResult(statistic=11.473752962415766, pvalue=0.0032248253630015773) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 15 	elapsed AVG,DEV_STD= (0.00022236926000914536, 0.0001339284975888727) 	 randGraphIndex:  5 	iteration to reach Optimal AVG,DEV,MAX:  (1.64, 0.9424241429983224, 4)
+iteration : 6 
+
+
+@stoer_wagner_minCut	minCutval=  2  graph: Nodes= 10 Edges= 16 	elapsed= 0.0005542679991776822 	 randGraphIndex:  6
+@ NormaltestResult(statistic=67.54057659780867, pvalue=2.156503361771747e-15) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 16 	elapsed AVG,DEV_STD= (0.0003270035399691551, 0.0003147244283499707) 	 randGraphIndex:  6 	iteration to reach Optimal AVG,DEV,MAX:  (2.5, 2.49284690951645, 16)
+iteration : 7 
+
+
+@stoer_wagner_minCut	minCutval=  2  graph: Nodes= 10 Edges= 17 	elapsed= 0.0005725800001528114 	 randGraphIndex:  7
+@ NormaltestResult(statistic=15.038816930697397, pvalue=0.0005424533509122926) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 17 	elapsed AVG,DEV_STD= (0.00025926508005795766, 0.00016465489387176404) 	 randGraphIndex:  7 	iteration to reach Optimal AVG,DEV,MAX:  (1.86, 1.1430357003370009, 5)
+iteration : 8 
+
+
+@stoer_wagner_minCut	minCutval=  2  graph: Nodes= 10 Edges= 18 	elapsed= 0.0006787900001654634 	 randGraphIndex:  8
+@ NormaltestResult(statistic=54.36020236179726, pvalue=1.5697555946269664e-12) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 18 	elapsed AVG,DEV_STD= (0.0002042021400302474, 0.00011557950686754335) 	 randGraphIndex:  8 	iteration to reach Optimal AVG,DEV,MAX:  (1.54, 0.9082389328715619, 6)
+iteration : 9 
+
+
+@stoer_wagner_minCut	minCutval=  2  graph: Nodes= 10 Edges= 19 	elapsed= 0.0005419230001280084 	 randGraphIndex:  9
+@ NormaltestResult(statistic=36.51782107111222, pvalue=1.175590069553156e-08) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 19 	elapsed AVG,DEV_STD= (0.0002162695599690778, 0.00013715115311484008) 	 randGraphIndex:  9 	iteration to reach Optimal AVG,DEV,MAX:  (1.48, 0.9089127840335353, 5)
+iteration : 10 
+
+
+@stoer_wagner_minCut	minCutval=  2  graph: Nodes= 10 Edges= 20 	elapsed= 0.0005620189995170222 	 randGraphIndex:  10
+@ NormaltestResult(statistic=44.73957911663546, pvalue=1.9271868937436216e-10) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 20 	elapsed AVG,DEV_STD= (0.00021559238000918413, 0.00015746651487569534) 	 randGraphIndex:  10 	iteration to reach Optimal AVG,DEV,MAX:  (1.52, 1.0736168130317678, 6)
+iteration : 11 
+
+
+@stoer_wagner_minCut	minCutval=  2  graph: Nodes= 10 Edges= 21 	elapsed= 0.0006161929995869286 	 randGraphIndex:  11
+@ NormaltestResult(statistic=11.063470678078541, pvalue=0.003959112721535603) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 21 	elapsed AVG,DEV_STD= (0.0004740278599820158, 0.00034358410559010027) 	 randGraphIndex:  11 	iteration to reach Optimal AVG,DEV,MAX:  (3.3, 2.3145502494313788, 10)
+iteration : 12 
+
+
+@stoer_wagner_minCut	minCutval=  2  graph: Nodes= 10 Edges= 22 	elapsed= 0.0005254210000202875 	 randGraphIndex:  12
+@ NormaltestResult(statistic=18.076910315316276, pvalue=0.00011875415126278526) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 22 	elapsed AVG,DEV_STD= (0.0005165938000754977, 0.000417923810764528) 	 randGraphIndex:  12 	iteration to reach Optimal AVG,DEV,MAX:  (3.6, 2.857142857142857, 12)
+iteration : 13 
+
+
+@stoer_wagner_minCut	minCutval=  3  graph: Nodes= 10 Edges= 23 	elapsed= 0.0006223150003279443 	 randGraphIndex:  13
+@ NormaltestResult(statistic=69.44644805861907, pvalue=8.315634840810246e-16) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 23 	elapsed AVG,DEV_STD= (0.00023681538008531788, 0.00018693446673871523) 	 randGraphIndex:  13 	iteration to reach Optimal AVG,DEV,MAX:  (1.68, 1.3315634511692622, 9)
+iteration : 14 
+
+
+@stoer_wagner_minCut	minCutval=  3  graph: Nodes= 10 Edges= 24 	elapsed= 0.00058670699945651 	 randGraphIndex:  14
+@ NormaltestResult(statistic=45.88680369682161, pvalue=1.0859433774556102e-10) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 24 	elapsed AVG,DEV_STD= (0.0002332075199956307, 0.00015229809660949795) 	 randGraphIndex:  14 	iteration to reach Optimal AVG,DEV,MAX:  (1.54, 0.9521190115972362, 6)
+iteration : 15 
+
+
+@stoer_wagner_minCut	minCutval=  3  graph: Nodes= 10 Edges= 25 	elapsed= 0.0007624579993716907 	 randGraphIndex:  15
+@ NormaltestResult(statistic=30.33573159365089, pvalue=2.5863040636779846e-07) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 25 	elapsed AVG,DEV_STD= (0.00023659095997572877, 0.00015375052705739436) 	 randGraphIndex:  15 	iteration to reach Optimal AVG,DEV,MAX:  (1.62, 1.104536101718726, 5)
+iteration : 16 
+
+
+@stoer_wagner_minCut	minCutval=  3  graph: Nodes= 10 Edges= 26 	elapsed= 0.0006664330003331997 	 randGraphIndex:  16
+@ NormaltestResult(statistic=28.63289744016577, pvalue=6.059619024588859e-07) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 26 	elapsed AVG,DEV_STD= (0.00029890939997130774, 0.00020240284545202595) 	 randGraphIndex:  16 	iteration to reach Optimal AVG,DEV,MAX:  (1.9, 1.2817398889233114, 7)
+iteration : 17 
+
+
+@stoer_wagner_minCut	minCutval=  3  graph: Nodes= 10 Edges= 27 	elapsed= 0.0005854279997947742 	 randGraphIndex:  17
+@ NormaltestResult(statistic=36.325307119368176, pvalue=1.2943740047561778e-08) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 27 	elapsed AVG,DEV_STD= (0.00033843277999039855, 0.00023787773542901489) 	 randGraphIndex:  17 	iteration to reach Optimal AVG,DEV,MAX:  (2.22, 1.568698927943349, 9)
+iteration : 18 
+
+
+@stoer_wagner_minCut	minCutval=  3  graph: Nodes= 10 Edges= 28 	elapsed= 0.0006951049999770476 	 randGraphIndex:  18
+@ NormaltestResult(statistic=20.274439990469382, pvalue=3.957867894278026e-05) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 28 	elapsed AVG,DEV_STD= (0.0003180488400357717, 0.00021656799625590704) 	 randGraphIndex:  18 	iteration to reach Optimal AVG,DEV,MAX:  (2.08, 1.4824139166940395, 7)
+iteration : 19 
+
+
+@stoer_wagner_minCut	minCutval=  3  graph: Nodes= 10 Edges= 29 	elapsed= 0.0007040710006549489 	 randGraphIndex:  19
+@ NormaltestResult(statistic=18.563776414150343, pvalue=9.309517443608994e-05) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 29 	elapsed AVG,DEV_STD= (0.000682798800025921, 0.0005982681121109392) 	 randGraphIndex:  19 	iteration to reach Optimal AVG,DEV,MAX:  (4.38, 3.686101862235431, 17)
+iteration : 20 
+
+
+@stoer_wagner_minCut	minCutval=  3  graph: Nodes= 10 Edges= 30 	elapsed= 0.0006950110000616405 	 randGraphIndex:  20
+@ NormaltestResult(statistic=24.62305373882191, pvalue=4.499578332753854e-06) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 30 	elapsed AVG,DEV_STD= (0.0006808090600134164, 0.0006042031791241707) 	 randGraphIndex:  20 	iteration to reach Optimal AVG,DEV,MAX:  (4.22, 3.615668848842465, 16)
+iteration : 21 
+
+
+@stoer_wagner_minCut	minCutval=  3  graph: Nodes= 10 Edges= 31 	elapsed= 0.0006724049999320414 	 randGraphIndex:  21
+@ NormaltestResult(statistic=28.34335535859973, pvalue=7.003555660968082e-07) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 31 	elapsed AVG,DEV_STD= (0.0006813998801044363, 0.0006036986819725423) 	 randGraphIndex:  21 	iteration to reach Optimal AVG,DEV,MAX:  (4.26, 3.8428836961376827, 18)
+iteration : 22 
+
+
+@stoer_wagner_minCut	minCutval=  4  graph: Nodes= 10 Edges= 32 	elapsed= 0.0006644770001003053 	 randGraphIndex:  22
+@ NormaltestResult(statistic=47.285434826107775, pvalue=5.3963273935350746e-11) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 32 	elapsed AVG,DEV_STD= (0.0004615465800088714, 0.00042322898052321166) 	 randGraphIndex:  22 	iteration to reach Optimal AVG,DEV,MAX:  (2.88, 2.5365893862203466, 15)
+iteration : 23 
+
+
+@stoer_wagner_minCut	minCutval=  4  graph: Nodes= 10 Edges= 33 	elapsed= 0.000807579000138503 	 randGraphIndex:  23
+@ NormaltestResult(statistic=15.987064115843094, pvalue=0.0003376394128199733) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 33 	elapsed AVG,DEV_STD= (0.0008626304999779677, 0.0006629870088723434) 	 randGraphIndex:  23 	iteration to reach Optimal AVG,DEV,MAX:  (5.22, 3.8771439098851084, 18)
+iteration : 24 
+
+
+@stoer_wagner_minCut	minCutval=  5  graph: Nodes= 10 Edges= 34 	elapsed= 0.000647971000034886 	 randGraphIndex:  24
+@ NormaltestResult(statistic=25.70388102354307, pvalue=2.6210370136340536e-06) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 34 	elapsed AVG,DEV_STD= (0.00039909139994051654, 0.00024687719082705815) 	 randGraphIndex:  24 	iteration to reach Optimal AVG,DEV,MAX:  (2.34, 1.5065841889411116, 8)
+iteration : 25 
+
+
+@stoer_wagner_minCut	minCutval=  5  graph: Nodes= 10 Edges= 35 	elapsed= 0.0006687820005026879 	 randGraphIndex:  25
+@ NormaltestResult(statistic=31.51959007335357, pvalue=1.430895703515972e-07) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 35 	elapsed AVG,DEV_STD= (0.0005393440600346366, 0.0004168399023418232) 	 randGraphIndex:  25 	iteration to reach Optimal AVG,DEV,MAX:  (3.2, 2.498979383505129, 14)
+iteration : 26 
+
+
+@stoer_wagner_minCut	minCutval=  5  graph: Nodes= 10 Edges= 36 	elapsed= 0.0007856770007492742 	 randGraphIndex:  26
+@ NormaltestResult(statistic=23.25262778480846, pvalue=8.928038032656495e-06) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 36 	elapsed AVG,DEV_STD= (0.0009447092601112672, 0.0009389014868296388) 	 randGraphIndex:  26 	iteration to reach Optimal AVG,DEV,MAX:  (5.68, 5.622258969343848, 24)
+iteration : 27 
+
+
+@stoer_wagner_minCut	minCutval=  5  graph: Nodes= 10 Edges= 37 	elapsed= 0.0006891490002089995 	 randGraphIndex:  27
+@ NormaltestResult(statistic=20.51087772215242, pvalue=3.516571832729572e-05) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 37 	elapsed AVG,DEV_STD= (0.000740924200072186, 0.000646399178346792) 	 randGraphIndex:  27 	iteration to reach Optimal AVG,DEV,MAX:  (4.28, 3.664724284531191, 17)
+iteration : 28 
+
+
+@stoer_wagner_minCut	minCutval=  5  graph: Nodes= 10 Edges= 38 	elapsed= 0.0008211590002247249 	 randGraphIndex:  28
+@ NormaltestResult(statistic=33.75786747029124, pvalue=4.672746473675948e-08) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 38 	elapsed AVG,DEV_STD= (0.0009928287600268959, 0.0010357275376763737) 	 randGraphIndex:  28 	iteration to reach Optimal AVG,DEV,MAX:  (5.82, 6.0531320953094445, 29)
+iteration : 29 
+
+
+@stoer_wagner_minCut	minCutval=  6  graph: Nodes= 10 Edges= 39 	elapsed= 0.0007245659999171039 	 randGraphIndex:  29
+@ NormaltestResult(statistic=8.354746135789169, pvalue=0.015338748539427915) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 39 	elapsed AVG,DEV_STD= (0.0013043723799819418, 0.0010711840248298278) 	 randGraphIndex:  29 	iteration to reach Optimal AVG,DEV,MAX:  (7.6, 6.164414002968976, 27)
+iteration : 30 
+
+
+@stoer_wagner_minCut	minCutval=  7  graph: Nodes= 10 Edges= 40 	elapsed= 0.0007482419996449607 	 randGraphIndex:  30
+@ NormaltestResult(statistic=15.029541968922153, pvalue=0.0005449748100499335) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 40 	elapsed AVG,DEV_STD= (0.0005504836199179408, 0.0005075798108104974) 	 randGraphIndex:  30 	iteration to reach Optimal AVG,DEV,MAX:  (3.14, 2.842893036385036, 12)
+iteration : 31 
+
+
+@stoer_wagner_minCut	minCutval=  7  graph: Nodes= 10 Edges= 41 	elapsed= 0.0010672899998098728 	 randGraphIndex:  31
+@ NormaltestResult(statistic=17.90697276303809, pvalue=0.00012928563436139006) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 41 	elapsed AVG,DEV_STD= (0.0010065719600424927, 0.0008618013089773413) 	 randGraphIndex:  31 	iteration to reach Optimal AVG,DEV,MAX:  (5.64, 4.749908699444783, 20)
+iteration : 32 
+
+
+@stoer_wagner_minCut	minCutval=  7  graph: Nodes= 10 Edges= 42 	elapsed= 0.0007393200003207312 	 randGraphIndex:  32
+@ NormaltestResult(statistic=36.6873232408053, pvalue=1.0800627308284368e-08) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 42 	elapsed AVG,DEV_STD= (0.0016430294000747382, 0.0015784815407566895) 	 randGraphIndex:  32 	iteration to reach Optimal AVG,DEV,MAX:  (9.5, 8.839267676749273, 47)
+iteration : 33 
+
+
+@stoer_wagner_minCut	minCutval=  8  graph: Nodes= 10 Edges= 43 	elapsed= 0.0007631890002812725 	 randGraphIndex:  33
+@ NormaltestResult(statistic=12.565327616814592, pvalue=0.0018684168547798126) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 43 	elapsed AVG,DEV_STD= (0.0005198754199773248, 0.00034134495233472593) 	 randGraphIndex:  33 	iteration to reach Optimal AVG,DEV,MAX:  (2.82, 1.9865876804825147, 9)
+iteration : 34 
+
+
+@stoer_wagner_minCut	minCutval=  8  graph: Nodes= 10 Edges= 44 	elapsed= 0.0008146880009007873 	 randGraphIndex:  34
+@ NormaltestResult(statistic=17.775909138320667, pvalue=0.00013804172420962206) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 44 	elapsed AVG,DEV_STD= (0.0010036884401051793, 0.0007687251780411821) 	 randGraphIndex:  34 	iteration to reach Optimal AVG,DEV,MAX:  (5.48, 4.2820937087612, 20)
+iteration : 35 
+
+
+@stoer_wagner_minCut	minCutval=  8  graph: Nodes= 10 Edges= 44 	elapsed= 0.0007262930002980283 	 randGraphIndex:  35
+@ NormaltestResult(statistic=22.138103242952106, pvalue=1.5587338288040553e-05) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 44 	elapsed AVG,DEV_STD= (0.0008763943400663265, 0.0008196609270237798) 	 randGraphIndex:  35 	iteration to reach Optimal AVG,DEV,MAX:  (4.84, 4.613025037868319, 21)
+iteration : 36 
+
+
+@stoer_wagner_minCut	minCutval=  9  graph: Nodes= 10 Edges= 45 	elapsed= 0.0007614639998791972 	 randGraphIndex:  36
+@ NormaltestResult(statistic=32.955965926415224, pvalue=6.977549500768367e-08) False
+@randMinCut-untilOpt	graph: Nodes= 10 Edges= 45 	elapsed AVG,DEV_STD= (0.0002643950399760797, 0.00013425695440204093) 	 randGraphIndex:  36 	iteration to reach Optimal AVG,DEV,MAX:  (1.36, 0.662709343128183, 4)
+max num of edges reached for  10  graph
+@@ global until Opt MAX stats on random graphs with nodes:  10 	 NormaltestResult(statistic=24.506072645190386, pvalue=4.7706102673713915e-06) normalTestPassed:  False  (AVG,DEV,MAX) (13.08108108108108, 8.842380204881923, 47)
+@@ global until Opt AVG stats on random graphs with nodes:  10 	 NormaltestResult(statistic=13.193415883248594, pvalue=0.0013648538282310526) normalTestPassed:  False  (AVG,DEV,MAX) (3.30972972972973, 1.9073578095925823, 9.5)
+
+
+
+exploring min cut solver algoritm with a graph of 15 with variable num of edges
+
+
+1/e fail prob iterations:  105
+graph with num nodes=  15  with this num of iteration of rand Algo:  105
+105.0 2
+iteration : 0 
+
+
+@stoer_wagner_minCut	minCutval=  1  graph: Nodes= 15 Edges= 17 	elapsed= 0.0007838100000299164 	 randGraphIndex:  0
+@ NormaltestResult(statistic=29.175876748096172, pvalue=4.618903212001972e-07) False
+@randMinCut-untilOpt	graph: Nodes= 15 Edges= 17 	elapsed AVG,DEV_STD= (0.0003826008800388081, 0.0002834507217731681) 	 randGraphIndex:  0 	iteration to reach Optimal AVG,DEV,MAX:  (1.74, 1.242282297274838, 6)
+iteration : 1 
+
+
+@stoer_wagner_minCut	minCutval=  1  graph: Nodes= 15 Edges= 20 	elapsed= 0.0008947480000642827 	 randGraphIndex:  1
+@ NormaltestResult(statistic=30.08560337041552, pvalue=2.930854344707178e-07) False
+@randMinCut-untilOpt	graph: Nodes= 15 Edges= 20 	elapsed AVG,DEV_STD= (0.00028570709993800845, 0.00016708604282829573) 	 randGraphIndex:  1 	iteration to reach Optimal AVG,DEV,MAX:  (1.36, 0.7216760537322907, 4)
+iteration : 2 
+
+
+@stoer_wagner_minCut	minCutval=  1  graph: Nodes= 15 Edges= 23 	elapsed= 0.0008972939995146589 	 randGraphIndex:  2
+@ NormaltestResult(statistic=37.470043990309165, pvalue=7.302697801933257e-09) False
+@randMinCut-untilOpt	graph: Nodes= 15 Edges= 23 	elapsed AVG,DEV_STD= (0.0007807728199804842, 0.0006117970606138416) 	 randGraphIndex:  2 	iteration to reach Optimal AVG,DEV,MAX:  (3.5, 2.8012387930182254, 16)
+iteration : 3 
+
+
+@stoer_wagner_minCut	minCutval=  2  graph: Nodes= 15 Edges= 26 	elapsed= 0.0010105960000146297 	 randGraphIndex:  3
+@ NormaltestResult(statistic=15.834306788818086, pvalue=0.0003644382633416945) False
+@randMinCut-untilOpt	graph: Nodes= 15 Edges= 26 	elapsed AVG,DEV_STD= (0.0007083909200264316, 0.0004414225466769281) 	 randGraphIndex:  3 	iteration to reach Optimal AVG,DEV,MAX:  (3.08, 1.9778363771287748, 10)
+iteration : 4 
+
+
+@stoer_wagner_minCut	minCutval=  3  graph: Nodes= 15 Edges= 29 	elapsed= 0.000882160999935877 	 randGraphIndex:  4
+@ NormaltestResult(statistic=32.1109346865191, pvalue=1.0646310505149255e-07) False
+@randMinCut-untilOpt	graph: Nodes= 15 Edges= 29 	elapsed AVG,DEV_STD= (0.0004633900000590074, 0.00037014701019937805) 	 randGraphIndex:  4 	iteration to reach Optimal AVG,DEV,MAX:  (1.94, 1.5440471601130132, 8)
+iteration : 5 
+
+
+@stoer_wagner_minCut	minCutval=  3  graph: Nodes= 15 Edges= 32 	elapsed= 0.0009486930002822191 	 randGraphIndex:  5
+@ NormaltestResult(statistic=33.71856259305375, pvalue=4.765485627416393e-08) False
+@randMinCut-untilOpt	graph: Nodes= 15 Edges= 32 	elapsed AVG,DEV_STD= (0.0005279483600315871, 0.00041530359196489003) 	 randGraphIndex:  5 	iteration to reach Optimal AVG,DEV,MAX:  (2.18, 1.7460158729437223, 9)
+iteration : 6 
+
+
+@stoer_wagner_minCut	minCutval=  3  graph: Nodes= 15 Edges= 35 	elapsed= 0.0014112360004219227 	 randGraphIndex:  6
+@ NormaltestResult(statistic=15.025613365717989, pvalue=0.0005460463570185773) False
+@randMinCut-untilOpt	graph: Nodes= 15 Edges= 35 	elapsed AVG,DEV_STD= (0.000641251640045084, 0.0004110740985137633) 	 randGraphIndex:  6 	iteration to reach Optimal AVG,DEV,MAX:  (2.28, 1.4851647335276603, 7)
+iteration : 7 
+
+
+@stoer_wagner_minCut	minCutval=  3  graph: Nodes= 15 Edges= 38 	elapsed= 0.0013542169999709586 	 randGraphIndex:  7
+@ NormaltestResult(statistic=14.375450859539711, pvalue=0.0007558063013417588) False
+@randMinCut-untilOpt	graph: Nodes= 15 Edges= 38 	elapsed AVG,DEV_STD= (0.0015073674000086613, 0.0013417018480244363) 	 randGraphIndex:  7 	iteration to reach Optimal AVG,DEV,MAX:  (5.92, 5.306291991011949, 20)
+iteration : 8 
+
+
+@stoer_wagner_minCut	minCutval=  3  graph: Nodes= 15 Edges= 41 	elapsed= 0.0010525070001676795 	 randGraphIndex:  8
+@ NormaltestResult(statistic=11.997009995573931, pvalue=0.002482460688081706) False
+@randMinCut-untilOpt	graph: Nodes= 15 Edges= 41 	elapsed AVG,DEV_STD= (0.001695948060023511, 0.0012369763314436263) 	 randGraphIndex:  8 	iteration to reach Optimal AVG,DEV,MAX:  (6.6, 4.7680912195081815, 21)
+iteration : 9 
+
+
+@stoer_wagner_minCut	minCutval=  3  graph: Nodes= 15 Edges= 44 	elapsed= 0.0011181800000485964 	 randGraphIndex:  9
+@ NormaltestResult(statistic=30.045601410558234, pvalue=2.990064459941878e-07) False
+@randMinCut-untilOpt	graph: Nodes= 15 Edges= 44 	elapsed AVG,DEV_STD= (0.001147307839964924, 0.0009996692747633407) 	 randGraphIndex:  9 	iteration to reach Optimal AVG,DEV,MAX:  (4.3, 3.807886552931954, 18)
+iteration : 10 
+
+
+@stoer_wagner_minCut	minCutval=  3  graph: Nodes= 15 Edges= 47 	elapsed= 0.0011295250005787238 	 randGraphIndex:  10
+@ NormaltestResult(statistic=20.99277757730291, pvalue=2.7636069053780032e-05) False
+@randMinCut-untilOpt	graph: Nodes= 15 Edges= 47 	elapsed AVG,DEV_STD= (0.0011119915600465902, 0.0009618084909002229) 	 randGraphIndex:  10 	iteration to reach Optimal AVG,DEV,MAX:  (4.02, 3.4492826820091396, 15)
+iteration : 11 
+
+
+@stoer_wagner_minCut	minCutval=  3  graph: Nodes= 15 Edges= 50 	elapsed= 0.001290926000365289 	 randGraphIndex:  11
+@ NormaltestResult(statistic=6.243566677836342, pvalue=0.044078491397483) False
+@randMinCut-untilOpt	graph: Nodes= 15 Edges= 50 	elapsed AVG,DEV_STD= (0.0008875447599893959, 0.0006128908692135393) 	 randGraphIndex:  11 	iteration to reach Optimal AVG,DEV,MAX:  (3.12, 2.181929496232775, 9)
+iteration : 12 
+
+
+@stoer_wagner_minCut	minCutval=  5  graph: Nodes= 15 Edges= 53 	elapsed= 0.0012228269997649477 	 randGraphIndex:  12
+@ NormaltestResult(statistic=53.093012928498425, pvalue=2.9580038081042264e-12) False
+@randMinCut-untilOpt	graph: Nodes= 15 Edges= 53 	elapsed AVG,DEV_STD= (0.0013610122799400414, 0.0012901361502784272) 	 randGraphIndex:  12 	iteration to reach Optimal AVG,DEV,MAX:  (4.76, 4.573927888208407, 27)
+iteration : 13 
+
+
+@stoer_wagner_minCut	minCutval=  5  graph: Nodes= 15 Edges= 56 	elapsed= 0.001209095000376692 	 randGraphIndex:  13
+@ NormaltestResult(statistic=16.8406743652364, pvalue=0.00022034034536871244) False
+@randMinCut-untilOpt	graph: Nodes= 15 Edges= 56 	elapsed AVG,DEV_STD= (0.0024593220600399946, 0.002193501386812995) 	 randGraphIndex:  13 	iteration to reach Optimal AVG,DEV,MAX:  (8.24, 7.204193789957715, 34)
+iteration : 14 
+
+
+@stoer_wagner_minCut	minCutval=  6  graph: Nodes= 15 Edges= 59 	elapsed= 0.0012511920003817067 	 randGraphIndex:  14
+@ NormaltestResult(statistic=21.088709146941664, pvalue=2.6341772430247735e-05) False
+@randMinCut-untilOpt	graph: Nodes= 15 Edges= 59 	elapsed AVG,DEV_STD= (0.0008939416000612255, 0.0006671204479974926) 	 randGraphIndex:  14 	iteration to reach Optimal AVG,DEV,MAX:  (2.9, 2.2062064587829284, 11)
+iteration : 15 
+
+
+@stoer_wagner_minCut	minCutval=  6  graph: Nodes= 15 Edges= 62 	elapsed= 0.001285575000110839 	 randGraphIndex:  15
+@ NormaltestResult(statistic=13.602472832669875, pvalue=0.001112398909035957) False
+@randMinCut-untilOpt	graph: Nodes= 15 Edges= 62 	elapsed AVG,DEV_STD= (0.002903814620003686, 0.0026081586031203754) 	 randGraphIndex:  15 	iteration to reach Optimal AVG,DEV,MAX:  (9.6, 8.706085134395765, 33)
+iteration : 16 
+
+
+@stoer_wagner_minCut	minCutval=  7  graph: Nodes= 15 Edges= 65 	elapsed= 0.0013859599994248128 	 randGraphIndex:  16
+@ NormaltestResult(statistic=24.629620751370403, pvalue=4.484828168447615e-06) False
+@randMinCut-untilOpt	graph: Nodes= 15 Edges= 65 	elapsed AVG,DEV_STD= (0.002054781920141977, 0.0017476419569582714) 	 randGraphIndex:  16 	iteration to reach Optimal AVG,DEV,MAX:  (6.66, 5.669863044093351, 26)
+iteration : 17 
+
+
+@stoer_wagner_minCut	minCutval=  7  graph: Nodes= 15 Edges= 68 	elapsed= 0.001491066999733448 	 randGraphIndex:  17
+@ NormaltestResult(statistic=36.96066884084404, pvalue=9.420907452864066e-09) False
+@randMinCut-untilOpt	graph: Nodes= 15 Edges= 68 	elapsed AVG,DEV_STD= (0.001726109180071944, 0.0014940608243648515) 	 randGraphIndex:  17 	iteration to reach Optimal AVG,DEV,MAX:  (5.46, 4.7647086982933, 26)
+iteration : 18 
+
+
+@stoer_wagner_minCut	minCutval=  7  graph: Nodes= 15 Edges= 71 	elapsed= 0.001502227999480965 	 randGraphIndex:  18
+@ NormaltestResult(statistic=28.010611898103527, pvalue=8.271283544638731e-07) False
+@randMinCut-untilOpt	graph: Nodes= 15 Edges= 71 	elapsed AVG,DEV_STD= (0.002355866400030209, 0.002385846495600309) 	 randGraphIndex:  18 	iteration to reach Optimal AVG,DEV,MAX:  (7.32, 7.462668997847122, 36)
+iteration : 19 
+
+
+@stoer_wagner_minCut	minCutval=  8  graph: Nodes= 15 Edges= 74 	elapsed= 0.0014702930002385983 	 randGraphIndex:  19
+@ NormaltestResult(statistic=20.105620803533107, pvalue=4.3064550143489886e-05) False
+@randMinCut-untilOpt	graph: Nodes= 15 Edges= 74 	elapsed AVG,DEV_STD= (0.0021538332200907464, 0.0019490681075496126) 	 randGraphIndex:  19 	iteration to reach Optimal AVG,DEV,MAX:  (6.56, 5.880302643884367, 25)
+iteration : 20 
+
+
+@stoer_wagner_minCut	minCutval=  8  graph: Nodes= 15 Edges= 77 	elapsed= 0.0014356080000652582 	 randGraphIndex:  20
+@ NormaltestResult(statistic=18.03994470711178, pvalue=0.00012096947056828742) False
+@randMinCut-untilOpt	graph: Nodes= 15 Edges= 77 	elapsed AVG,DEV_STD= (0.00314375771995401, 0.0026283386365918756) 	 randGraphIndex:  20 	iteration to reach Optimal AVG,DEV,MAX:  (9.34, 7.880769671310341, 36)
+iteration : 21 
+
+
+@stoer_wagner_minCut	minCutval=  8  graph: Nodes= 15 Edges= 80 	elapsed= 0.0014698240001962404 	 randGraphIndex:  21
+@ NormaltestResult(statistic=47.917098640328526, pvalue=3.934904856395185e-11) False
+@randMinCut-untilOpt	graph: Nodes= 15 Edges= 80 	elapsed AVG,DEV_STD= (0.002710955959992134, 0.0034355357129136673) 	 randGraphIndex:  21 	iteration to reach Optimal AVG,DEV,MAX:  (7.84, 9.924942810712732, 50)
+iteration : 22 
+
+
+@stoer_wagner_minCut	minCutval=  8  graph: Nodes= 15 Edges= 83 	elapsed= 0.0014739099997314042 	 randGraphIndex:  22
+@ NormaltestResult(statistic=6.320888658713495, pvalue=0.04240689426567418) False
+@randMinCut-untilOpt	graph: Nodes= 15 Edges= 83 	elapsed AVG,DEV_STD= (0.004064754539922433, 0.002962307300186685) 	 randGraphIndex:  22 	iteration to reach Optimal AVG,DEV,MAX:  (11.8, 8.640200300021394, 31)
+iteration : 23 
+
+
+@stoer_wagner_minCut	minCutval=  8  graph: Nodes= 15 Edges= 86 	elapsed= 0.001534170000013546 	 randGraphIndex:  23
+@ NormaltestResult(statistic=14.151874136424127, pvalue=0.0008452001724295306) False
+@randMinCut-untilOpt	graph: Nodes= 15 Edges= 86 	elapsed AVG,DEV_STD= (0.003147962319981161, 0.0023015338850515413) 	 randGraphIndex:  23 	iteration to reach Optimal AVG,DEV,MAX:  (8.94, 6.585109981571132, 32)
+iteration : 24 
+
+
+@stoer_wagner_minCut	minCutval=  9  graph: Nodes= 15 Edges= 89 	elapsed= 0.0016004970002541086 	 randGraphIndex:  24
+@ NormaltestResult(statistic=8.040443278643275, pvalue=0.01794898629746033) False
+@randMinCut-untilOpt	graph: Nodes= 15 Edges= 89 	elapsed AVG,DEV_STD= (0.0027107897799942293, 0.0015794568080944804) 	 randGraphIndex:  24 	iteration to reach Optimal AVG,DEV,MAX:  (7.54, 4.385551416240585, 17)
+iteration : 25 
+
+
+@stoer_wagner_minCut	minCutval=  9  graph: Nodes= 15 Edges= 92 	elapsed= 0.0016192400007639662 	 randGraphIndex:  25
+@ NormaltestResult(statistic=17.04369861927956, pvalue=0.00019907094093816165) False
+@randMinCut-untilOpt	graph: Nodes= 15 Edges= 92 	elapsed AVG,DEV_STD= (0.003950244320076308, 0.0037758365593833993) 	 randGraphIndex:  25 	iteration to reach Optimal AVG,DEV,MAX:  (10.12, 8.537169630862588, 40)
+iteration : 26 
+
+
+@stoer_wagner_minCut	minCutval=  10  graph: Nodes= 15 Edges= 95 	elapsed= 0.0016139219997057808 	 randGraphIndex:  26
+@ NormaltestResult(statistic=20.65175358078634, pvalue=3.277394262742855e-05) False
+@randMinCut-untilOpt	graph: Nodes= 15 Edges= 95 	elapsed AVG,DEV_STD= (0.003170585539955937, 0.0029084569995211783) 	 randGraphIndex:  26 	iteration to reach Optimal AVG,DEV,MAX:  (8.52, 7.8434686204510315, 37)
+iteration : 27 
+
+
+@stoer_wagner_minCut	minCutval=  10  graph: Nodes= 15 Edges= 96 	elapsed= 0.0016864179997355677 	 randGraphIndex:  27
+@ NormaltestResult(statistic=9.221295741005868, pvalue=0.009945372906434385) False
+@randMinCut-untilOpt	graph: Nodes= 15 Edges= 96 	elapsed AVG,DEV_STD= (0.00362007255998833, 0.0028055246429177345) 	 randGraphIndex:  27 	iteration to reach Optimal AVG,DEV,MAX:  (9.66, 7.569029269439553, 34)
+iteration : 28 
+
+
+@stoer_wagner_minCut	minCutval=  10  graph: Nodes= 15 Edges= 97 	elapsed= 0.0016054140005508089 	 randGraphIndex:  28
+@ NormaltestResult(statistic=26.362830438159037, pvalue=1.8853157978514852e-06) False
+@randMinCut-untilOpt	graph: Nodes= 15 Edges= 97 	elapsed AVG,DEV_STD= (0.003159293100125069, 0.0030314175995940916) 	 randGraphIndex:  28 	iteration to reach Optimal AVG,DEV,MAX:  (8.42, 8.19678881872502, 36)
+iteration : 29 
+
+
+@stoer_wagner_minCut	minCutval=  10  graph: Nodes= 15 Edges= 98 	elapsed= 0.00165676800043002 	 randGraphIndex:  29
+@ NormaltestResult(statistic=26.437958110528637, pvalue=1.8158097340658363e-06) False
+@randMinCut-untilOpt	graph: Nodes= 15 Edges= 98 	elapsed AVG,DEV_STD= (0.004287010720036051, 0.004316592788786914) 	 randGraphIndex:  29 	iteration to reach Optimal AVG,DEV,MAX:  (11.4, 11.515739007895203, 49)
+iteration : 30 
+
+
+@stoer_wagner_minCut	minCutval=  12  graph: Nodes= 15 Edges= 101 	elapsed= 0.001617578000150388 	 randGraphIndex:  30
+@ NormaltestResult(statistic=42.6402263934618, pvalue=5.505445719550345e-10) False
+@randMinCut-untilOpt	graph: Nodes= 15 Edges= 101 	elapsed AVG,DEV_STD= (0.001586760360005428, 0.0015087375697043755) 	 randGraphIndex:  30 	iteration to reach Optimal AVG,DEV,MAX:  (4.08, 4.034747039588652, 20)
+iteration : 31 
+
+
+@stoer_wagner_minCut	minCutval=  13  graph: Nodes= 15 Edges= 104 	elapsed= 0.0016351290005331975 	 randGraphIndex:  31
+@ NormaltestResult(statistic=6.736318603181119, pvalue=0.03445299658897396) False
+@randMinCut-untilOpt	graph: Nodes= 15 Edges= 104 	elapsed AVG,DEV_STD= (0.002683937340079865, 0.002251157917611328) 	 randGraphIndex:  31 	iteration to reach Optimal AVG,DEV,MAX:  (6.86, 5.72145978232971, 20)
+iteration : 32 
+
+
+@stoer_wagner_minCut	minCutval=  13  graph: Nodes= 15 Edges= 104 	elapsed= 0.0016744560007282416 	 randGraphIndex:  32
+@ NormaltestResult(statistic=52.598371282798844, pvalue=3.787989769403474e-12) False
+@randMinCut-untilOpt	graph: Nodes= 15 Edges= 104 	elapsed AVG,DEV_STD= (0.002647530319918587, 0.003002320026667088) 	 randGraphIndex:  32 	iteration to reach Optimal AVG,DEV,MAX:  (6.76, 7.6733304373003515, 44)
+iteration : 33 
+
+
+@stoer_wagner_minCut	minCutval=  14  graph: Nodes= 15 Edges= 105 	elapsed= 0.0016855419999046717 	 randGraphIndex:  33
+@ NormaltestResult(statistic=33.25345350193146, pvalue=6.01318160092955e-08) False
+@randMinCut-untilOpt	graph: Nodes= 15 Edges= 105 	elapsed AVG,DEV_STD= (0.0005577659599839535, 0.00034387238355588085) 	 randGraphIndex:  33 	iteration to reach Optimal AVG,DEV,MAX:  (1.32, 0.7406560798180412, 4)
+max num of edges reached for  15  graph
+@@ global until Opt MAX stats on random graphs with nodes:  15 	 NormaltestResult(statistic=2.9631867932958857, pvalue=0.22727526007690232) normalTestPassed:  True  (AVG,DEV,MAX) (23.852941176470587, 13.188912590876031, 50)
+(19.2511120228841, 28.454770330057073)
+@@ global until Opt AVG stats on random graphs with nodes:  15 	 NormaltestResult(statistic=4.394900293892964, pvalue=0.11108605064762767) normalTestPassed:  True  (AVG,DEV,MAX) (6.004117647058823, 3.038072672188295, 11.8)
+(4.944083978834938, 7.064151315282708)
+
+
+
+exploring min cut solver algoritm with a graph of 20 with variable num of edges
+
+
+1/e fail prob iterations:  190
+graph with num nodes=  20  with this num of iteration of rand Algo:  190
+190.0 3
+iteration : 0 
+
+
+@stoer_wagner_minCut	minCutval=  1  graph: Nodes= 20 Edges= 23 	elapsed= 0.0010828310005308595 	 randGraphIndex:  0
+@ NormaltestResult(statistic=36.27927022602363, pvalue=1.3245140413778216e-08) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 23 	elapsed AVG,DEV_STD= (0.00035771986013060085, 0.00014847658314738488) 	 randGraphIndex:  0 	iteration to reach Optimal AVG,DEV,MAX:  (1.22, 0.5066899385990914, 3)
+iteration : 1 
+
+
+@stoer_wagner_minCut	minCutval=  1  graph: Nodes= 20 Edges= 27 	elapsed= 0.0014771449996260344 	 randGraphIndex:  1
+@ NormaltestResult(statistic=21.31869697390639, pvalue=2.3480307027689126e-05) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 27 	elapsed AVG,DEV_STD= (0.0008315469799526909, 0.000655638211639557) 	 randGraphIndex:  1 	iteration to reach Optimal AVG,DEV,MAX:  (2.56, 2.0717733703180916, 9)
+iteration : 2 
+
+
+@stoer_wagner_minCut	minCutval=  1  graph: Nodes= 20 Edges= 31 	elapsed= 0.0013229789992692531 	 randGraphIndex:  2
+@ NormaltestResult(statistic=35.48847876558934, pvalue=1.9668658979552432e-08) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 31 	elapsed AVG,DEV_STD= (0.0012614409400157455, 0.0011690222964256525) 	 randGraphIndex:  2 	iteration to reach Optimal AVG,DEV,MAX:  (3.88, 3.532011047663403, 19)
+iteration : 3 
+
+
+@stoer_wagner_minCut	minCutval=  2  graph: Nodes= 20 Edges= 35 	elapsed= 0.0013168089999453514 	 randGraphIndex:  3
+@ NormaltestResult(statistic=32.746007766181734, pvalue=7.749876136585716e-08) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 35 	elapsed AVG,DEV_STD= (0.0005672623599821236, 0.0004280926159745108) 	 randGraphIndex:  3 	iteration to reach Optimal AVG,DEV,MAX:  (1.62, 1.1586410054852352, 6)
+iteration : 4 
+
+
+@stoer_wagner_minCut	minCutval=  2  graph: Nodes= 20 Edges= 39 	elapsed= 0.001465178000216838 	 randGraphIndex:  4
+@ NormaltestResult(statistic=24.07778907173264, pvalue=5.90982382954427e-06) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 39 	elapsed AVG,DEV_STD= (0.0012860298001578486, 0.0012063393156348085) 	 randGraphIndex:  4 	iteration to reach Optimal AVG,DEV,MAX:  (3.7, 3.471457965777962, 16)
+iteration : 5 
+
+
+@stoer_wagner_minCut	minCutval=  2  graph: Nodes= 20 Edges= 43 	elapsed= 0.0014912710003045504 	 randGraphIndex:  5
+@ NormaltestResult(statistic=9.696650030166815, pvalue=0.007841500951224097) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 43 	elapsed AVG,DEV_STD= (0.0020519419599986577, 0.0015079771213648233) 	 randGraphIndex:  5 	iteration to reach Optimal AVG,DEV,MAX:  (5.76, 4.201846047165654, 18)
+iteration : 6 
+
+
+@stoer_wagner_minCut	minCutval=  2  graph: Nodes= 20 Edges= 47 	elapsed= 0.001508131999798934 	 randGraphIndex:  6
+@ NormaltestResult(statistic=30.415854865272728, pvalue=2.484740477104488e-07) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 47 	elapsed AVG,DEV_STD= (0.0019491041400215181, 0.0016741437187393154) 	 randGraphIndex:  6 	iteration to reach Optimal AVG,DEV,MAX:  (5.28, 4.513200592909286, 24)
+iteration : 7 
+
+
+@stoer_wagner_minCut	minCutval=  2  graph: Nodes= 20 Edges= 51 	elapsed= 0.001669899000262376 	 randGraphIndex:  7
+@ NormaltestResult(statistic=36.68244773170781, pvalue=1.0826988704886958e-08) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 51 	elapsed AVG,DEV_STD= (0.0017516163600339496, 0.0015372496876342606) 	 randGraphIndex:  7 	iteration to reach Optimal AVG,DEV,MAX:  (4.62, 3.9325434465729265, 20)
+iteration : 8 
+
+
+@stoer_wagner_minCut	minCutval=  2  graph: Nodes= 20 Edges= 55 	elapsed= 0.001662534999923082 	 randGraphIndex:  8
+@ NormaltestResult(statistic=24.929852260826888, pvalue=3.859680575343316e-06) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 55 	elapsed AVG,DEV_STD= (0.0013627575599639385, 0.0011753132557440686) 	 randGraphIndex:  8 	iteration to reach Optimal AVG,DEV,MAX:  (3.48, 2.9640017075651253, 14)
+iteration : 9 
+
+
+@stoer_wagner_minCut	minCutval=  2  graph: Nodes= 20 Edges= 59 	elapsed= 0.001740525999593956 	 randGraphIndex:  9
+@ NormaltestResult(statistic=16.95555789381978, pvalue=0.00020804025841694514) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 59 	elapsed AVG,DEV_STD= (0.0012906051600293721, 0.0009436551709956592) 	 randGraphIndex:  9 	iteration to reach Optimal AVG,DEV,MAX:  (3.18, 2.353373609722599, 11)
+iteration : 10 
+
+
+@stoer_wagner_minCut	minCutval=  2  graph: Nodes= 20 Edges= 63 	elapsed= 0.0019613410004239995 	 randGraphIndex:  10
+@ NormaltestResult(statistic=40.46799057563078, pvalue=1.6311259596412753e-09) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 63 	elapsed AVG,DEV_STD= (0.0012117014999057573, 0.0009175205164328475) 	 randGraphIndex:  10 	iteration to reach Optimal AVG,DEV,MAX:  (2.92, 2.211657426327272, 13)
+iteration : 11 
+
+
+@stoer_wagner_minCut	minCutval=  3  graph: Nodes= 20 Edges= 67 	elapsed= 0.0018185190001531737 	 randGraphIndex:  11
+@ NormaltestResult(statistic=5.3759332817561205, pvalue=0.0680191061227458) True
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 67 	elapsed AVG,DEV_STD= (0.0022272009799416993, 0.00153964021652455) 	 randGraphIndex:  11 	iteration to reach Optimal AVG,DEV,MAX:  (5.26, 3.6578682316343762, 16)
+iteration : 12 
+
+
+@stoer_wagner_minCut	minCutval=  3  graph: Nodes= 20 Edges= 71 	elapsed= 0.00194453899985092 	 randGraphIndex:  12
+@ NormaltestResult(statistic=62.09500518226021, pvalue=3.2827737180514606e-14) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 71 	elapsed AVG,DEV_STD= (0.0019415324000328837, 0.0020123945417340372) 	 randGraphIndex:  12 	iteration to reach Optimal AVG,DEV,MAX:  (4.46, 4.532017616191423, 28)
+iteration : 13 
+
+
+@stoer_wagner_minCut	minCutval=  4  graph: Nodes= 20 Edges= 75 	elapsed= 0.0019874630006597727 	 randGraphIndex:  13
+@ NormaltestResult(statistic=33.44066165998186, pvalue=5.475863137497273e-08) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 75 	elapsed AVG,DEV_STD= (0.0033939715399901615, 0.0029391876898199627) 	 randGraphIndex:  13 	iteration to reach Optimal AVG,DEV,MAX:  (7.66, 6.595019766026916, 33)
+iteration : 14 
+
+
+@stoer_wagner_minCut	minCutval=  4  graph: Nodes= 20 Edges= 79 	elapsed= 0.002039762999629602 	 randGraphIndex:  14
+@ NormaltestResult(statistic=20.343790131103578, pvalue=3.822980673652867e-05) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 79 	elapsed AVG,DEV_STD= (0.002942194239985838, 0.0028030962117299827) 	 randGraphIndex:  14 	iteration to reach Optimal AVG,DEV,MAX:  (6.5, 6.231093853589825, 27)
+iteration : 15 
+
+
+@stoer_wagner_minCut	minCutval=  4  graph: Nodes= 20 Edges= 83 	elapsed= 0.0020921129998896504 	 randGraphIndex:  15
+@ NormaltestResult(statistic=26.505543211506186, pvalue=1.75547408126051e-06) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 83 	elapsed AVG,DEV_STD= (0.001975261140087241, 0.0016873351267806703) 	 randGraphIndex:  15 	iteration to reach Optimal AVG,DEV,MAX:  (4.24, 3.617192506993934, 18)
+iteration : 16 
+
+
+@stoer_wagner_minCut	minCutval=  5  graph: Nodes= 20 Edges= 87 	elapsed= 0.002273342000080447 	 randGraphIndex:  16
+@ NormaltestResult(statistic=32.23806588200262, pvalue=9.990631490761153e-08) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 87 	elapsed AVG,DEV_STD= (0.003695976120088744, 0.003549366880980154) 	 randGraphIndex:  16 	iteration to reach Optimal AVG,DEV,MAX:  (7.84, 7.467917776620693, 37)
+iteration : 17 
+
+
+@stoer_wagner_minCut	minCutval=  5  graph: Nodes= 20 Edges= 91 	elapsed= 0.002197066000007908 	 randGraphIndex:  17
+@ NormaltestResult(statistic=25.35364759447802, pvalue=3.1226648651944124e-06) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 91 	elapsed AVG,DEV_STD= (0.0037775612000768887, 0.003609883505522367) 	 randGraphIndex:  17 	iteration to reach Optimal AVG,DEV,MAX:  (7.8, 7.323431781700741, 35)
+iteration : 18 
+
+
+@stoer_wagner_minCut	minCutval=  6  graph: Nodes= 20 Edges= 95 	elapsed= 0.0023858570002630586 	 randGraphIndex:  18
+@ NormaltestResult(statistic=21.77063741328296, pvalue=1.873122376203184e-05) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 95 	elapsed AVG,DEV_STD= (0.004306540780016803, 0.004112240277465144) 	 randGraphIndex:  18 	iteration to reach Optimal AVG,DEV,MAX:  (8.72, 8.271021455562025, 36)
+iteration : 19 
+
+
+@stoer_wagner_minCut	minCutval=  6  graph: Nodes= 20 Edges= 99 	elapsed= 0.00235711299956165 	 randGraphIndex:  19
+@ NormaltestResult(statistic=34.73064362902709, pvalue=2.873006175352547e-08) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 99 	elapsed AVG,DEV_STD= (0.0030009584599429216, 0.00296078970017287) 	 randGraphIndex:  19 	iteration to reach Optimal AVG,DEV,MAX:  (5.94, 5.901954017483514, 31)
+iteration : 20 
+
+
+@stoer_wagner_minCut	minCutval=  6  graph: Nodes= 20 Edges= 103 	elapsed= 0.0025954809998438577 	 randGraphIndex:  20
+@ NormaltestResult(statistic=18.092057412877054, pvalue=0.00011785815811198185) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 103 	elapsed AVG,DEV_STD= (0.0036952657599613305, 0.003211205200012163) 	 randGraphIndex:  20 	iteration to reach Optimal AVG,DEV,MAX:  (7.16, 6.152351466831895, 26)
+iteration : 21 
+
+
+@stoer_wagner_minCut	minCutval=  6  graph: Nodes= 20 Edges= 107 	elapsed= 0.002439976999994542 	 randGraphIndex:  21
+@ NormaltestResult(statistic=14.177718825677331, pvalue=0.0008343484702479577) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 107 	elapsed AVG,DEV_STD= (0.0034730227600266515, 0.0027055440726767178) 	 randGraphIndex:  21 	iteration to reach Optimal AVG,DEV,MAX:  (6.58, 5.182742162844937, 23)
+iteration : 22 
+
+
+@stoer_wagner_minCut	minCutval=  6  graph: Nodes= 20 Edges= 111 	elapsed= 0.0024593640000603045 	 randGraphIndex:  22
+@ NormaltestResult(statistic=38.15728874762216, pvalue=5.179049074849539e-09) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 111 	elapsed AVG,DEV_STD= (0.003367086179969192, 0.0029785309527787683) 	 randGraphIndex:  22 	iteration to reach Optimal AVG,DEV,MAX:  (6.26, 5.594494378130947, 31)
+iteration : 23 
+
+
+@stoer_wagner_minCut	minCutval=  6  graph: Nodes= 20 Edges= 115 	elapsed= 0.0024724140002945205 	 randGraphIndex:  23
+@ NormaltestResult(statistic=13.349461802419494, pvalue=0.001262412253750738) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 115 	elapsed AVG,DEV_STD= (0.0032607549600106723, 0.0028326721150448886) 	 randGraphIndex:  23 	iteration to reach Optimal AVG,DEV,MAX:  (5.98, 5.128909658564312, 22)
+iteration : 24 
+
+
+@stoer_wagner_minCut	minCutval=  6  graph: Nodes= 20 Edges= 119 	elapsed= 0.0025547770001139725 	 randGraphIndex:  24
+@ NormaltestResult(statistic=35.559229924184635, pvalue=1.8985031917045505e-08) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 119 	elapsed AVG,DEV_STD= (0.0032734837599673484, 0.0031141165893914407) 	 randGraphIndex:  24 	iteration to reach Optimal AVG,DEV,MAX:  (5.84, 5.4374363707278714, 26)
+iteration : 25 
+
+
+@stoer_wagner_minCut	minCutval=  6  graph: Nodes= 20 Edges= 123 	elapsed= 0.002623407999635674 	 randGraphIndex:  25
+@ NormaltestResult(statistic=28.93862326131723, pvalue=5.200652093387763e-07) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 123 	elapsed AVG,DEV_STD= (0.0026706653199653372, 0.0025954712059785266) 	 randGraphIndex:  25 	iteration to reach Optimal AVG,DEV,MAX:  (4.66, 4.591962810060594, 22)
+iteration : 26 
+
+
+@stoer_wagner_minCut	minCutval=  6  graph: Nodes= 20 Edges= 127 	elapsed= 0.0026466160006748396 	 randGraphIndex:  26
+@ NormaltestResult(statistic=10.870577947857313, pvalue=0.004359974920011597) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 127 	elapsed AVG,DEV_STD= (0.0028357011199477713, 0.002063920038251657) 	 randGraphIndex:  26 	iteration to reach Optimal AVG,DEV,MAX:  (4.88, 3.537784386780367, 16)
+iteration : 27 
+
+
+@stoer_wagner_minCut	minCutval=  7  graph: Nodes= 20 Edges= 131 	elapsed= 0.003081845999986399 	 randGraphIndex:  27
+@ NormaltestResult(statistic=28.66770837960832, pvalue=5.955061088769099e-07) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 131 	elapsed AVG,DEV_STD= (0.004160803239956295, 0.0036807978793424907) 	 randGraphIndex:  27 	iteration to reach Optimal AVG,DEV,MAX:  (7.04, 6.147705727691081, 31)
+iteration : 28 
+
+
+@stoer_wagner_minCut	minCutval=  8  graph: Nodes= 20 Edges= 135 	elapsed= 0.00277649800045765 	 randGraphIndex:  28
+@ NormaltestResult(statistic=17.25613435698454, pvalue=0.00017901030597666716) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 135 	elapsed AVG,DEV_STD= (0.004424013640000339, 0.0037049897196333756) 	 randGraphIndex:  28 	iteration to reach Optimal AVG,DEV,MAX:  (7.38, 6.213513909378559, 29)
+iteration : 29 
+
+
+@stoer_wagner_minCut	minCutval=  8  graph: Nodes= 20 Edges= 139 	elapsed= 0.0029554249995271675 	 randGraphIndex:  29
+@ NormaltestResult(statistic=25.861626681736922, pvalue=2.422250864290048e-06) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 139 	elapsed AVG,DEV_STD= (0.004265048779943754, 0.003903749119278782) 	 randGraphIndex:  29 	iteration to reach Optimal AVG,DEV,MAX:  (6.98, 6.267799145030812, 31)
+iteration : 30 
+
+
+@stoer_wagner_minCut	minCutval=  8  graph: Nodes= 20 Edges= 143 	elapsed= 0.002972295999825292 	 randGraphIndex:  30
+@ NormaltestResult(statistic=5.977820915265979, pvalue=0.05034225687544648) True
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 143 	elapsed AVG,DEV_STD= (0.004619175559964788, 0.00388812223117421) 	 randGraphIndex:  30 	iteration to reach Optimal AVG,DEV,MAX:  (7.3, 6.1486683476163835, 22)
+iteration : 31 
+
+
+@stoer_wagner_minCut	minCutval=  8  graph: Nodes= 20 Edges= 147 	elapsed= 0.003102550999756204 	 randGraphIndex:  31
+@ NormaltestResult(statistic=32.06233015406114, pvalue=1.0908209456755645e-07) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 147 	elapsed AVG,DEV_STD= (0.0036945590400137007, 0.0030759582868450366) 	 randGraphIndex:  31 	iteration to reach Optimal AVG,DEV,MAX:  (5.76, 4.8426675057687545, 26)
+iteration : 32 
+
+
+@stoer_wagner_minCut	minCutval=  9  graph: Nodes= 20 Edges= 151 	elapsed= 0.00296472299942252 	 randGraphIndex:  32
+@ NormaltestResult(statistic=34.14156372020764, pvalue=3.857035502392196e-08) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 151 	elapsed AVG,DEV_STD= (0.00553909959995508, 0.006935209943829285) 	 randGraphIndex:  32 	iteration to reach Optimal AVG,DEV,MAX:  (8.56, 10.656338537246654, 47)
+iteration : 33 
+
+
+@stoer_wagner_minCut	minCutval=  10  graph: Nodes= 20 Edges= 155 	elapsed= 0.0031633100006729364 	 randGraphIndex:  33
+@ NormaltestResult(statistic=25.613955571917288, pvalue=2.74157554620873e-06) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 155 	elapsed AVG,DEV_STD= (0.005729851519990916, 0.005624884871433144) 	 randGraphIndex:  33 	iteration to reach Optimal AVG,DEV,MAX:  (8.68, 8.500756268877325, 39)
+iteration : 34 
+
+
+@stoer_wagner_minCut	minCutval=  11  graph: Nodes= 20 Edges= 159 	elapsed= 0.003055058999962057 	 randGraphIndex:  34
+@ NormaltestResult(statistic=50.77472816708385, pvalue=9.427745893488941e-12) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 159 	elapsed AVG,DEV_STD= (0.003146488580023288, 0.0034248819369738976) 	 randGraphIndex:  34 	iteration to reach Optimal AVG,DEV,MAX:  (4.7, 4.879151816553733, 28)
+iteration : 35 
+
+
+@stoer_wagner_minCut	minCutval=  11  graph: Nodes= 20 Edges= 163 	elapsed= 0.003224719999707304 	 randGraphIndex:  35
+@ NormaltestResult(statistic=8.814999457663484, pvalue=0.012185607596695448) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 163 	elapsed AVG,DEV_STD= (0.0068799823399422165, 0.005927267583941494) 	 randGraphIndex:  35 	iteration to reach Optimal AVG,DEV,MAX:  (10.22, 8.746521174333326, 34)
+iteration : 36 
+
+
+@stoer_wagner_minCut	minCutval=  12  graph: Nodes= 20 Edges= 167 	elapsed= 0.00321193099989614 	 randGraphIndex:  36
+@ NormaltestResult(statistic=13.983284494623168, pvalue=0.0009195351868195806) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 167 	elapsed AVG,DEV_STD= (0.008257643739998457, 0.007290727149928657) 	 randGraphIndex:  36 	iteration to reach Optimal AVG,DEV,MAX:  (12.12, 10.674478432032094, 46)
+iteration : 37 
+
+
+@stoer_wagner_minCut	minCutval=  13  graph: Nodes= 20 Edges= 171 	elapsed= 0.003246438000132912 	 randGraphIndex:  37
+@ NormaltestResult(statistic=29.583596432504912, pvalue=3.767069712731833e-07) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 171 	elapsed AVG,DEV_STD= (0.009073311399988597, 0.008591850632019086) 	 randGraphIndex:  37 	iteration to reach Optimal AVG,DEV,MAX:  (13.08, 12.409410517335427, 62)
+iteration : 38 
+
+
+@stoer_wagner_minCut	minCutval=  13  graph: Nodes= 20 Edges= 173 	elapsed= 0.0032035259991971543 	 randGraphIndex:  38
+@ NormaltestResult(statistic=23.784751264855856, pvalue=6.8423752185957585e-06) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 173 	elapsed AVG,DEV_STD= (0.006635591960039164, 0.006330843950837098) 	 randGraphIndex:  38 	iteration to reach Optimal AVG,DEV,MAX:  (9.5, 9.060454554529473, 43)
+iteration : 39 
+
+
+@stoer_wagner_minCut	minCutval=  13  graph: Nodes= 20 Edges= 176 	elapsed= 0.0032810070006235037 	 randGraphIndex:  39
+@ NormaltestResult(statistic=21.620223192120257, pvalue=2.019427123393833e-05) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 176 	elapsed AVG,DEV_STD= (0.006843677740034764, 0.006151943434898761) 	 randGraphIndex:  39 	iteration to reach Optimal AVG,DEV,MAX:  (9.66, 8.64400228541178, 36)
+iteration : 40 
+
+
+@stoer_wagner_minCut	minCutval=  13  graph: Nodes= 20 Edges= 178 	elapsed= 0.0032687789998817607 	 randGraphIndex:  40
+@ NormaltestResult(statistic=7.0554070008333625, pvalue=0.029372291929056504) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 178 	elapsed AVG,DEV_STD= (0.006465609299993957, 0.004520804137894035) 	 randGraphIndex:  40 	iteration to reach Optimal AVG,DEV,MAX:  (9.08, 6.365852781258224, 28)
+iteration : 41 
+
+
+@stoer_wagner_minCut	minCutval=  13  graph: Nodes= 20 Edges= 178 	elapsed= 0.00341915799981507 	 randGraphIndex:  41
+@ NormaltestResult(statistic=24.83877997358639, pvalue=4.039498583078779e-06) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 178 	elapsed AVG,DEV_STD= (0.006580056400052854, 0.006964814944380414) 	 randGraphIndex:  41 	iteration to reach Optimal AVG,DEV,MAX:  (9.2, 9.689042833036098, 39)
+iteration : 42 
+
+
+@stoer_wagner_minCut	minCutval=  13  graph: Nodes= 20 Edges= 178 	elapsed= 0.003268499999649066 	 randGraphIndex:  42
+@ NormaltestResult(statistic=25.111107757918212, pvalue=3.525268765907392e-06) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 178 	elapsed AVG,DEV_STD= (0.007071727620023012, 0.006188688445586055) 	 randGraphIndex:  42 	iteration to reach Optimal AVG,DEV,MAX:  (9.9, 8.61240206839852, 43)
+iteration : 43 
+
+
+@stoer_wagner_minCut	minCutval=  14  graph: Nodes= 20 Edges= 182 	elapsed= 0.0032929989993135678 	 randGraphIndex:  43
+@ NormaltestResult(statistic=21.760187247798843, pvalue=1.882935209712955e-05) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 182 	elapsed AVG,DEV_STD= (0.009646476959951543, 0.00857665153795398) 	 randGraphIndex:  43 	iteration to reach Optimal AVG,DEV,MAX:  (13.38, 11.916186898671976, 58)
+iteration : 44 
+
+
+@stoer_wagner_minCut	minCutval=  16  graph: Nodes= 20 Edges= 186 	elapsed= 0.0033164410006065737 	 randGraphIndex:  44
+@ NormaltestResult(statistic=7.547756434774807, pvalue=0.02296283550876682) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 186 	elapsed AVG,DEV_STD= (0.016811667460005994, 0.014356122924471465) 	 randGraphIndex:  44 	iteration to reach Optimal AVG,DEV,MAX:  (22.58, 18.515398996510985, 74)
+iteration : 45 
+
+
+@stoer_wagner_minCut	minCutval=  16  graph: Nodes= 20 Edges= 186 	elapsed= 0.0034792269998433767 	 randGraphIndex:  45
+@ NormaltestResult(statistic=25.350073009429494, pvalue=3.128250971279542e-06) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 186 	elapsed AVG,DEV_STD= (0.00952826243992604, 0.00900967853297015) 	 randGraphIndex:  45 	iteration to reach Optimal AVG,DEV,MAX:  (13.06, 12.291377432317073, 54)
+iteration : 46 
+
+
+@stoer_wagner_minCut	minCutval=  16  graph: Nodes= 20 Edges= 186 	elapsed= 0.0033393760004400974 	 randGraphIndex:  46
+@ NormaltestResult(statistic=4.350933034984268, pvalue=0.1135551658406631) True
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 186 	elapsed AVG,DEV_STD= (0.01220560320014556, 0.00896524708284599) 	 randGraphIndex:  46 	iteration to reach Optimal AVG,DEV,MAX:  (16.72, 12.342129608187808, 49)
+iteration : 47 
+
+
+@stoer_wagner_minCut	minCutval=  17  graph: Nodes= 20 Edges= 187 	elapsed= 0.003359713000463671 	 randGraphIndex:  47
+@ NormaltestResult(statistic=38.77226281626874, pvalue=3.808115429399593e-09) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 187 	elapsed AVG,DEV_STD= (0.014455472699937673, 0.015634790388952758) 	 randGraphIndex:  47 	iteration to reach Optimal AVG,DEV,MAX:  (19.76, 21.470967583683596, 111)
+iteration : 48 
+
+
+@stoer_wagner_minCut	minCutval=  17  graph: Nodes= 20 Edges= 188 	elapsed= 0.00344852299986087 	 randGraphIndex:  48
+@ NormaltestResult(statistic=30.754549447625678, pvalue=2.0976568312945656e-07) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 188 	elapsed AVG,DEV_STD= (0.009240445299965358, 0.008719242079005839) 	 randGraphIndex:  48 	iteration to reach Optimal AVG,DEV,MAX:  (12.6, 11.837332849066627, 60)
+iteration : 49 
+
+
+@stoer_wagner_minCut	minCutval=  18  graph: Nodes= 20 Edges= 189 	elapsed= 0.0034056439999403665 	 randGraphIndex:  49
+@ NormaltestResult(statistic=48.487960134958115, pvalue=2.957830189545863e-11) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 189 	elapsed AVG,DEV_STD= (0.006621282860014617, 0.005971179504453589) 	 randGraphIndex:  49 	iteration to reach Optimal AVG,DEV,MAX:  (8.94, 8.07720400199202, 48)
+iteration : 50 
+
+
+@stoer_wagner_minCut	minCutval=  18  graph: Nodes= 20 Edges= 189 	elapsed= 0.0033607909999773256 	 randGraphIndex:  50
+@ NormaltestResult(statistic=29.425358305842423, pvalue=4.0772245436965906e-07) False
+@randMinCut-untilOpt	graph: Nodes= 20 Edges= 189 	elapsed AVG,DEV_STD= (0.006971234239990735, 0.006986963212202664) 	 randGraphIndex:  50 	iteration to reach Optimal AVG,DEV,MAX:  (9.42, 9.536375043987722, 46)
+@@ global until Opt MAX stats on random graphs with nodes:  20 	 NormaltestResult(statistic=28.547229212844236, pvalue=6.324816640418378e-07) normalTestPassed:  False  (AVG,DEV,MAX) (32.627450980392155, 18.807403631882554, 111)
+@@ global until Opt AVG stats on random graphs with nodes:  20 	 NormaltestResult(statistic=20.26575266949975, pvalue=3.975096920084931e-05) normalTestPassed:  False  (AVG,DEV,MAX) (7.718039215686274, 4.2466763566854695, 22.58)
+
+
+
+exploring min cut solver algoritm with a graph of 25 with variable num of edges
+
+
+1/e fail prob iterations:  300
+graph with num nodes=  25  with this num of iteration of rand Algo:  300
+300.0 6
+iteration : 0 
+
+
+@stoer_wagner_minCut	minCutval=  1  graph: Nodes= 25 Edges= 31 	elapsed= 0.0016653559996484546 	 randGraphIndex:  0
+@ NormaltestResult(statistic=21.43965476193902, pvalue=2.210233318636364e-05) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 31 	elapsed AVG,DEV_STD= (0.0005688996399476309, 0.00026538161306152947) 	 randGraphIndex:  0 	iteration to reach Optimal AVG,DEV,MAX:  (1.32, 0.5869325309764039, 3)
+iteration : 1 
+
+
+@stoer_wagner_minCut	minCutval=  1  graph: Nodes= 25 Edges= 38 	elapsed= 0.0019853469993904582 	 randGraphIndex:  1
+@ NormaltestResult(statistic=29.84019821465428, pvalue=3.3134718720996557e-07) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 38 	elapsed AVG,DEV_STD= (0.0006945248399460979, 0.0004271823460437872) 	 randGraphIndex:  1 	iteration to reach Optimal AVG,DEV,MAX:  (1.52, 0.9527618286018895, 5)
+iteration : 2 
+
+
+@stoer_wagner_minCut	minCutval=  1  graph: Nodes= 25 Edges= 45 	elapsed= 0.0019644920002974686 	 randGraphIndex:  2
+@ NormaltestResult(statistic=77.04277927312656, pvalue=1.8636872993583164e-17) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 45 	elapsed AVG,DEV_STD= (0.0010390228999858663, 0.0010178337716402156) 	 randGraphIndex:  2 	iteration to reach Optimal AVG,DEV,MAX:  (2.2, 2.2131333406899527, 15)
+iteration : 3 
+
+
+@stoer_wagner_minCut	minCutval=  1  graph: Nodes= 25 Edges= 52 	elapsed= 0.002048977999947965 	 randGraphIndex:  3
+@ NormaltestResult(statistic=13.278189204954009, pvalue=0.00130821115894147) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 52 	elapsed AVG,DEV_STD= (0.001495607060023758, 0.001133010566147671) 	 randGraphIndex:  3 	iteration to reach Optimal AVG,DEV,MAX:  (3.04, 2.27640963280481, 10)
+iteration : 4 
+
+
+@stoer_wagner_minCut	minCutval=  2  graph: Nodes= 25 Edges= 59 	elapsed= 0.002241400000457361 	 randGraphIndex:  4
+@ NormaltestResult(statistic=28.817744956516826, pvalue=5.524668097230482e-07) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 59 	elapsed AVG,DEV_STD= (0.003471832179966441, 0.003099390686109289) 	 randGraphIndex:  4 	iteration to reach Optimal AVG,DEV,MAX:  (6.84, 6.11575416278253, 30)
+iteration : 5 
+
+
+@stoer_wagner_minCut	minCutval=  2  graph: Nodes= 25 Edges= 66 	elapsed= 0.0025012309997691773 	 randGraphIndex:  5
+@ NormaltestResult(statistic=47.33919770415126, pvalue=5.2531987189022966e-11) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 66 	elapsed AVG,DEV_STD= (0.003053670460012654, 0.002976388562548024) 	 randGraphIndex:  5 	iteration to reach Optimal AVG,DEV,MAX:  (5.78, 5.4671187800432905, 32)
+iteration : 6 
+
+
+@stoer_wagner_minCut	minCutval=  2  graph: Nodes= 25 Edges= 73 	elapsed= 0.0025712879996717675 	 randGraphIndex:  6
+@ NormaltestResult(statistic=4.432206941641434, pvalue=0.10903313296134616) True
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 73 	elapsed AVG,DEV_STD= (0.0026858105400242496, 0.0018705808596296586) 	 randGraphIndex:  6 	iteration to reach Optimal AVG,DEV,MAX:  (4.8, 3.3502969713024497, 14)
+iteration : 7 
+
+
+@stoer_wagner_minCut	minCutval=  2  graph: Nodes= 25 Edges= 80 	elapsed= 0.002764769999885175 	 randGraphIndex:  7
+@ NormaltestResult(statistic=16.586427239205168, pvalue=0.00025020909251549715) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 80 	elapsed AVG,DEV_STD= (0.0018185264800013102, 0.0013610052687103118) 	 randGraphIndex:  7 	iteration to reach Optimal AVG,DEV,MAX:  (3.12, 2.378818091028417, 11)
+iteration : 8 
+
+
+@stoer_wagner_minCut	minCutval=  3  graph: Nodes= 25 Edges= 87 	elapsed= 0.002795089000755979 	 randGraphIndex:  8
+@ NormaltestResult(statistic=36.16286835659248, pvalue=1.4038894534659889e-08) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 87 	elapsed AVG,DEV_STD= (0.003561460260025342, 0.002907821617973083) 	 randGraphIndex:  8 	iteration to reach Optimal AVG,DEV,MAX:  (5.92, 4.831191174365315, 27)
+iteration : 9 
+
+
+@stoer_wagner_minCut	minCutval=  3  graph: Nodes= 25 Edges= 94 	elapsed= 0.002953971999886562 	 randGraphIndex:  9
+@ NormaltestResult(statistic=37.560873570448564, pvalue=6.97846551063246e-09) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 94 	elapsed AVG,DEV_STD= (0.002891184220025025, 0.002364134842801939) 	 randGraphIndex:  9 	iteration to reach Optimal AVG,DEV,MAX:  (4.64, 3.7891359200229493, 21)
+iteration : 10 
+
+
+@stoer_wagner_minCut	minCutval=  4  graph: Nodes= 25 Edges= 101 	elapsed= 0.003056174999983341 	 randGraphIndex:  10
+@ NormaltestResult(statistic=24.293290481271193, pvalue=5.306143590862164e-06) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 101 	elapsed AVG,DEV_STD= (0.004323553920112317, 0.0047930669193684316) 	 randGraphIndex:  10 	iteration to reach Optimal AVG,DEV,MAX:  (6.7, 7.4100042689128145, 31)
+iteration : 11 
+
+
+@stoer_wagner_minCut	minCutval=  4  graph: Nodes= 25 Edges= 108 	elapsed= 0.003217208999558352 	 randGraphIndex:  11
+@ NormaltestResult(statistic=9.435209380234523, pvalue=0.008936558759616142) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 108 	elapsed AVG,DEV_STD= (0.004438368719929713, 0.0035448556036443493) 	 randGraphIndex:  11 	iteration to reach Optimal AVG,DEV,MAX:  (6.62, 5.2523658420539885, 21)
+iteration : 12 
+
+
+@stoer_wagner_minCut	minCutval=  4  graph: Nodes= 25 Edges= 115 	elapsed= 0.003427003000069817 	 randGraphIndex:  12
+@ NormaltestResult(statistic=59.586369283918444, pvalue=1.1507588185166077e-13) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 115 	elapsed AVG,DEV_STD= (0.0032189989800281184, 0.003228391473631106) 	 randGraphIndex:  12 	iteration to reach Optimal AVG,DEV,MAX:  (4.64, 4.754203295988912, 29)
+iteration : 13 
+
+
+@stoer_wagner_minCut	minCutval=  4  graph: Nodes= 25 Edges= 122 	elapsed= 0.0034750140002870467 	 randGraphIndex:  13
+@ NormaltestResult(statistic=13.184439322273334, pvalue=0.0013709934428863962) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 122 	elapsed AVG,DEV_STD= (0.0027834142999927283, 0.0023553601577554263) 	 randGraphIndex:  13 	iteration to reach Optimal AVG,DEV,MAX:  (3.88, 3.292787417916899, 13)
+iteration : 14 
+
+
+@stoer_wagner_minCut	minCutval=  5  graph: Nodes= 25 Edges= 129 	elapsed= 0.0037477930000022752 	 randGraphIndex:  14
+@ NormaltestResult(statistic=25.50036909727326, pvalue=2.9017848387967854e-06) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 129 	elapsed AVG,DEV_STD= (0.005125108720003482, 0.0050943422515774125) 	 randGraphIndex:  14 	iteration to reach Optimal AVG,DEV,MAX:  (7.02, 7.020349430224181, 30)
+iteration : 15 
+
+
+@stoer_wagner_minCut	minCutval=  6  graph: Nodes= 25 Edges= 136 	elapsed= 0.0037048179992780206 	 randGraphIndex:  15
+@ NormaltestResult(statistic=23.153480717337963, pvalue=9.381786462377968e-06) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 136 	elapsed AVG,DEV_STD= (0.005981273759989563, 0.005215181586441833) 	 randGraphIndex:  15 	iteration to reach Optimal AVG,DEV,MAX:  (7.9, 6.890543653205798, 34)
+iteration : 16 
+
+
+@stoer_wagner_minCut	minCutval=  6  graph: Nodes= 25 Edges= 143 	elapsed= 0.003997460000391584 	 randGraphIndex:  16
+@ NormaltestResult(statistic=11.948404859557986, pvalue=0.0025435299217127783) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 143 	elapsed AVG,DEV_STD= (0.004921943460012699, 0.004154413366973499) 	 randGraphIndex:  16 	iteration to reach Optimal AVG,DEV,MAX:  (6.34, 5.393155147868415, 22)
+iteration : 17 
+
+
+@stoer_wagner_minCut	minCutval=  6  graph: Nodes= 25 Edges= 150 	elapsed= 0.0039632830003029085 	 randGraphIndex:  17
+@ NormaltestResult(statistic=26.11560985401537, pvalue=2.1333758495096772e-06) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 150 	elapsed AVG,DEV_STD= (0.004249039799960883, 0.0036297989908910485) 	 randGraphIndex:  17 	iteration to reach Optimal AVG,DEV,MAX:  (5.24, 4.5290896503849964, 23)
+iteration : 18 
+
+
+@stoer_wagner_minCut	minCutval=  6  graph: Nodes= 25 Edges= 157 	elapsed= 0.004023784999844793 	 randGraphIndex:  18
+@ NormaltestResult(statistic=15.679912271749888, pvalue=0.0003936863089818356) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 157 	elapsed AVG,DEV_STD= (0.005454406559965719, 0.004705221116880921) 	 randGraphIndex:  18 	iteration to reach Optimal AVG,DEV,MAX:  (6.6, 5.703561365050608, 24)
+iteration : 19 
+
+
+@stoer_wagner_minCut	minCutval=  6  graph: Nodes= 25 Edges= 164 	elapsed= 0.00412928900004772 	 randGraphIndex:  19
+@ NormaltestResult(statistic=4.199769609563187, pvalue=0.12247053546050561) True
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 164 	elapsed AVG,DEV_STD= (0.0042298137199395566, 0.002835415735466675) 	 randGraphIndex:  19 	iteration to reach Optimal AVG,DEV,MAX:  (4.98, 3.4135982571510213, 14)
+iteration : 20 
+
+
+@stoer_wagner_minCut	minCutval=  6  graph: Nodes= 25 Edges= 171 	elapsed= 0.004968732000634191 	 randGraphIndex:  20
+@ NormaltestResult(statistic=4.369335632239489, pvalue=0.11251510315072573) True
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 171 	elapsed AVG,DEV_STD= (0.003930859379925096, 0.00274532862602475) 	 randGraphIndex:  20 	iteration to reach Optimal AVG,DEV,MAX:  (4.46, 3.0385952715835316, 12)
+iteration : 21 
+
+
+@stoer_wagner_minCut	minCutval=  7  graph: Nodes= 25 Edges= 178 	elapsed= 0.004397226999572013 	 randGraphIndex:  21
+@ NormaltestResult(statistic=13.129872617292596, pvalue=0.0014089136836677948) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 178 	elapsed AVG,DEV_STD= (0.004599922960023832, 0.003636574575023947) 	 randGraphIndex:  21 	iteration to reach Optimal AVG,DEV,MAX:  (5.1, 3.9859446938010588, 19)
+iteration : 22 
+
+
+@stoer_wagner_minCut	minCutval=  9  graph: Nodes= 25 Edges= 185 	elapsed= 0.004440565000550123 	 randGraphIndex:  22
+@ NormaltestResult(statistic=48.78945336406305, pvalue=2.5439279941805145e-11) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 185 	elapsed AVG,DEV_STD= (0.009414996260038605, 0.011503204859152813) 	 randGraphIndex:  22 	iteration to reach Optimal AVG,DEV,MAX:  (10.3, 12.589678312014172, 63)
+iteration : 23 
+
+
+@stoer_wagner_minCut	minCutval=  9  graph: Nodes= 25 Edges= 192 	elapsed= 0.004801176000000851 	 randGraphIndex:  23
+@ NormaltestResult(statistic=26.835946391081386, pvalue=1.4881553940203178e-06) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 192 	elapsed AVG,DEV_STD= (0.007689893480037426, 0.006907610223926123) 	 randGraphIndex:  23 	iteration to reach Optimal AVG,DEV,MAX:  (8.24, 7.377738163432155, 37)
+iteration : 24 
+
+
+@stoer_wagner_minCut	minCutval=  10  graph: Nodes= 25 Edges= 199 	elapsed= 0.004654387999835308 	 randGraphIndex:  24
+@ NormaltestResult(statistic=12.237416826037334, pvalue=0.0022012972946619026) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 199 	elapsed AVG,DEV_STD= (0.004498439499930101, 0.0037561997381915053) 	 randGraphIndex:  24 	iteration to reach Optimal AVG,DEV,MAX:  (4.66, 3.889336546958903, 15)
+iteration : 25 
+
+
+@stoer_wagner_minCut	minCutval=  10  graph: Nodes= 25 Edges= 206 	elapsed= 0.0048088399998960085 	 randGraphIndex:  25
+@ NormaltestResult(statistic=8.49984865988429, pvalue=0.014265313325243638) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 206 	elapsed AVG,DEV_STD= (0.009766805939962068, 0.008714900179099542) 	 randGraphIndex:  25 	iteration to reach Optimal AVG,DEV,MAX:  (9.92, 8.750137025166158, 33)
+iteration : 26 
+
+
+@stoer_wagner_minCut	minCutval=  10  graph: Nodes= 25 Edges= 213 	elapsed= 0.004874410999946122 	 randGraphIndex:  26
+@ NormaltestResult(statistic=34.10325309296143, pvalue=3.931630390447035e-08) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 213 	elapsed AVG,DEV_STD= (0.008531504559978203, 0.009522346723050946) 	 randGraphIndex:  26 	iteration to reach Optimal AVG,DEV,MAX:  (8.44, 9.357219192709348, 42)
+iteration : 27 
+
+
+@stoer_wagner_minCut	minCutval=  12  graph: Nodes= 25 Edges= 220 	elapsed= 0.00517335099993943 	 randGraphIndex:  27
+@ NormaltestResult(statistic=18.928593144724964, pvalue=7.757257777918133e-05) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 220 	elapsed AVG,DEV_STD= (0.010026937400034512, 0.009960164090402382) 	 randGraphIndex:  27 	iteration to reach Optimal AVG,DEV,MAX:  (9.44, 8.451928894685302, 37)
+iteration : 28 
+
+
+@stoer_wagner_minCut	minCutval=  14  graph: Nodes= 25 Edges= 227 	elapsed= 0.005086151999421418 	 randGraphIndex:  28
+@ NormaltestResult(statistic=4.378851484171394, pvalue=0.11198103615301185) True
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 227 	elapsed AVG,DEV_STD= (0.005563287259956268, 0.004288926081241874) 	 randGraphIndex:  28 	iteration to reach Optimal AVG,DEV,MAX:  (5.34, 4.108776072789381, 16)
+iteration : 29 
+
+
+@stoer_wagner_minCut	minCutval=  14  graph: Nodes= 25 Edges= 234 	elapsed= 0.005352815999685845 	 randGraphIndex:  29
+@ NormaltestResult(statistic=16.940808153899816, pvalue=0.00020958019972303857) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 234 	elapsed AVG,DEV_STD= (0.014315822200005641, 0.012115940730621088) 	 randGraphIndex:  29 	iteration to reach Optimal AVG,DEV,MAX:  (13.5, 11.4415105324999, 54)
+iteration : 30 
+
+
+@stoer_wagner_minCut	minCutval=  15  graph: Nodes= 25 Edges= 241 	elapsed= 0.005204547000175808 	 randGraphIndex:  30
+@ NormaltestResult(statistic=54.84540282872363, pvalue=1.2316068532554525e-12) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 241 	elapsed AVG,DEV_STD= (0.008443485159968987, 0.007775087123442415) 	 randGraphIndex:  30 	iteration to reach Optimal AVG,DEV,MAX:  (7.74, 7.119418687574119, 43)
+iteration : 31 
+
+
+@stoer_wagner_minCut	minCutval=  15  graph: Nodes= 25 Edges= 248 	elapsed= 0.00543104400003358 	 randGraphIndex:  31
+@ NormaltestResult(statistic=4.268540618034891, pvalue=0.11833090387523014) True
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 248 	elapsed AVG,DEV_STD= (0.017294322200086754, 0.013360225193313608) 	 randGraphIndex:  31 	iteration to reach Optimal AVG,DEV,MAX:  (15.68, 12.147797314403823, 49)
+iteration : 32 
+
+
+@stoer_wagner_minCut	minCutval=  15  graph: Nodes= 25 Edges= 252 	elapsed= 0.00554994699996314 	 randGraphIndex:  32
+@ NormaltestResult(statistic=4.444755375287012, pvalue=0.10835117705104444) True
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 252 	elapsed AVG,DEV_STD= (0.011571591339943552, 0.00838685170569076) 	 randGraphIndex:  32 	iteration to reach Optimal AVG,DEV,MAX:  (10.34, 7.446708627827135, 28)
+iteration : 33 
+
+
+@stoer_wagner_minCut	minCutval=  15  graph: Nodes= 25 Edges= 259 	elapsed= 0.005572777999987011 	 randGraphIndex:  33
+@ NormaltestResult(statistic=36.23620518206794, pvalue=1.3533434400276808e-08) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 259 	elapsed AVG,DEV_STD= (0.015338314080090641, 0.01566414289381331) 	 randGraphIndex:  33 	iteration to reach Optimal AVG,DEV,MAX:  (13.44, 13.765025185859521, 73)
+iteration : 34 
+
+
+@stoer_wagner_minCut	minCutval=  17  graph: Nodes= 25 Edges= 266 	elapsed= 0.005777798999588413 	 randGraphIndex:  34
+@ NormaltestResult(statistic=18.9928440611165, pvalue=7.512012714115958e-05) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 266 	elapsed AVG,DEV_STD= (0.01892891692003104, 0.016760275847929742) 	 randGraphIndex:  34 	iteration to reach Optimal AVG,DEV,MAX:  (16.28, 14.410936889765923, 57)
+iteration : 35 
+
+
+@stoer_wagner_minCut	minCutval=  19  graph: Nodes= 25 Edges= 273 	elapsed= 0.0060888019997946685 	 randGraphIndex:  35
+@ NormaltestResult(statistic=28.805609811071626, pvalue=5.558291325214701e-07) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 273 	elapsed AVG,DEV_STD= (0.011816863520016341, 0.010499719455294123) 	 randGraphIndex:  35 	iteration to reach Optimal AVG,DEV,MAX:  (9.94, 8.853478504669962, 45)
+iteration : 36 
+
+
+@stoer_wagner_minCut	minCutval=  19  graph: Nodes= 25 Edges= 273 	elapsed= 0.006153070999971533 	 randGraphIndex:  36
+@ NormaltestResult(statistic=27.463548344954084, pvalue=1.087342216835678e-06) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 273 	elapsed AVG,DEV_STD= (0.00984201192010005, 0.009153187753876676) 	 randGraphIndex:  36 	iteration to reach Optimal AVG,DEV,MAX:  (8.32, 7.77342411354093, 37)
+iteration : 37 
+
+
+@stoer_wagner_minCut	minCutval=  19  graph: Nodes= 25 Edges= 280 	elapsed= 0.005976424000436964 	 randGraphIndex:  37
+@ NormaltestResult(statistic=39.053385290935765, pvalue=3.3087589896191267e-09) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 280 	elapsed AVG,DEV_STD= (0.02134126388000368, 0.021195427570940454) 	 randGraphIndex:  37 	iteration to reach Optimal AVG,DEV,MAX:  (17.72, 17.422762497985918, 95)
+iteration : 38 
+
+
+@stoer_wagner_minCut	minCutval=  20  graph: Nodes= 25 Edges= 285 	elapsed= 0.005947763999756717 	 randGraphIndex:  38
+@ NormaltestResult(statistic=14.869553664581769, pvalue=0.0005903607115966493) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 285 	elapsed AVG,DEV_STD= (0.022451314219979396, 0.019144211862312625) 	 randGraphIndex:  38 	iteration to reach Optimal AVG,DEV,MAX:  (18.38, 15.72842221286428, 66)
+iteration : 39 
+
+
+@stoer_wagner_minCut	minCutval=  22  graph: Nodes= 25 Edges= 290 	elapsed= 0.006012808000377845 	 randGraphIndex:  39
+@ NormaltestResult(statistic=12.439032806129763, pvalue=0.0019902074428013385) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 290 	elapsed AVG,DEV_STD= (0.004553054640073242, 0.0035125640868704203) 	 randGraphIndex:  39 	iteration to reach Optimal AVG,DEV,MAX:  (3.66, 2.8256117271580434, 12)
+iteration : 40 
+
+
+@stoer_wagner_minCut	minCutval=  22  graph: Nodes= 25 Edges= 293 	elapsed= 0.006140722000054666 	 randGraphIndex:  40
+@ NormaltestResult(statistic=15.818389998556926, pvalue=0.00036735017875972573) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 293 	elapsed AVG,DEV_STD= (0.007093733940037055, 0.006144401351839062) 	 randGraphIndex:  40 	iteration to reach Optimal AVG,DEV,MAX:  (5.66, 4.934716665770039, 22)
+iteration : 41 
+
+
+@stoer_wagner_minCut	minCutval=  22  graph: Nodes= 25 Edges= 293 	elapsed= 0.006073621999348688 	 randGraphIndex:  41
+@ NormaltestResult(statistic=7.7404814771388715, pvalue=0.020853348615574047) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 293 	elapsed AVG,DEV_STD= (0.007322087380052835, 0.005568393142903501) 	 randGraphIndex:  41 	iteration to reach Optimal AVG,DEV,MAX:  (5.88, 4.447608850809154, 19)
+iteration : 42 
+
+
+@stoer_wagner_minCut	minCutval=  22  graph: Nodes= 25 Edges= 293 	elapsed= 0.006229007999536407 	 randGraphIndex:  42
+@ NormaltestResult(statistic=20.44345126537637, pvalue=3.6371479062575194e-05) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 293 	elapsed AVG,DEV_STD= (0.008257338259954849, 0.008343416845761524) 	 randGraphIndex:  42 	iteration to reach Optimal AVG,DEV,MAX:  (6.6, 6.715805299167519, 27)
+iteration : 43 
+
+
+@stoer_wagner_minCut	minCutval=  22  graph: Nodes= 25 Edges= 294 	elapsed= 0.006322092000118573 	 randGraphIndex:  43
+@ NormaltestResult(statistic=16.664890235294795, pvalue=0.00024058307120396663) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 294 	elapsed AVG,DEV_STD= (0.01034556014010377, 0.008526101164187031) 	 randGraphIndex:  43 	iteration to reach Optimal AVG,DEV,MAX:  (8.28, 6.8214547493888125, 31)
+iteration : 44 
+
+
+@stoer_wagner_minCut	minCutval=  22  graph: Nodes= 25 Edges= 295 	elapsed= 0.006101511999986542 	 randGraphIndex:  44
+@ NormaltestResult(statistic=24.41751679657714, pvalue=4.986589253244342e-06) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 295 	elapsed AVG,DEV_STD= (0.014348940479994781, 0.013596843520886798) 	 randGraphIndex:  44 	iteration to reach Optimal AVG,DEV,MAX:  (11.22, 10.833225535832073, 50)
+iteration : 45 
+
+
+@stoer_wagner_minCut	minCutval=  22  graph: Nodes= 25 Edges= 295 	elapsed= 0.006228256999747828 	 randGraphIndex:  45
+@ NormaltestResult(statistic=15.15180025748138, pvalue=0.0005126587551665627) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 295 	elapsed AVG,DEV_STD= (0.014815718640002161, 0.011700483990138798) 	 randGraphIndex:  45 	iteration to reach Optimal AVG,DEV,MAX:  (11.8, 9.295599134284252, 43)
+iteration : 46 
+
+
+@stoer_wagner_minCut	minCutval=  22  graph: Nodes= 25 Edges= 296 	elapsed= 0.006116031000601652 	 randGraphIndex:  46
+@ NormaltestResult(statistic=16.23904187747327, pvalue=0.00029767122904436036) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 296 	elapsed AVG,DEV_STD= (0.029321584640019865, 0.025841473373166713) 	 randGraphIndex:  46 	iteration to reach Optimal AVG,DEV,MAX:  (23.46, 20.723850008713956, 87)
+iteration : 47 
+
+
+@stoer_wagner_minCut	minCutval=  22  graph: Nodes= 25 Edges= 296 	elapsed= 0.006355400000757072 	 randGraphIndex:  47
+@ NormaltestResult(statistic=6.842606489935009, pvalue=0.0326698303909223) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 296 	elapsed AVG,DEV_STD= (0.01848005155999999, 0.01622685958485895) 	 randGraphIndex:  47 	iteration to reach Optimal AVG,DEV,MAX:  (14.74, 12.969052645841646, 44)
+iteration : 48 
+
+
+@stoer_wagner_minCut	minCutval=  22  graph: Nodes= 25 Edges= 297 	elapsed= 0.006164276999697904 	 randGraphIndex:  48
+@ NormaltestResult(statistic=10.724824117943808, pvalue=0.0046895809088448774) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 297 	elapsed AVG,DEV_STD= (0.0268797042600454, 0.023321474999125142) 	 randGraphIndex:  48 	iteration to reach Optimal AVG,DEV,MAX:  (21.36, 18.486354592575818, 74)
+iteration : 49 
+
+
+@stoer_wagner_minCut	minCutval=  22  graph: Nodes= 25 Edges= 297 	elapsed= 0.006269976999647042 	 randGraphIndex:  49
+@ NormaltestResult(statistic=27.81981497915202, pvalue=9.099215139369932e-07) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 297 	elapsed AVG,DEV_STD= (0.034112603359862985, 0.03440773225417133) 	 randGraphIndex:  49 	iteration to reach Optimal AVG,DEV,MAX:  (27.2, 27.510294919004632, 134)
+iteration : 50 
+
+
+@stoer_wagner_minCut	minCutval=  22  graph: Nodes= 25 Edges= 297 	elapsed= 0.006105117000515747 	 randGraphIndex:  50
+@ NormaltestResult(statistic=15.373062568324357, pvalue=0.00045896744141217755) False
+@randMinCut-untilOpt	graph: Nodes= 25 Edges= 297 	elapsed AVG,DEV_STD= (0.02807143680010995, 0.02612935354283258) 	 randGraphIndex:  50 	iteration to reach Optimal AVG,DEV,MAX:  (22.28, 20.6733980698651, 88)
+@@ global until Opt MAX stats on random graphs with nodes:  25 	 NormaltestResult(statistic=23.30790090261919, pvalue=8.684676116000946e-06) normalTestPassed:  False  (AVG,DEV,MAX) (36.490196078431374, 25.951009652049844, 134)
+@@ global until Opt AVG stats on random graphs with nodes:  25 	 NormaltestResult(statistic=15.073055015810791, pvalue=0.0005332461034004681) normalTestPassed:  False  (AVG,DEV,MAX) (8.989803921568628, 5.908884663012498, 27.2)
+
+
+
+exploring min cut solver algoritm with a graph of 30 with variable num of edges
+
+
+1/e fail prob iterations:  435
+graph with num nodes=  30  with this num of iteration of rand Algo:  435
+435.0 8
+iteration : 0 
+
+
+@stoer_wagner_minCut	minCutval=  1  graph: Nodes= 30 Edges= 38 	elapsed= 0.002086124000015843 	 randGraphIndex:  0
+@ NormaltestResult(statistic=28.491547639724537, pvalue=6.503378630047603e-07) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 38 	elapsed AVG,DEV_STD= (0.0013856639800724224, 0.0010759309912765384) 	 randGraphIndex:  0 	iteration to reach Optimal AVG,DEV,MAX:  (2.48, 1.9403344967256737, 10)
+iteration : 1 
+
+
+@stoer_wagner_minCut	minCutval=  1  graph: Nodes= 30 Edges= 47 	elapsed= 0.0024165840004570782 	 randGraphIndex:  1
+@ NormaltestResult(statistic=42.40406222653675, pvalue=6.195478901865795e-10) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 47 	elapsed AVG,DEV_STD= (0.0031404273599764565, 0.002908232236104823) 	 randGraphIndex:  1 	iteration to reach Optimal AVG,DEV,MAX:  (5.36, 5.05383265352108, 28)
+iteration : 2 
+
+
+@stoer_wagner_minCut	minCutval=  2  graph: Nodes= 30 Edges= 56 	elapsed= 0.0026887450003414415 	 randGraphIndex:  2
+@ NormaltestResult(statistic=22.47102852106794, pvalue=1.3197089296424993e-05) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 56 	elapsed AVG,DEV_STD= (0.0010863822400096978, 0.0005447079615586508) 	 randGraphIndex:  2 	iteration to reach Optimal AVG,DEV,MAX:  (1.7, 0.8864052604279183, 5)
+iteration : 3 
+
+
+@stoer_wagner_minCut	minCutval=  2  graph: Nodes= 30 Edges= 65 	elapsed= 0.0029569799999080715 	 randGraphIndex:  3
+@ NormaltestResult(statistic=9.200594985701061, pvalue=0.010048845840124504) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 65 	elapsed AVG,DEV_STD= (0.003024717699881876, 0.0025180806382836323) 	 randGraphIndex:  3 	iteration to reach Optimal AVG,DEV,MAX:  (4.64, 3.869082051128839, 14)
+iteration : 4 
+
+
+@stoer_wagner_minCut	minCutval=  2  graph: Nodes= 30 Edges= 74 	elapsed= 0.003127013000266743 	 randGraphIndex:  4
+@ NormaltestResult(statistic=15.975442135757383, pvalue=0.00033960714378132996) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 74 	elapsed AVG,DEV_STD= (0.0023168904799422308, 0.0017579103640893807) 	 randGraphIndex:  4 	iteration to reach Optimal AVG,DEV,MAX:  (3.34, 2.4957923775500106, 12)
+iteration : 5 
+
+
+@stoer_wagner_minCut	minCutval=  3  graph: Nodes= 30 Edges= 83 	elapsed= 0.0032717819995013997 	 randGraphIndex:  5
+@ NormaltestResult(statistic=52.947361744928926, pvalue=3.181460103519147e-12) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 83 	elapsed AVG,DEV_STD= (0.002019608380014688, 0.002005265472107586) 	 randGraphIndex:  5 	iteration to reach Optimal AVG,DEV,MAX:  (2.74, 2.7315989187765513, 16)
+iteration : 6 
+
+
+@stoer_wagner_minCut	minCutval=  3  graph: Nodes= 30 Edges= 92 	elapsed= 0.003727843999513425 	 randGraphIndex:  6
+@ NormaltestResult(statistic=14.13250718246366, pvalue=0.0008534244041570188) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 92 	elapsed AVG,DEV_STD= (0.001391203180046432, 0.0008880562836990148) 	 randGraphIndex:  6 	iteration to reach Optimal AVG,DEV,MAX:  (1.82, 1.1551128578133454, 5)
+iteration : 7 
+
+
+@stoer_wagner_minCut	minCutval=  3  graph: Nodes= 30 Edges= 101 	elapsed= 0.003819231999841577 	 randGraphIndex:  7
+@ NormaltestResult(statistic=40.01254020397547, pvalue=2.048270410746811e-09) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 101 	elapsed AVG,DEV_STD= (0.0036788076399898273, 0.0037298711798011423) 	 randGraphIndex:  7 	iteration to reach Optimal AVG,DEV,MAX:  (4.64, 4.771343027462423, 25)
+iteration : 8 
+
+
+@stoer_wagner_minCut	minCutval=  4  graph: Nodes= 30 Edges= 110 	elapsed= 0.00415897600032622 	 randGraphIndex:  8
+@ NormaltestResult(statistic=15.349942955389555, pvalue=0.00046430380042416673) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 110 	elapsed AVG,DEV_STD= (0.007168389219968958, 0.0060239163524346325) 	 randGraphIndex:  8 	iteration to reach Optimal AVG,DEV,MAX:  (8.72, 7.370764089652179, 33)
+iteration : 9 
+
+
+@stoer_wagner_minCut	minCutval=  4  graph: Nodes= 30 Edges= 119 	elapsed= 0.004246542999680969 	 randGraphIndex:  9
+@ NormaltestResult(statistic=25.898904228719722, pvalue=2.3775212268118106e-06) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 119 	elapsed AVG,DEV_STD= (0.007518335100103286, 0.007513064628503941) 	 randGraphIndex:  9 	iteration to reach Optimal AVG,DEV,MAX:  (8.44, 8.61692686353021, 36)
+iteration : 10 
+
+
+@stoer_wagner_minCut	minCutval=  4  graph: Nodes= 30 Edges= 128 	elapsed= 0.004443785000148637 	 randGraphIndex:  10
+@ NormaltestResult(statistic=51.84973016836297, pvalue=5.50774912116435e-12) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 128 	elapsed AVG,DEV_STD= (0.005294829019949248, 0.005709225576984963) 	 randGraphIndex:  10 	iteration to reach Optimal AVG,DEV,MAX:  (5.9, 6.386369413502032, 33)
+iteration : 11 
+
+
+@stoer_wagner_minCut	minCutval=  4  graph: Nodes= 30 Edges= 137 	elapsed= 0.004736361999675864 	 randGraphIndex:  11
+@ NormaltestResult(statistic=8.124211319865331, pvalue=0.017212736759474552) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 137 	elapsed AVG,DEV_STD= (0.006383624179961771, 0.0052885339617773095) 	 randGraphIndex:  11 	iteration to reach Optimal AVG,DEV,MAX:  (6.98, 5.8291666362756684, 24)
+iteration : 12 
+
+
+@stoer_wagner_minCut	minCutval=  4  graph: Nodes= 30 Edges= 146 	elapsed= 0.0047598849996575154 	 randGraphIndex:  12
+@ NormaltestResult(statistic=24.004503406215225, pvalue=6.130392975685055e-06) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 146 	elapsed AVG,DEV_STD= (0.004798415840068629, 0.004213470988768076) 	 randGraphIndex:  12 	iteration to reach Optimal AVG,DEV,MAX:  (5.04, 4.41222790685622, 22)
+iteration : 13 
+
+
+@stoer_wagner_minCut	minCutval=  4  graph: Nodes= 30 Edges= 155 	elapsed= 0.005127617000653117 	 randGraphIndex:  13
+@ NormaltestResult(statistic=15.79450768939384, pvalue=0.0003717630590362627) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 155 	elapsed AVG,DEV_STD= (0.00396681065993107, 0.0029081976974426604) 	 randGraphIndex:  13 	iteration to reach Optimal AVG,DEV,MAX:  (4.02, 2.853497674712884, 14)
+iteration : 14 
+
+
+@stoer_wagner_minCut	minCutval=  6  graph: Nodes= 30 Edges= 164 	elapsed= 0.005248252999990655 	 randGraphIndex:  14
+@ NormaltestResult(statistic=35.87109757397392, pvalue=1.6243893441908946e-08) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 164 	elapsed AVG,DEV_STD= (0.007787355820019002, 0.008206210076124367) 	 randGraphIndex:  14 	iteration to reach Optimal AVG,DEV,MAX:  (7.68, 8.062105867601105, 38)
+iteration : 15 
+
+
+@stoer_wagner_minCut	minCutval=  7  graph: Nodes= 30 Edges= 173 	elapsed= 0.0056091590004143654 	 randGraphIndex:  15
+@ NormaltestResult(statistic=5.5419685922590025, pvalue=0.06260035711815473) True
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 173 	elapsed AVG,DEV_STD= (0.012070348619909054, 0.009532622513136583) 	 randGraphIndex:  15 	iteration to reach Optimal AVG,DEV,MAX:  (11.58, 9.13635929812799, 35)
+iteration : 16 
+
+
+@stoer_wagner_minCut	minCutval=  7  graph: Nodes= 30 Edges= 182 	elapsed= 0.005532511999263079 	 randGraphIndex:  16
+@ NormaltestResult(statistic=24.847717296940118, pvalue=4.02148770280356e-06) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 182 	elapsed AVG,DEV_STD= (0.009279614759980176, 0.008193223209740664) 	 randGraphIndex:  16 	iteration to reach Optimal AVG,DEV,MAX:  (8.64, 7.515317691222374, 34)
+iteration : 17 
+
+
+@stoer_wagner_minCut	minCutval=  8  graph: Nodes= 30 Edges= 191 	elapsed= 0.005681368999830738 	 randGraphIndex:  17
+@ NormaltestResult(statistic=15.513261868593194, pvalue=0.0004278957639157635) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 191 	elapsed AVG,DEV_STD= (0.01227894396004558, 0.011144145798599096) 	 randGraphIndex:  17 	iteration to reach Optimal AVG,DEV,MAX:  (11.04, 10.09336011283393, 43)
+iteration : 18 
+
+
+@stoer_wagner_minCut	minCutval=  8  graph: Nodes= 30 Edges= 200 	elapsed= 0.006098919000578462 	 randGraphIndex:  18
+@ NormaltestResult(statistic=22.160467026030496, pvalue=1.5414013218947633e-05) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 200 	elapsed AVG,DEV_STD= (0.010618760559973453, 0.010220418052936798) 	 randGraphIndex:  18 	iteration to reach Optimal AVG,DEV,MAX:  (9.16, 8.80945688520268, 39)
+iteration : 19 
+
+
+@stoer_wagner_minCut	minCutval=  9  graph: Nodes= 30 Edges= 209 	elapsed= 0.0060156800000186195 	 randGraphIndex:  19
+@ NormaltestResult(statistic=18.670579890026477, pvalue=8.825414053452609e-05) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 209 	elapsed AVG,DEV_STD= (0.0053085690400621385, 0.004192591435889149) 	 randGraphIndex:  19 	iteration to reach Optimal AVG,DEV,MAX:  (4.5, 3.5239703952982886, 17)
+iteration : 20 
+
+
+@stoer_wagner_minCut	minCutval=  9  graph: Nodes= 30 Edges= 218 	elapsed= 0.006115686000157439 	 randGraphIndex:  20
+@ NormaltestResult(statistic=46.600368580512864, pvalue=7.600786529628418e-11) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 218 	elapsed AVG,DEV_STD= (0.012862513620002574, 0.013151092440027773) 	 randGraphIndex:  20 	iteration to reach Optimal AVG,DEV,MAX:  (10.68, 10.94968082658493, 54)
+iteration : 21 
+
+
+@stoer_wagner_minCut	minCutval=  10  graph: Nodes= 30 Edges= 227 	elapsed= 0.006462986999395071 	 randGraphIndex:  21
+@ NormaltestResult(statistic=4.527217862118397, pvalue=0.10397456978290485) True
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 227 	elapsed AVG,DEV_STD= (0.014130561399979343, 0.009991695906232672) 	 randGraphIndex:  21 	iteration to reach Optimal AVG,DEV,MAX:  (11.44, 8.10180126104494, 35)
+iteration : 22 
+
+
+@stoer_wagner_minCut	minCutval=  11  graph: Nodes= 30 Edges= 236 	elapsed= 0.006936943999789946 	 randGraphIndex:  22
+@ NormaltestResult(statistic=25.39160232397453, pvalue=3.0639636737336445e-06) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 236 	elapsed AVG,DEV_STD= (0.0051588675000130025, 0.004139107127538242) 	 randGraphIndex:  22 	iteration to reach Optimal AVG,DEV,MAX:  (4.04, 3.2698998299579736, 17)
+iteration : 23 
+
+
+@stoer_wagner_minCut	minCutval=  11  graph: Nodes= 30 Edges= 245 	elapsed= 0.00670057099978294 	 randGraphIndex:  23
+@ NormaltestResult(statistic=17.020578339549314, pvalue=0.0002013855818682165) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 245 	elapsed AVG,DEV_STD= (0.015912640200040188, 0.016453204431892594) 	 randGraphIndex:  23 	iteration to reach Optimal AVG,DEV,MAX:  (12.24, 12.630639778906284, 54)
+iteration : 24 
+
+
+@stoer_wagner_minCut	minCutval=  11  graph: Nodes= 30 Edges= 254 	elapsed= 0.007064241999614751 	 randGraphIndex:  24
+@ NormaltestResult(statistic=17.390901779509075, pvalue=0.00016734535452092258) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 254 	elapsed AVG,DEV_STD= (0.016719649660080903, 0.01680210771464048) 	 randGraphIndex:  24 	iteration to reach Optimal AVG,DEV,MAX:  (12.46, 12.522974804701304, 56)
+iteration : 25 
+
+
+@stoer_wagner_minCut	minCutval=  12  graph: Nodes= 30 Edges= 263 	elapsed= 0.0075643800000761985 	 randGraphIndex:  25
+@ NormaltestResult(statistic=63.322928844734605, pvalue=1.7766452224999347e-14) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 263 	elapsed AVG,DEV_STD= (0.017393163880005887, 0.019928502515488278) 	 randGraphIndex:  25 	iteration to reach Optimal AVG,DEV,MAX:  (12.68, 14.49622047856838, 89)
+iteration : 26 
+
+
+@stoer_wagner_minCut	minCutval=  13  graph: Nodes= 30 Edges= 272 	elapsed= 0.007303155000045081 	 randGraphIndex:  26
+@ NormaltestResult(statistic=24.500717053388925, pvalue=4.783402107313861e-06) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 272 	elapsed AVG,DEV_STD= (0.013304261599969322, 0.01414659635158064) 	 randGraphIndex:  26 	iteration to reach Optimal AVG,DEV,MAX:  (9.46, 10.028958071504736, 44)
+iteration : 27 
+
+
+@stoer_wagner_minCut	minCutval=  14  graph: Nodes= 30 Edges= 281 	elapsed= 0.007426371999827097 	 randGraphIndex:  27
+@ NormaltestResult(statistic=18.004742996121607, pvalue=0.000123117484729998) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 281 	elapsed AVG,DEV_STD= (0.010273107060074836, 0.00859146774529369) 	 randGraphIndex:  27 	iteration to reach Optimal AVG,DEV,MAX:  (7.16, 5.922492580607167, 27)
+iteration : 28 
+
+
+@stoer_wagner_minCut	minCutval=  14  graph: Nodes= 30 Edges= 290 	elapsed= 0.007659296999918297 	 randGraphIndex:  28
+@ NormaltestResult(statistic=11.614453666789737, pvalue=0.0030057539817629052) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 290 	elapsed AVG,DEV_STD= (0.0215417188200081, 0.017164287253388238) 	 randGraphIndex:  28 	iteration to reach Optimal AVG,DEV,MAX:  (14.48, 11.606191169776059, 45)
+iteration : 29 
+
+
+@stoer_wagner_minCut	minCutval=  15  graph: Nodes= 30 Edges= 299 	elapsed= 0.007895640000242565 	 randGraphIndex:  29
+@ NormaltestResult(statistic=32.48263689572711, pvalue=8.84066673298503e-08) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 299 	elapsed AVG,DEV_STD= (0.023458416720022798, 0.021316499224680596) 	 randGraphIndex:  29 	iteration to reach Optimal AVG,DEV,MAX:  (15.58, 14.064124282611225, 75)
+iteration : 30 
+
+
+@stoer_wagner_minCut	minCutval=  15  graph: Nodes= 30 Edges= 308 	elapsed= 0.007971456000632315 	 randGraphIndex:  30
+@ NormaltestResult(statistic=28.56977582420528, pvalue=6.253915445366074e-07) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 308 	elapsed AVG,DEV_STD= (0.01690271857998596, 0.015457879122008222) 	 randGraphIndex:  30 	iteration to reach Optimal AVG,DEV,MAX:  (11.08, 10.119369182565741, 50)
+iteration : 31 
+
+
+@stoer_wagner_minCut	minCutval=  16  graph: Nodes= 30 Edges= 317 	elapsed= 0.008500172999447386 	 randGraphIndex:  31
+@ NormaltestResult(statistic=47.96561052784158, pvalue=3.8406082750418594e-11) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 317 	elapsed AVG,DEV_STD= (0.013280482860027405, 0.013820318762933877) 	 randGraphIndex:  31 	iteration to reach Optimal AVG,DEV,MAX:  (8.48, 8.885300863143096, 50)
+iteration : 32 
+
+
+@stoer_wagner_minCut	minCutval=  17  graph: Nodes= 30 Edges= 326 	elapsed= 0.008935132000260637 	 randGraphIndex:  32
+@ NormaltestResult(statistic=59.605229099587476, pvalue=1.1399582730272712e-13) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 326 	elapsed AVG,DEV_STD= (0.02342636522005705, 0.026196125376759038) 	 randGraphIndex:  32 	iteration to reach Optimal AVG,DEV,MAX:  (14.62, 16.451400287774028, 99)
+iteration : 33 
+
+
+@stoer_wagner_minCut	minCutval=  18  graph: Nodes= 30 Edges= 335 	elapsed= 0.00910885400026018 	 randGraphIndex:  33
+@ NormaltestResult(statistic=23.57789877527948, pvalue=7.587947781474087e-06) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 335 	elapsed AVG,DEV_STD= (0.03206649722002112, 0.028030645935977573) 	 randGraphIndex:  33 	iteration to reach Optimal AVG,DEV,MAX:  (19.62, 17.145106995220267, 77)
+iteration : 34 
+
+
+@stoer_wagner_minCut	minCutval=  20  graph: Nodes= 30 Edges= 344 	elapsed= 0.009391456999765069 	 randGraphIndex:  34
+@ NormaltestResult(statistic=12.4996437705924, pvalue=0.0019307980091178842) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 344 	elapsed AVG,DEV_STD= (0.012491815279954608, 0.009897752561894322) 	 randGraphIndex:  34 	iteration to reach Optimal AVG,DEV,MAX:  (7.4, 5.809914116475073, 23)
+iteration : 35 
+
+
+@stoer_wagner_minCut	minCutval=  20  graph: Nodes= 30 Edges= 353 	elapsed= 0.009549647000312689 	 randGraphIndex:  35
+@ NormaltestResult(statistic=10.83181582502068, pvalue=0.0044453000365396) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 353 	elapsed AVG,DEV_STD= (0.03331189809990974, 0.024674907986899794) 	 randGraphIndex:  35 	iteration to reach Optimal AVG,DEV,MAX:  (19.54, 14.48322041085434, 62)
+iteration : 36 
+
+
+@stoer_wagner_minCut	minCutval=  20  graph: Nodes= 30 Edges= 362 	elapsed= 0.009699296000690083 	 randGraphIndex:  36
+@ NormaltestResult(statistic=23.63391952678796, pvalue=7.378355594199226e-06) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 362 	elapsed AVG,DEV_STD= (0.034885933099903926, 0.0312022122851166) 	 randGraphIndex:  36 	iteration to reach Optimal AVG,DEV,MAX:  (20.06, 17.51199006162256, 82)
+iteration : 37 
+
+
+@stoer_wagner_minCut	minCutval=  21  graph: Nodes= 30 Edges= 371 	elapsed= 0.009906586999932188 	 randGraphIndex:  37
+@ NormaltestResult(statistic=32.561080439067304, pvalue=8.500632091341919e-08) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 371 	elapsed AVG,DEV_STD= (0.0359875922199717, 0.03813289616707017) 	 randGraphIndex:  37 	iteration to reach Optimal AVG,DEV,MAX:  (20.48, 21.783948406183516, 106)
+iteration : 38 
+
+
+@stoer_wagner_minCut	minCutval=  22  graph: Nodes= 30 Edges= 380 	elapsed= 0.010151222999411402 	 randGraphIndex:  38
+@ NormaltestResult(statistic=29.332273581936697, pvalue=4.271473544035956e-07) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 380 	elapsed AVG,DEV_STD= (0.018797452919989154, 0.0180190369014132) 	 randGraphIndex:  38 	iteration to reach Optimal AVG,DEV,MAX:  (10.5, 10.047336940296008, 50)
+iteration : 39 
+
+
+@stoer_wagner_minCut	minCutval=  23  graph: Nodes= 30 Edges= 389 	elapsed= 0.010063618999993196 	 randGraphIndex:  39
+@ NormaltestResult(statistic=50.58801630005147, pvalue=1.0350273721700771e-11) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 389 	elapsed AVG,DEV_STD= (0.018200540640045802, 0.020939781959897864) 	 randGraphIndex:  39 	iteration to reach Optimal AVG,DEV,MAX:  (9.98, 11.393678877664883, 62)
+iteration : 40 
+
+
+@stoer_wagner_minCut	minCutval=  24  graph: Nodes= 30 Edges= 398 	elapsed= 0.01032719900013035 	 randGraphIndex:  40
+@ NormaltestResult(statistic=40.42192557380033, pvalue=1.6691308636869085e-09) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 398 	elapsed AVG,DEV_STD= (0.008646775079923827, 0.007359525469457653) 	 randGraphIndex:  40 	iteration to reach Optimal AVG,DEV,MAX:  (4.66, 3.9877874792410686, 22)
+iteration : 41 
+
+
+@stoer_wagner_minCut	minCutval=  24  graph: Nodes= 30 Edges= 403 	elapsed= 0.010569676999693911 	 randGraphIndex:  41
+@ NormaltestResult(statistic=28.923105722154286, pvalue=5.241159696023436e-07) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 403 	elapsed AVG,DEV_STD= (0.016718365120050295, 0.017642952789616573) 	 randGraphIndex:  41 	iteration to reach Optimal AVG,DEV,MAX:  (8.96, 9.458739614876858, 46)
+iteration : 42 
+
+
+@stoer_wagner_minCut	minCutval=  25  graph: Nodes= 30 Edges= 410 	elapsed= 0.010567332000391616 	 randGraphIndex:  42
+@ NormaltestResult(statistic=13.813508116398951, pvalue=0.0010010017221715093) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 410 	elapsed AVG,DEV_STD= (0.016390984020054022, 0.015454386608117371) 	 randGraphIndex:  42 	iteration to reach Optimal AVG,DEV,MAX:  (8.64, 8.200945689619072, 32)
+iteration : 43 
+
+
+@stoer_wagner_minCut	minCutval=  25  graph: Nodes= 30 Edges= 413 	elapsed= 0.01066965199970582 	 randGraphIndex:  43
+@ NormaltestResult(statistic=56.64318309149591, pvalue=5.012900367080092e-13) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 413 	elapsed AVG,DEV_STD= (0.039533776359967306, 0.04465719980646255) 	 randGraphIndex:  43 	iteration to reach Optimal AVG,DEV,MAX:  (20.78, 23.535721872966477, 141)
+iteration : 44 
+
+
+@stoer_wagner_minCut	minCutval=  25  graph: Nodes= 30 Edges= 413 	elapsed= 0.011497397999846726 	 randGraphIndex:  44
+@ NormaltestResult(statistic=48.86685179472492, pvalue=2.4473605702626164e-11) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 413 	elapsed AVG,DEV_STD= (0.052263243420056824, 0.05888821815250553) 	 randGraphIndex:  44 	iteration to reach Optimal AVG,DEV,MAX:  (27.32, 30.939994591242616, 172)
+iteration : 45 
+
+
+@stoer_wagner_minCut	minCutval=  26  graph: Nodes= 30 Edges= 420 	elapsed= 0.010729040000114765 	 randGraphIndex:  45
+@ NormaltestResult(statistic=25.329940414510496, pvalue=3.1598999026136426e-06) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 420 	elapsed AVG,DEV_STD= (0.008239130260080855, 0.0072357207959082405) 	 randGraphIndex:  45 	iteration to reach Optimal AVG,DEV,MAX:  (4.26, 3.7406209241193076, 17)
+iteration : 46 
+
+
+@stoer_wagner_minCut	minCutval=  26  graph: Nodes= 30 Edges= 422 	elapsed= 0.01074621199950343 	 randGraphIndex:  46
+@ NormaltestResult(statistic=66.30418705676865, pvalue=4.001554323537864e-15) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 422 	elapsed AVG,DEV_STD= (0.016405211800029063, 0.017314119411057798) 	 randGraphIndex:  46 	iteration to reach Optimal AVG,DEV,MAX:  (8.42, 8.921631588677132, 57)
+iteration : 47 
+
+
+@stoer_wagner_minCut	minCutval=  27  graph: Nodes= 30 Edges= 426 	elapsed= 0.01086506299998291 	 randGraphIndex:  47
+@ NormaltestResult(statistic=21.25961884511314, pvalue=2.4184238889052234e-05) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 426 	elapsed AVG,DEV_STD= (0.014323969559973193, 0.012323457025503033) 	 randGraphIndex:  47 	iteration to reach Optimal AVG,DEV,MAX:  (7.28, 6.292334176420948, 28)
+iteration : 48 
+
+
+@stoer_wagner_minCut	minCutval=  27  graph: Nodes= 30 Edges= 428 	elapsed= 0.01095754699963436 	 randGraphIndex:  48
+@ NormaltestResult(statistic=51.79801165424078, pvalue=5.652032917264019e-12) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 428 	elapsed AVG,DEV_STD= (0.02011877957997058, 0.017331808433280846) 	 randGraphIndex:  48 	iteration to reach Optimal AVG,DEV,MAX:  (10.18, 8.814852956973317, 54)
+iteration : 49 
+
+
+@stoer_wagner_minCut	minCutval=  27  graph: Nodes= 30 Edges= 428 	elapsed= 0.011923263999960909 	 randGraphIndex:  49
+@ NormaltestResult(statistic=15.402359060704658, pvalue=0.0004522933743637903) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 428 	elapsed AVG,DEV_STD= (0.02623337585997433, 0.023200088116980964) 	 randGraphIndex:  49 	iteration to reach Optimal AVG,DEV,MAX:  (13.3, 11.784199036793952, 48)
+iteration : 50 
+
+
+@stoer_wagner_minCut	minCutval=  27  graph: Nodes= 30 Edges= 428 	elapsed= 0.010398667000117712 	 randGraphIndex:  50
+@ NormaltestResult(statistic=23.844100012945606, pvalue=6.642315027812792e-06) False
+@randMinCut-untilOpt	graph: Nodes= 30 Edges= 428 	elapsed AVG,DEV_STD= (0.031553130580032306, 0.0252285587030529) 	 randGraphIndex:  50 	iteration to reach Optimal AVG,DEV,MAX:  (16.04, 12.830066727998648, 62)
+@@ global until Opt MAX stats on random graphs with nodes:  30 	 NormaltestResult(statistic=29.079900407818062, pvalue=4.845960382439853e-07) normalTestPassed:  False  (AVG,DEV,MAX) (45.470588235294116, 32.71779512202891, 172)
+@@ global until Opt AVG stats on random graphs with nodes:  30 	 NormaltestResult(statistic=8.77050171500862, pvalue=0.012459762117427576) normalTestPassed:  False  (AVG,DEV,MAX) (9.808627450980392, 5.619334131232221, 27.32)
+
+
+
+exploring min cut solver algoritm with a graph of 35 with variable num of edges
+
+
+1/e fail prob iterations:  595
+graph with num nodes=  35  with this num of iteration of rand Algo:  595
+595.0 11
+iteration : 0 
+
+
+@stoer_wagner_minCut	minCutval=  1  graph: Nodes= 35 Edges= 46 	elapsed= 0.0028547530000651022 	 randGraphIndex:  0
+@ NormaltestResult(statistic=19.1936339624669, pvalue=6.794466179498067e-05) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 46 	elapsed AVG,DEV_STD= (0.0011315238399583905, 0.0006156781977834599) 	 randGraphIndex:  0 	iteration to reach Optimal AVG,DEV,MAX:  (1.58, 0.8592830423898609, 4)
+iteration : 1 
+
+
+@stoer_wagner_minCut	minCutval=  1  graph: Nodes= 35 Edges= 58 	elapsed= 0.003334653999445436 	 randGraphIndex:  1
+@ NormaltestResult(statistic=23.23194585134818, pvalue=9.020841589163952e-06) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 58 	elapsed AVG,DEV_STD= (0.0016663882998182089, 0.0013655578137634363) 	 randGraphIndex:  1 	iteration to reach Optimal AVG,DEV,MAX:  (2.2, 1.7842851423995423, 8)
+iteration : 2 
+
+
+@stoer_wagner_minCut	minCutval=  1  graph: Nodes= 35 Edges= 70 	elapsed= 0.0037010360001659137 	 randGraphIndex:  2
+@ NormaltestResult(statistic=40.712372850908515, pvalue=1.4435125460489928e-09) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 70 	elapsed AVG,DEV_STD= (0.002265780080033437, 0.0017509893949613638) 	 randGraphIndex:  2 	iteration to reach Optimal AVG,DEV,MAX:  (2.8, 2.1852940772540506, 12)
+iteration : 3 
+
+
+@stoer_wagner_minCut	minCutval=  2  graph: Nodes= 35 Edges= 82 	elapsed= 0.004099392999705742 	 randGraphIndex:  3
+@ NormaltestResult(statistic=29.240804154659443, pvalue=4.471364295721014e-07) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 82 	elapsed AVG,DEV_STD= (0.0013918578400625846, 0.0008575079206865802) 	 randGraphIndex:  3 	iteration to reach Optimal AVG,DEV,MAX:  (1.6, 0.9476070829586857, 5)
+iteration : 4 
+
+
+@stoer_wagner_minCut	minCutval=  2  graph: Nodes= 35 Edges= 94 	elapsed= 0.00442894800016802 	 randGraphIndex:  4
+@ NormaltestResult(statistic=18.501636681703992, pvalue=9.603303214349284e-05) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 94 	elapsed AVG,DEV_STD= (0.003047588880035619, 0.002524354018233972) 	 randGraphIndex:  4 	iteration to reach Optimal AVG,DEV,MAX:  (3.36, 2.7312253361329772, 12)
+iteration : 5 
+
+
+@stoer_wagner_minCut	minCutval=  2  graph: Nodes= 35 Edges= 106 	elapsed= 0.004742625999824668 	 randGraphIndex:  5
+@ NormaltestResult(statistic=11.320884890928248, pvalue=0.0034809764152212994) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 106 	elapsed AVG,DEV_STD= (0.004004875759965216, 0.0035702626378256615) 	 randGraphIndex:  5 	iteration to reach Optimal AVG,DEV,MAX:  (4.22, 3.7541269807713085, 15)
+iteration : 6 
+
+
+@stoer_wagner_minCut	minCutval=  3  graph: Nodes= 35 Edges= 118 	elapsed= 0.005349699999896984 	 randGraphIndex:  6
+@ NormaltestResult(statistic=28.903414829428318, pvalue=5.293016108572979e-07) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 118 	elapsed AVG,DEV_STD= (0.003909777799963194, 0.002802037340801562) 	 randGraphIndex:  6 	iteration to reach Optimal AVG,DEV,MAX:  (3.86, 2.7256154519368163, 15)
+iteration : 7 
+
+
+@stoer_wagner_minCut	minCutval=  3  graph: Nodes= 35 Edges= 130 	elapsed= 0.005487061000167159 	 randGraphIndex:  7
+@ NormaltestResult(statistic=41.60514260732797, pvalue=9.237577041091125e-10) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 130 	elapsed AVG,DEV_STD= (0.004903492340017693, 0.004591578894716055) 	 randGraphIndex:  7 	iteration to reach Optimal AVG,DEV,MAX:  (4.62, 4.294704855507345, 24)
+iteration : 8 
+
+
+@stoer_wagner_minCut	minCutval=  3  graph: Nodes= 35 Edges= 142 	elapsed= 0.005571837999923446 	 randGraphIndex:  8
+@ NormaltestResult(statistic=10.652110468340576, pvalue=0.004863216473434493) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 142 	elapsed AVG,DEV_STD= (0.00619605396001134, 0.004903439047207363) 	 randGraphIndex:  8 	iteration to reach Optimal AVG,DEV,MAX:  (5.62, 4.453340869275468, 20)
+iteration : 9 
+
+
+@stoer_wagner_minCut	minCutval=  5  graph: Nodes= 35 Edges= 154 	elapsed= 0.005991053999423457 	 randGraphIndex:  9
+@ NormaltestResult(statistic=32.6355183234512, pvalue=8.190062935164843e-08) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 154 	elapsed AVG,DEV_STD= (0.0035768945799463836, 0.003027509138075328) 	 randGraphIndex:  9 	iteration to reach Optimal AVG,DEV,MAX:  (3.06, 2.550790193693887, 12)
+iteration : 10 
+
+
+@stoer_wagner_minCut	minCutval=  6  graph: Nodes= 35 Edges= 166 	elapsed= 0.006406884000170976 	 randGraphIndex:  10
+@ NormaltestResult(statistic=25.807859324607122, pvalue=2.4882530941822974e-06) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 166 	elapsed AVG,DEV_STD= (0.014085050480061909, 0.012388816159233235) 	 randGraphIndex:  10 	iteration to reach Optimal AVG,DEV,MAX:  (11.64, 10.237506073856313, 50)
+iteration : 11 
+
+
+@stoer_wagner_minCut	minCutval=  6  graph: Nodes= 35 Edges= 178 	elapsed= 0.006447077999837347 	 randGraphIndex:  11
+@ NormaltestResult(statistic=23.97048703345869, pvalue=6.2355515856086255e-06) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 178 	elapsed AVG,DEV_STD= (0.01249294806006219, 0.012566055601700455) 	 randGraphIndex:  11 	iteration to reach Optimal AVG,DEV,MAX:  (9.96, 10.0141940081393, 43)
+iteration : 12 
+
+
+@stoer_wagner_minCut	minCutval=  8  graph: Nodes= 35 Edges= 190 	elapsed= 0.006920207999428385 	 randGraphIndex:  12
+@ NormaltestResult(statistic=13.32433895230159, pvalue=0.0012783699666477895) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 190 	elapsed AVG,DEV_STD= (0.005237386020053236, 0.004096071465871201) 	 randGraphIndex:  12 	iteration to reach Optimal AVG,DEV,MAX:  (4, 3.136356914300021, 14)
+iteration : 13 
+
+
+@stoer_wagner_minCut	minCutval=  8  graph: Nodes= 35 Edges= 202 	elapsed= 0.007115803000488086 	 randGraphIndex:  13
+@ NormaltestResult(statistic=10.956056799803404, pvalue=0.004177558057598285) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 202 	elapsed AVG,DEV_STD= (0.020232403259960847, 0.017944065230438865) 	 randGraphIndex:  13 	iteration to reach Optimal AVG,DEV,MAX:  (14.78, 12.602704601207874, 53)
+iteration : 14 
+
+
+@stoer_wagner_minCut	minCutval=  8  graph: Nodes= 35 Edges= 214 	elapsed= 0.0074770909996004775 	 randGraphIndex:  14
+@ NormaltestResult(statistic=42.228791917556975, pvalue=6.762921499400877e-10) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 214 	elapsed AVG,DEV_STD= (0.01778571920001923, 0.018571400830848808) 	 randGraphIndex:  14 	iteration to reach Optimal AVG,DEV,MAX:  (12.72, 13.334074809314975, 72)
+iteration : 15 
+
+
+@stoer_wagner_minCut	minCutval=  9  graph: Nodes= 35 Edges= 226 	elapsed= 0.008002333999684197 	 randGraphIndex:  15
+@ NormaltestResult(statistic=40.148949354182996, pvalue=1.9132266453810758e-09) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 226 	elapsed AVG,DEV_STD= (0.006744223440000497, 0.006402288332479198) 	 randGraphIndex:  15 	iteration to reach Optimal AVG,DEV,MAX:  (4.66, 4.419853169599226, 24)
+iteration : 16 
+
+
+@stoer_wagner_minCut	minCutval=  9  graph: Nodes= 35 Edges= 238 	elapsed= 0.008144583000103012 	 randGraphIndex:  16
+@ NormaltestResult(statistic=13.684615282482868, pvalue=0.001067636831973215) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 238 	elapsed AVG,DEV_STD= (0.010309537339962845, 0.009420028512140374) 	 randGraphIndex:  16 	iteration to reach Optimal AVG,DEV,MAX:  (6.88, 6.329845083057737, 24)
+iteration : 17 
+
+
+@stoer_wagner_minCut	minCutval=  10  graph: Nodes= 35 Edges= 250 	elapsed= 0.008550742000807077 	 randGraphIndex:  17
+@ NormaltestResult(statistic=18.127952050484787, pvalue=0.0001157617885519649) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 250 	elapsed AVG,DEV_STD= (0.012427815919927525, 0.01065880058090659) 	 randGraphIndex:  17 	iteration to reach Optimal AVG,DEV,MAX:  (8.02, 6.909000341169894, 30)
+iteration : 18 
+
+
+@stoer_wagner_minCut	minCutval=  10  graph: Nodes= 35 Edges= 262 	elapsed= 0.008831629000269459 	 randGraphIndex:  18
+@ NormaltestResult(statistic=24.97655480216985, pvalue=3.7705962930834945e-06) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 262 	elapsed AVG,DEV_STD= (0.013743817160066101, 0.014688585159059828) 	 randGraphIndex:  18 	iteration to reach Optimal AVG,DEV,MAX:  (8.58, 9.066849237857703, 36)
+iteration : 19 
+
+
+@stoer_wagner_minCut	minCutval=  11  graph: Nodes= 35 Edges= 274 	elapsed= 0.009381820000271546 	 randGraphIndex:  19
+@ NormaltestResult(statistic=7.007115537514835, pvalue=0.030090139003566486) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 274 	elapsed AVG,DEV_STD= (0.011408364459966833, 0.00968489807062933) 	 randGraphIndex:  19 	iteration to reach Optimal AVG,DEV,MAX:  (6.9, 5.852785835891855, 24)
+iteration : 20 
+
+
+@stoer_wagner_minCut	minCutval=  12  graph: Nodes= 35 Edges= 286 	elapsed= 0.0095131690004564 	 randGraphIndex:  20
+@ NormaltestResult(statistic=29.01900614540985, pvalue=4.995775115067882e-07) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 286 	elapsed AVG,DEV_STD= (0.011048553539912973, 0.011363171875905154) 	 randGraphIndex:  20 	iteration to reach Optimal AVG,DEV,MAX:  (6.48, 6.649351663960962, 32)
+iteration : 21 
+
+
+@stoer_wagner_minCut	minCutval=  13  graph: Nodes= 35 Edges= 298 	elapsed= 0.009842620999734208 	 randGraphIndex:  21
+@ NormaltestResult(statistic=12.665468925166197, pvalue=0.001777167520757269) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 298 	elapsed AVG,DEV_STD= (0.010981628879962955, 0.009627054740264445) 	 randGraphIndex:  21 	iteration to reach Optimal AVG,DEV,MAX:  (6.22, 5.4633846129090555, 22)
+iteration : 22 
+
+
+@stoer_wagner_minCut	minCutval=  13  graph: Nodes= 35 Edges= 310 	elapsed= 0.01040141700013919 	 randGraphIndex:  22
+@ NormaltestResult(statistic=25.168091789929726, pvalue=3.426244156071531e-06) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 310 	elapsed AVG,DEV_STD= (0.03524820593996992, 0.0326210925475534) 	 randGraphIndex:  22 	iteration to reach Optimal AVG,DEV,MAX:  (19.5, 18.007084773522234, 80)
+iteration : 23 
+
+
+@stoer_wagner_minCut	minCutval=  13  graph: Nodes= 35 Edges= 322 	elapsed= 0.01067893199979153 	 randGraphIndex:  23
+@ NormaltestResult(statistic=44.565288372963906, pvalue=2.1026674299891032e-10) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 322 	elapsed AVG,DEV_STD= (0.03115030531997036, 0.03876812175181869) 	 randGraphIndex:  23 	iteration to reach Optimal AVG,DEV,MAX:  (16.74, 20.91265606453349, 105)
+iteration : 24 
+
+
+@stoer_wagner_minCut	minCutval=  14  graph: Nodes= 35 Edges= 334 	elapsed= 0.010940089000541775 	 randGraphIndex:  24
+@ NormaltestResult(statistic=7.309870896248596, pvalue=0.025863166945219496) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 334 	elapsed AVG,DEV_STD= (0.015314688960006605, 0.011914144619693008) 	 randGraphIndex:  24 	iteration to reach Optimal AVG,DEV,MAX:  (8, 6.200724118345915, 27)
+iteration : 25 
+
+
+@stoer_wagner_minCut	minCutval=  14  graph: Nodes= 35 Edges= 346 	elapsed= 0.011145634000058635 	 randGraphIndex:  25
+@ NormaltestResult(statistic=17.460825364794843, pvalue=0.00016159575473970788) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 346 	elapsed AVG,DEV_STD= (0.03476619735994973, 0.03131732919002862) 	 randGraphIndex:  25 	iteration to reach Optimal AVG,DEV,MAX:  (17.7, 15.969677900474322, 70)
+iteration : 26 
+
+
+@stoer_wagner_minCut	minCutval=  15  graph: Nodes= 35 Edges= 358 	elapsed= 0.012240512000062154 	 randGraphIndex:  26
+@ NormaltestResult(statistic=25.16086692879957, pvalue=3.4386436077794684e-06) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 358 	elapsed AVG,DEV_STD= (0.034059429299977635, 0.03247235410670637) 	 randGraphIndex:  26 	iteration to reach Optimal AVG,DEV,MAX:  (17, 16.178847364408142, 72)
+iteration : 27 
+
+
+@stoer_wagner_minCut	minCutval=  15  graph: Nodes= 35 Edges= 370 	elapsed= 0.01187043400022958 	 randGraphIndex:  27
+@ NormaltestResult(statistic=9.189875596979233, pvalue=0.010102849173912928) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 370 	elapsed AVG,DEV_STD= (0.03839495765998436, 0.035650101357025746) 	 randGraphIndex:  27 	iteration to reach Optimal AVG,DEV,MAX:  (18.74, 17.38262092447746, 67)
+iteration : 28 
+
+
+@stoer_wagner_minCut	minCutval=  15  graph: Nodes= 35 Edges= 382 	elapsed= 0.012315023000155634 	 randGraphIndex:  28
+@ NormaltestResult(statistic=61.32373932423508, pvalue=4.827465746491802e-14) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 382 	elapsed AVG,DEV_STD= (0.026977145340024437, 0.03220465864821194) 	 randGraphIndex:  28 	iteration to reach Optimal AVG,DEV,MAX:  (12.82, 15.387100348761528, 92)
+iteration : 29 
+
+
+@stoer_wagner_minCut	minCutval=  16  graph: Nodes= 35 Edges= 394 	elapsed= 0.012923533000503085 	 randGraphIndex:  29
+@ NormaltestResult(statistic=23.28962616426533, pvalue=8.764394863013319e-06) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 394 	elapsed AVG,DEV_STD= (0.029607575480022207, 0.025826917841197596) 	 randGraphIndex:  29 	iteration to reach Optimal AVG,DEV,MAX:  (13.82, 12.069002292092359, 55)
+iteration : 30 
+
+
+@stoer_wagner_minCut	minCutval=  16  graph: Nodes= 35 Edges= 406 	elapsed= 0.013077417999738827 	 randGraphIndex:  30
+@ NormaltestResult(statistic=18.036413447429258, pvalue=0.0001211832465444894) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 406 	elapsed AVG,DEV_STD= (0.0297192740000537, 0.02652627913452104) 	 randGraphIndex:  30 	iteration to reach Optimal AVG,DEV,MAX:  (13.58, 12.18578964974183, 50)
+iteration : 31 
+
+
+@stoer_wagner_minCut	minCutval=  17  graph: Nodes= 35 Edges= 418 	elapsed= 0.013663447999533673 	 randGraphIndex:  31
+@ NormaltestResult(statistic=42.62467734127683, pvalue=5.548414766503917e-10) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 418 	elapsed AVG,DEV_STD= (0.029893764059925162, 0.031197301393955837) 	 randGraphIndex:  31 	iteration to reach Optimal AVG,DEV,MAX:  (13.22, 13.723642641330281, 76)
+iteration : 32 
+
+
+@stoer_wagner_minCut	minCutval=  20  graph: Nodes= 35 Edges= 430 	elapsed= 0.013591754000117362 	 randGraphIndex:  32
+@ NormaltestResult(statistic=12.615741550757482, pvalue=0.0018219083643874132) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 430 	elapsed AVG,DEV_STD= (0.04527610228000412, 0.03355511061904945) 	 randGraphIndex:  32 	iteration to reach Optimal AVG,DEV,MAX:  (19.82, 14.704837465880376, 50)
+iteration : 33 
+
+
+@stoer_wagner_minCut	minCutval=  20  graph: Nodes= 35 Edges= 442 	elapsed= 0.014065545999983442 	 randGraphIndex:  33
+@ NormaltestResult(statistic=63.58319140064005, pvalue=1.5598592636715513e-14) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 442 	elapsed AVG,DEV_STD= (0.04483269121996272, 0.05578075328602021) 	 randGraphIndex:  33 	iteration to reach Optimal AVG,DEV,MAX:  (19.2, 23.876382319209526, 145)
+iteration : 34 
+
+
+@stoer_wagner_minCut	minCutval=  21  graph: Nodes= 35 Edges= 454 	elapsed= 0.014360090000081982 	 randGraphIndex:  34
+@ NormaltestResult(statistic=32.728172627280046, pvalue=7.819295260162613e-08) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 454 	elapsed AVG,DEV_STD= (0.037607558959953165, 0.03774086579681406) 	 randGraphIndex:  34 	iteration to reach Optimal AVG,DEV,MAX:  (15.76, 15.822433054214576, 81)
+iteration : 35 
+
+
+@stoer_wagner_minCut	minCutval=  21  graph: Nodes= 35 Edges= 466 	elapsed= 0.014848539000013261 	 randGraphIndex:  35
+@ NormaltestResult(statistic=9.411627287984745, pvalue=0.009042553804352102) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 466 	elapsed AVG,DEV_STD= (0.04463244835991645, 0.03869235245448146) 	 randGraphIndex:  35 	iteration to reach Optimal AVG,DEV,MAX:  (18.26, 15.90123856041101, 61)
+iteration : 36 
+
+
+@stoer_wagner_minCut	minCutval=  21  graph: Nodes= 35 Edges= 478 	elapsed= 0.015026875999865297 	 randGraphIndex:  36
+@ NormaltestResult(statistic=49.545373731793916, pvalue=1.7432464610641255e-11) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 478 	elapsed AVG,DEV_STD= (0.0456921384600173, 0.0501060461044016) 	 randGraphIndex:  36 	iteration to reach Optimal AVG,DEV,MAX:  (18.32, 20.200464735005582, 115)
+iteration : 37 
+
+
+@stoer_wagner_minCut	minCutval=  22  graph: Nodes= 35 Edges= 490 	elapsed= 0.015580186999613943 	 randGraphIndex:  37
+@ NormaltestResult(statistic=11.075349302673107, pvalue=0.003935668006323437) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 490 	elapsed AVG,DEV_STD= (0.04621306530001675, 0.04143391667376246) 	 randGraphIndex:  37 	iteration to reach Optimal AVG,DEV,MAX:  (18.28, 16.463986672214514, 63)
+iteration : 38 
+
+
+@stoer_wagner_minCut	minCutval=  23  graph: Nodes= 35 Edges= 502 	elapsed= 0.015752490000522812 	 randGraphIndex:  38
+@ NormaltestResult(statistic=15.875185003075565, pvalue=0.0003570650779797789) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 502 	elapsed AVG,DEV_STD= (0.05601288649995695, 0.05165367372754111) 	 randGraphIndex:  38 	iteration to reach Optimal AVG,DEV,MAX:  (21.62, 19.951870660595784, 92)
+iteration : 39 
+
+
+@stoer_wagner_minCut	minCutval=  25  graph: Nodes= 35 Edges= 514 	elapsed= 0.0163102059996163 	 randGraphIndex:  39
+@ NormaltestResult(statistic=10.95418219151613, pvalue=0.004181475535723389) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 514 	elapsed AVG,DEV_STD= (0.022691311379949185, 0.016374882776088666) 	 randGraphIndex:  39 	iteration to reach Optimal AVG,DEV,MAX:  (8.54, 6.181638380010957, 28)
+iteration : 40 
+
+
+@stoer_wagner_minCut	minCutval=  27  graph: Nodes= 35 Edges= 526 	elapsed= 0.01737503900039883 	 randGraphIndex:  40
+@ NormaltestResult(statistic=13.19044276117158, pvalue=0.0013668842755733951) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 526 	elapsed AVG,DEV_STD= (0.03835598105988538, 0.03660841567836971) 	 randGraphIndex:  40 	iteration to reach Optimal AVG,DEV,MAX:  (14.12, 13.579155694952286, 57)
+iteration : 41 
+
+
+@stoer_wagner_minCut	minCutval=  28  graph: Nodes= 35 Edges= 538 	elapsed= 0.01766104499984067 	 randGraphIndex:  41
+@ NormaltestResult(statistic=25.340967168694018, pvalue=3.1425261209927966e-06) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 538 	elapsed AVG,DEV_STD= (0.02802820642004008, 0.026151887712074752) 	 randGraphIndex:  41 	iteration to reach Optimal AVG,DEV,MAX:  (10.26, 9.537915743740552, 43)
+iteration : 42 
+
+
+@stoer_wagner_minCut	minCutval=  28  graph: Nodes= 35 Edges= 543 	elapsed= 0.017996679000134463 	 randGraphIndex:  42
+@ NormaltestResult(statistic=9.651249721397326, pvalue=0.008021539958997074) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 543 	elapsed AVG,DEV_STD= (0.08345522053999957, 0.07821034669803512) 	 randGraphIndex:  42 	iteration to reach Optimal AVG,DEV,MAX:  (30.28, 28.369313688978686, 109)
+iteration : 43 
+
+
+@stoer_wagner_minCut	minCutval=  29  graph: Nodes= 35 Edges= 548 	elapsed= 0.01791824700012512 	 randGraphIndex:  43
+@ NormaltestResult(statistic=21.209717827980043, pvalue=2.4795238629050367e-05) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 548 	elapsed AVG,DEV_STD= (0.04850680000003194, 0.04963331969250383) 	 randGraphIndex:  43 	iteration to reach Optimal AVG,DEV,MAX:  (17.46, 17.871662668330895, 80)
+iteration : 44 
+
+
+@stoer_wagner_minCut	minCutval=  29  graph: Nodes= 35 Edges= 548 	elapsed= 0.018220054000266828 	 randGraphIndex:  44
+@ NormaltestResult(statistic=36.53773826154366, pvalue=1.1639409446443138e-08) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 548 	elapsed AVG,DEV_STD= (0.04395294374000514, 0.041493774733396334) 	 randGraphIndex:  44 	iteration to reach Optimal AVG,DEV,MAX:  (15.7, 14.79968284271315, 81)
+iteration : 45 
+
+
+@stoer_wagner_minCut	minCutval=  29  graph: Nodes= 35 Edges= 554 	elapsed= 0.01836574099979771 	 randGraphIndex:  45
+@ NormaltestResult(statistic=29.31550151614016, pvalue=4.307444879292343e-07) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 554 	elapsed AVG,DEV_STD= (0.10705964390006556, 0.0968640826432709) 	 randGraphIndex:  45 	iteration to reach Optimal AVG,DEV,MAX:  (38.28, 34.62454007651515, 173)
+iteration : 46 
+
+
+@stoer_wagner_minCut	minCutval=  30  graph: Nodes= 35 Edges= 559 	elapsed= 0.018189166000411205 	 randGraphIndex:  46
+@ NormaltestResult(statistic=40.57499178150289, pvalue=1.5461530554377886e-09) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 559 	elapsed AVG,DEV_STD= (0.029272475140041932, 0.03202809932232754) 	 randGraphIndex:  46 	iteration to reach Optimal AVG,DEV,MAX:  (10.26, 11.253679670332232, 53)
+iteration : 47 
+
+
+@stoer_wagner_minCut	minCutval=  30  graph: Nodes= 35 Edges= 560 	elapsed= 0.018774926999867603 	 randGraphIndex:  47
+@ NormaltestResult(statistic=21.414935786821445, pvalue=2.2377201817113222e-05) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 560 	elapsed AVG,DEV_STD= (0.025393153919940233, 0.02641036381367888) 	 randGraphIndex:  47 	iteration to reach Optimal AVG,DEV,MAX:  (8.98, 9.309836799025524, 40)
+iteration : 48 
+
+
+@stoer_wagner_minCut	minCutval=  30  graph: Nodes= 35 Edges= 572 	elapsed= 0.018605473000206985 	 randGraphIndex:  48
+@ NormaltestResult(statistic=49.49850612098282, pvalue=1.7845797662470595e-11) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 572 	elapsed AVG,DEV_STD= (0.09710988587996326, 0.08943008157119205) 	 randGraphIndex:  48 	iteration to reach Optimal AVG,DEV,MAX:  (33.84, 31.283013582062555, 187)
+iteration : 49 
+
+
+@stoer_wagner_minCut	minCutval=  30  graph: Nodes= 35 Edges= 574 	elapsed= 0.018121248000170453 	 randGraphIndex:  49
+@ NormaltestResult(statistic=20.908914553410867, pvalue=2.8819529969445664e-05) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 574 	elapsed AVG,DEV_STD= (0.08507897501991465, 0.077559771372984) 	 randGraphIndex:  49 	iteration to reach Optimal AVG,DEV,MAX:  (29.6, 27.10147220942743, 124)
+iteration : 50 
+
+
+@stoer_wagner_minCut	minCutval=  31  graph: Nodes= 35 Edges= 581 	elapsed= 0.018529023000155576 	 randGraphIndex:  50
+@ NormaltestResult(statistic=23.09703538664242, pvalue=9.65033726656301e-06) False
+@randMinCut-untilOpt	graph: Nodes= 35 Edges= 581 	elapsed AVG,DEV_STD= (0.07738259589996233, 0.07380144825574393) 	 randGraphIndex:  50 	iteration to reach Optimal AVG,DEV,MAX:  (26.42, 25.32892997893024, 103)
+@@ global until Opt MAX stats on random graphs with nodes:  35 	 NormaltestResult(statistic=11.920766005415617, pvalue=0.002578924047956859) normalTestPassed:  False  (AVG,DEV,MAX) (57.450980392156865, 42.32602685133118, 187)
+@@ global until Opt AVG stats on random graphs with nodes:  35 	 NormaltestResult(statistic=8.521917378026103, pvalue=0.014108770001726435) normalTestPassed:  False  (AVG,DEV,MAX) (12.938823529411765, 8.534071395777945, 38.28)
+
+
+
+exploring min cut solver algoritm with a graph of 40 with variable num of edges
+
+
+1/e fail prob iterations:  780
+graph with num nodes=  40  with this num of iteration of rand Algo:  780
+780.0 15
+iteration : 0 
+
+
+@stoer_wagner_minCut	minCutval=  1  graph: Nodes= 40 Edges= 55 	elapsed= 0.003759966000870918 	 randGraphIndex:  0
+@ NormaltestResult(statistic=6.765364798129493, pvalue=0.03395624825463841) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 55 	elapsed AVG,DEV_STD= (0.00220278340002551, 0.0012562196773620812) 	 randGraphIndex:  0 	iteration to reach Optimal AVG,DEV,MAX:  (2.44, 1.4165206007132045, 6)
+iteration : 1 
+
+
+@stoer_wagner_minCut	minCutval=  1  graph: Nodes= 40 Edges= 71 	elapsed= 0.004270755000106874 	 randGraphIndex:  1
+@ NormaltestResult(statistic=13.854213618339465, pvalue=0.0009808345086942992) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 71 	elapsed AVG,DEV_STD= (0.0023637290600163397, 0.0018606668035012974) 	 randGraphIndex:  1 	iteration to reach Optimal AVG,DEV,MAX:  (2.4, 1.9378085666072193, 8)
+iteration : 2 
+
+
+@stoer_wagner_minCut	minCutval=  1  graph: Nodes= 40 Edges= 87 	elapsed= 0.004807661999620905 	 randGraphIndex:  2
+@ NormaltestResult(statistic=58.07675410665522, pvalue=2.4478966744137747e-13) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 87 	elapsed AVG,DEV_STD= (0.003353517159994226, 0.002825183904460197) 	 randGraphIndex:  2 	iteration to reach Optimal AVG,DEV,MAX:  (3.18, 2.7232183840718576, 17)
+iteration : 3 
+
+
+@stoer_wagner_minCut	minCutval=  1  graph: Nodes= 40 Edges= 103 	elapsed= 0.006130277999545797 	 randGraphIndex:  3
+@ NormaltestResult(statistic=9.016314462299253, pvalue=0.011018746481366236) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 103 	elapsed AVG,DEV_STD= (0.0029260455999246915, 0.0020077064892460054) 	 randGraphIndex:  3 	iteration to reach Optimal AVG,DEV,MAX:  (2.56, 1.7631141280618872, 7)
+iteration : 4 
+
+
+@stoer_wagner_minCut	minCutval=  2  graph: Nodes= 40 Edges= 119 	elapsed= 0.005895668999983172 	 randGraphIndex:  4
+@ NormaltestResult(statistic=49.06272065009885, pvalue=2.2190422810837257e-11) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 119 	elapsed AVG,DEV_STD= (0.0036462653198759652, 0.0032480666341914988) 	 randGraphIndex:  4 	iteration to reach Optimal AVG,DEV,MAX:  (3.04, 2.6951203070341325, 16)
+iteration : 5 
+
+
+@stoer_wagner_minCut	minCutval=  2  graph: Nodes= 40 Edges= 135 	elapsed= 0.0064794600002642255 	 randGraphIndex:  5
+@ NormaltestResult(statistic=36.54513540253194, pvalue=1.1596439782244722e-08) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 135 	elapsed AVG,DEV_STD= (0.004533698159975757, 0.004024419888659805) 	 randGraphIndex:  5 	iteration to reach Optimal AVG,DEV,MAX:  (3.58, 3.1563993953327807, 16)
+iteration : 6 
+
+
+@stoer_wagner_minCut	minCutval=  2  graph: Nodes= 40 Edges= 151 	elapsed= 0.00715950999983761 	 randGraphIndex:  6
+@ NormaltestResult(statistic=10.896444508103041, pvalue=0.004303949222013694) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 151 	elapsed AVG,DEV_STD= (0.004829497819991957, 0.003413341634775726) 	 randGraphIndex:  6 	iteration to reach Optimal AVG,DEV,MAX:  (3.58, 2.5321604875469244, 11)
+iteration : 7 
+
+
+@stoer_wagner_minCut	minCutval=  3  graph: Nodes= 40 Edges= 167 	elapsed= 0.007620938999934879 	 randGraphIndex:  7
+@ NormaltestResult(statistic=20.129231888684437, pvalue=4.255913895984372e-05) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 167 	elapsed AVG,DEV_STD= (0.007954445919967839, 0.006328793841236465) 	 randGraphIndex:  7 	iteration to reach Optimal AVG,DEV,MAX:  (5.6, 4.47213595499958, 20)
+iteration : 8 
+
+
+@stoer_wagner_minCut	minCutval=  3  graph: Nodes= 40 Edges= 183 	elapsed= 0.007990713999788568 	 randGraphIndex:  8
+@ NormaltestResult(statistic=19.695450984217583, pvalue=5.286730346656961e-05) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 183 	elapsed AVG,DEV_STD= (0.007375714740010153, 0.0067387701549176905) 	 randGraphIndex:  8 	iteration to reach Optimal AVG,DEV,MAX:  (4.96, 4.557836937739261, 20)
+iteration : 9 
+
+
+@stoer_wagner_minCut	minCutval=  3  graph: Nodes= 40 Edges= 199 	elapsed= 0.008581390000472311 	 randGraphIndex:  9
+@ NormaltestResult(statistic=11.055935318720827, pvalue=0.003974057526021957) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 199 	elapsed AVG,DEV_STD= (0.005864590280034463, 0.004414374324355171) 	 randGraphIndex:  9 	iteration to reach Optimal AVG,DEV,MAX:  (3.74, 2.834265552923684, 12)
+iteration : 10 
+
+
+@stoer_wagner_minCut	minCutval=  4  graph: Nodes= 40 Edges= 215 	elapsed= 0.009012954999889189 	 randGraphIndex:  10
+@ NormaltestResult(statistic=29.97140602114473, pvalue=3.103072160854911e-07) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 215 	elapsed AVG,DEV_STD= (0.008351576140030374, 0.008078568905979728) 	 randGraphIndex:  10 	iteration to reach Optimal AVG,DEV,MAX:  (5.12, 4.851425206123685, 24)
+iteration : 11 
+
+
+@stoer_wagner_minCut	minCutval=  4  graph: Nodes= 40 Edges= 231 	elapsed= 0.009558574999573466 	 randGraphIndex:  11
+@ NormaltestResult(statistic=19.53943819709913, pvalue=5.715640511218886e-05) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 231 	elapsed AVG,DEV_STD= (0.009686779440016835, 0.00791504496473055) 	 randGraphIndex:  11 	iteration to reach Optimal AVG,DEV,MAX:  (5.64, 4.623630519805131, 21)
+iteration : 12 
+
+
+@stoer_wagner_minCut	minCutval=  4  graph: Nodes= 40 Edges= 247 	elapsed= 0.010554406999290222 	 randGraphIndex:  12
+@ NormaltestResult(statistic=5.8475158948238715, pvalue=0.05373138769346728) True
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 247 	elapsed AVG,DEV_STD= (0.006378639600025053, 0.004432691520188817) 	 randGraphIndex:  12 	iteration to reach Optimal AVG,DEV,MAX:  (3.54, 2.4678338845296404, 10)
+iteration : 13 
+
+
+@stoer_wagner_minCut	minCutval=  4  graph: Nodes= 40 Edges= 263 	elapsed= 0.010871834999306884 	 randGraphIndex:  13
+@ NormaltestResult(statistic=5.907850838790264, pvalue=0.052134653373547266) True
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 263 	elapsed AVG,DEV_STD= (0.0070849068400275425, 0.005005146696416007) 	 randGraphIndex:  13 	iteration to reach Optimal AVG,DEV,MAX:  (3.8, 2.6802375770419595, 12)
+iteration : 14 
+
+
+@stoer_wagner_minCut	minCutval=  5  graph: Nodes= 40 Edges= 279 	elapsed= 0.011625005000496458 	 randGraphIndex:  14
+@ NormaltestResult(statistic=16.340174151077424, pvalue=0.0002829933735709779) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 279 	elapsed AVG,DEV_STD= (0.009588415760063071, 0.00834324725047859) 	 randGraphIndex:  14 	iteration to reach Optimal AVG,DEV,MAX:  (4.98, 4.316508415138234, 17)
+iteration : 15 
+
+
+@stoer_wagner_minCut	minCutval=  7  graph: Nodes= 40 Edges= 295 	elapsed= 0.011999725999885413 	 randGraphIndex:  15
+@ NormaltestResult(statistic=7.223357551409096, pvalue=0.027006470981691254) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 295 	elapsed AVG,DEV_STD= (0.01293997078008033, 0.011415983619123627) 	 randGraphIndex:  15 	iteration to reach Optimal AVG,DEV,MAX:  (6.46, 5.6899840392875385, 22)
+iteration : 16 
+
+
+@stoer_wagner_minCut	minCutval=  9  graph: Nodes= 40 Edges= 311 	elapsed= 0.012565103999804705 	 randGraphIndex:  16
+@ NormaltestResult(statistic=16.60911473596666, pvalue=0.00024738682135859647) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 311 	elapsed AVG,DEV_STD= (0.023537430960004713, 0.02463733045317505) 	 randGraphIndex:  16 	iteration to reach Optimal AVG,DEV,MAX:  (11.34, 11.884838566640358, 46)
+iteration : 17 
+
+
+@stoer_wagner_minCut	minCutval=  11  graph: Nodes= 40 Edges= 327 	elapsed= 0.013415692999842577 	 randGraphIndex:  17
+@ NormaltestResult(statistic=13.429191316477144, pvalue=0.0012130764102246884) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 327 	elapsed AVG,DEV_STD= (0.017798477459982677, 0.015401131386599265) 	 randGraphIndex:  17 	iteration to reach Optimal AVG,DEV,MAX:  (8.26, 7.193562882103382, 32)
+iteration : 18 
+
+
+@stoer_wagner_minCut	minCutval=  12  graph: Nodes= 40 Edges= 343 	elapsed= 0.01366782399963995 	 randGraphIndex:  18
+@ NormaltestResult(statistic=18.662230010917362, pvalue=8.862336644832899e-05) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 343 	elapsed AVG,DEV_STD= (0.02200400361991342, 0.021165477228489677) 	 randGraphIndex:  18 	iteration to reach Optimal AVG,DEV,MAX:  (9.7, 9.553821759070118, 35)
+iteration : 19 
+
+
+@stoer_wagner_minCut	minCutval=  13  graph: Nodes= 40 Edges= 359 	elapsed= 0.014214372999958869 	 randGraphIndex:  19
+@ NormaltestResult(statistic=38.8139018959725, pvalue=3.729651840535229e-09) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 359 	elapsed AVG,DEV_STD= (0.014163231360016652, 0.013154621646842474) 	 randGraphIndex:  19 	iteration to reach Optimal AVG,DEV,MAX:  (6.16, 5.747617074998675, 31)
+iteration : 20 
+
+
+@stoer_wagner_minCut	minCutval=  13  graph: Nodes= 40 Edges= 375 	elapsed= 0.014550693999808573 	 randGraphIndex:  20
+@ NormaltestResult(statistic=20.622117544559067, pvalue=3.326320348872242e-05) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 375 	elapsed AVG,DEV_STD= (0.01614233046007939, 0.015286069401871286) 	 randGraphIndex:  20 	iteration to reach Optimal AVG,DEV,MAX:  (6.78, 6.364089302725192, 27)
+iteration : 21 
+
+
+@stoer_wagner_minCut	minCutval=  13  graph: Nodes= 40 Edges= 391 	elapsed= 0.01529104000019288 	 randGraphIndex:  21
+@ NormaltestResult(statistic=33.327695072133395, pvalue=5.79405972797998e-08) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 391 	elapsed AVG,DEV_STD= (0.0395692271799453, 0.0350383617291991) 	 randGraphIndex:  21 	iteration to reach Optimal AVG,DEV,MAX:  (16.26, 14.450210082506462, 76)
+iteration : 22 
+
+
+@stoer_wagner_minCut	minCutval=  13  graph: Nodes= 40 Edges= 407 	elapsed= 0.015828044999580015 	 randGraphIndex:  22
+@ NormaltestResult(statistic=28.993015204693375, pvalue=5.061121244689908e-07) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 407 	elapsed AVG,DEV_STD= (0.0444104540200351, 0.048649908864852986) 	 randGraphIndex:  22 	iteration to reach Optimal AVG,DEV,MAX:  (17.72, 19.452758054280306, 92)
+iteration : 23 
+
+
+@stoer_wagner_minCut	minCutval=  14  graph: Nodes= 40 Edges= 423 	elapsed= 0.016037413000049128 	 randGraphIndex:  23
+@ NormaltestResult(statistic=35.25930912409713, pvalue=2.2056586723349346e-08) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 423 	elapsed AVG,DEV_STD= (0.03688281988004746, 0.030964742068048435) 	 randGraphIndex:  23 	iteration to reach Optimal AVG,DEV,MAX:  (14.06, 11.899939975839013, 61)
+iteration : 24 
+
+
+@stoer_wagner_minCut	minCutval=  15  graph: Nodes= 40 Edges= 439 	elapsed= 0.016431392999948002 	 randGraphIndex:  24
+@ NormaltestResult(statistic=24.852847672457006, pvalue=4.011185051544482e-06) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 439 	elapsed AVG,DEV_STD= (0.030198403720023633, 0.02984203478735218) 	 randGraphIndex:  24 	iteration to reach Optimal AVG,DEV,MAX:  (11.16, 11.181909588295568, 51)
+iteration : 25 
+
+
+@stoer_wagner_minCut	minCutval=  15  graph: Nodes= 40 Edges= 455 	elapsed= 0.017723149000630656 	 randGraphIndex:  25
+@ NormaltestResult(statistic=28.58089426750243, pvalue=6.219245002861728e-07) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 455 	elapsed AVG,DEV_STD= (0.03590201038010491, 0.03583462861324127) 	 randGraphIndex:  25 	iteration to reach Optimal AVG,DEV,MAX:  (12.98, 12.944922572505531, 63)
+iteration : 26 
+
+
+@stoer_wagner_minCut	minCutval=  17  graph: Nodes= 40 Edges= 471 	elapsed= 0.01881847100048617 	 randGraphIndex:  26
+@ NormaltestResult(statistic=11.634545192856393, pvalue=0.002975710049301108) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 471 	elapsed AVG,DEV_STD= (0.056971567979962855, 0.051251571384380086) 	 randGraphIndex:  26 	iteration to reach Optimal AVG,DEV,MAX:  (20.14, 18.14005602673435, 71)
+iteration : 27 
+
+
+@stoer_wagner_minCut	minCutval=  18  graph: Nodes= 40 Edges= 487 	elapsed= 0.03778215699912835 	 randGraphIndex:  27
+@ NormaltestResult(statistic=34.243207925114326, pvalue=3.6659106679186346e-08) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 487 	elapsed AVG,DEV_STD= (0.057108994699974575, 0.05886936234007833) 	 randGraphIndex:  27 	iteration to reach Optimal AVG,DEV,MAX:  (19.64, 20.369805585518893, 105)
+iteration : 28 
+
+
+@stoer_wagner_minCut	minCutval=  19  graph: Nodes= 40 Edges= 503 	elapsed= 0.019463280999843846 	 randGraphIndex:  28
+@ NormaltestResult(statistic=37.54929919581992, pvalue=7.018968283233301e-09) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 503 	elapsed AVG,DEV_STD= (0.02907479223998962, 0.03032325243908634) 	 randGraphIndex:  28 	iteration to reach Optimal AVG,DEV,MAX:  (9.72, 10.236070674684836, 52)
+iteration : 29 
+
+
+@stoer_wagner_minCut	minCutval=  19  graph: Nodes= 40 Edges= 519 	elapsed= 0.02061742800015054 	 randGraphIndex:  29
+@ NormaltestResult(statistic=6.863217506737524, pvalue=0.03233488006048612) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 519 	elapsed AVG,DEV_STD= (0.07296315867997691, 0.06535569286464107) 	 randGraphIndex:  29 	iteration to reach Optimal AVG,DEV,MAX:  (23.8, 21.29769557334065, 78)
+iteration : 30 
+
+
+@stoer_wagner_minCut	minCutval=  19  graph: Nodes= 40 Edges= 535 	elapsed= 0.019165066999448754 	 randGraphIndex:  30
+@ NormaltestResult(statistic=34.21481542574671, pvalue=3.718324007254227e-08) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 535 	elapsed AVG,DEV_STD= (0.05137401465995936, 0.05215975415356451) 	 randGraphIndex:  30 	iteration to reach Optimal AVG,DEV,MAX:  (16.26, 16.513210543349214, 86)
+iteration : 31 
+
+
+@stoer_wagner_minCut	minCutval=  19  graph: Nodes= 40 Edges= 551 	elapsed= 0.02061884600061603 	 randGraphIndex:  31
+@ NormaltestResult(statistic=13.842275460140824, pvalue=0.0009867066957992515) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 551 	elapsed AVG,DEV_STD= (0.06318562470003598, 0.05753772017560893) 	 randGraphIndex:  31 	iteration to reach Optimal AVG,DEV,MAX:  (19.78, 18.028650667699985, 79)
+iteration : 32 
+
+
+@stoer_wagner_minCut	minCutval=  20  graph: Nodes= 40 Edges= 567 	elapsed= 0.022421351000048162 	 randGraphIndex:  32
+@ NormaltestResult(statistic=23.695430181408796, pvalue=7.154885909078848e-06) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 567 	elapsed AVG,DEV_STD= (0.037755080580027425, 0.037591227383398707) 	 randGraphIndex:  32 	iteration to reach Optimal AVG,DEV,MAX:  (11.52, 11.412917851169833, 52)
+iteration : 33 
+
+
+@stoer_wagner_minCut	minCutval=  20  graph: Nodes= 40 Edges= 583 	elapsed= 0.022009481000168307 	 randGraphIndex:  33
+@ NormaltestResult(statistic=5.441573049125996, pvalue=0.06582296268437372) True
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 583 	elapsed AVG,DEV_STD= (0.039200638920010536, 0.034264106675425204) 	 randGraphIndex:  33 	iteration to reach Optimal AVG,DEV,MAX:  (11.68, 10.15681132671719, 38)
+iteration : 34 
+
+
+@stoer_wagner_minCut	minCutval=  21  graph: Nodes= 40 Edges= 599 	elapsed= 0.021705182000005152 	 randGraphIndex:  34
+@ NormaltestResult(statistic=57.17660691535451, pvalue=3.8393487322735583e-13) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 599 	elapsed AVG,DEV_STD= (0.052136837300058685, 0.051376892329732735) 	 randGraphIndex:  34 	iteration to reach Optimal AVG,DEV,MAX:  (15.38, 15.158872932095862, 92)
+iteration : 35 
+
+
+@stoer_wagner_minCut	minCutval=  23  graph: Nodes= 40 Edges= 615 	elapsed= 0.023836688999836042 	 randGraphIndex:  35
+@ NormaltestResult(statistic=45.85874337041832, pvalue=1.101286723404723e-10) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 615 	elapsed AVG,DEV_STD= (0.08131578840000657, 0.08631190691699642) 	 randGraphIndex:  35 	iteration to reach Optimal AVG,DEV,MAX:  (23.42, 24.773331612515776, 136)
+iteration : 36 
+
+
+@stoer_wagner_minCut	minCutval=  24  graph: Nodes= 40 Edges= 631 	elapsed= 0.02476509600001009 	 randGraphIndex:  36
+@ NormaltestResult(statistic=32.975169194903614, pvalue=6.910874230559698e-08) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 631 	elapsed AVG,DEV_STD= (0.07167770968002514, 0.06371347711387829) 	 randGraphIndex:  36 	iteration to reach Optimal AVG,DEV,MAX:  (20.18, 18.014382009485463, 95)
+iteration : 37 
+
+
+@stoer_wagner_minCut	minCutval=  28  graph: Nodes= 40 Edges= 647 	elapsed= 0.024709010000151466 	 randGraphIndex:  37
+@ NormaltestResult(statistic=23.334900200747985, pvalue=8.568223837167134e-06) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 647 	elapsed AVG,DEV_STD= (0.02064430121998157, 0.018370966499158235) 	 randGraphIndex:  37 	iteration to reach Optimal AVG,DEV,MAX:  (5.72, 5.111172236645236, 25)
+iteration : 38 
+
+
+@stoer_wagner_minCut	minCutval=  28  graph: Nodes= 40 Edges= 663 	elapsed= 0.025263050999456027 	 randGraphIndex:  38
+@ NormaltestResult(statistic=37.48218325971022, pvalue=7.258507339595347e-09) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 663 	elapsed AVG,DEV_STD= (0.055297810940046474, 0.060994307755702956) 	 randGraphIndex:  38 	iteration to reach Optimal AVG,DEV,MAX:  (14.94, 16.49664158771322, 85)
+iteration : 39 
+
+
+@stoer_wagner_minCut	minCutval=  28  graph: Nodes= 40 Edges= 670 	elapsed= 0.027533604000382184 	 randGraphIndex:  39
+@ NormaltestResult(statistic=39.14629724123366, pvalue=3.158563123167859e-09) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 670 	elapsed AVG,DEV_STD= (0.08257466056002158, 0.08615733886791764) 	 randGraphIndex:  39 	iteration to reach Optimal AVG,DEV,MAX:  (21.9, 22.67719343395069, 124)
+iteration : 40 
+
+
+@stoer_wagner_minCut	minCutval=  30  graph: Nodes= 40 Edges= 680 	elapsed= 0.025955577999411616 	 randGraphIndex:  40
+@ NormaltestResult(statistic=54.60365124743064, pvalue=1.3898495337926752e-12) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 680 	elapsed AVG,DEV_STD= (0.035603959299969574, 0.046654487673341835) 	 randGraphIndex:  40 	iteration to reach Optimal AVG,DEV,MAX:  (9.44, 12.38030034913103, 68)
+iteration : 41 
+
+
+@stoer_wagner_minCut	minCutval=  30  graph: Nodes= 40 Edges= 696 	elapsed= 0.027492475000144623 	 randGraphIndex:  41
+@ NormaltestResult(statistic=28.46327062093107, pvalue=6.595979788537636e-07) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 696 	elapsed AVG,DEV_STD= (0.1066081679600211, 0.1094237648346862) 	 randGraphIndex:  41 	iteration to reach Optimal AVG,DEV,MAX:  (27.74, 28.536271226462016, 127)
+iteration : 42 
+
+
+@stoer_wagner_minCut	minCutval=  31  graph: Nodes= 40 Edges= 709 	elapsed= 0.026759873999253614 	 randGraphIndex:  42
+@ NormaltestResult(statistic=14.082743779468013, pvalue=0.0008749254373156632) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 709 	elapsed AVG,DEV_STD= (0.12787558825997622, 0.11768846929203142) 	 randGraphIndex:  42 	iteration to reach Optimal AVG,DEV,MAX:  (32.66, 30.164589322243256, 134)
+iteration : 43 
+
+
+@stoer_wagner_minCut	minCutval=  33  graph: Nodes= 40 Edges= 720 	elapsed= 0.028670720000263827 	 randGraphIndex:  43
+@ NormaltestResult(statistic=59.50235358303408, pvalue=1.2001294397145163e-13) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 720 	elapsed AVG,DEV_STD= (0.07170201342005385, 0.09039619740545975) 	 randGraphIndex:  43 	iteration to reach Optimal AVG,DEV,MAX:  (18.1, 22.85825890132492, 134)
+iteration : 44 
+
+
+@stoer_wagner_minCut	minCutval=  33  graph: Nodes= 40 Edges= 722 	elapsed= 0.027697935999640322 	 randGraphIndex:  44
+@ NormaltestResult(statistic=30.971173908398352, pvalue=1.8823268482102783e-07) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 722 	elapsed AVG,DEV_STD= (0.047647674680010826, 0.04963646045315009) 	 randGraphIndex:  44 	iteration to reach Optimal AVG,DEV,MAX:  (12.06, 12.576963067449947, 60)
+iteration : 45 
+
+
+@stoer_wagner_minCut	minCutval=  34  graph: Nodes= 40 Edges= 734 	elapsed= 0.04357654500017816 	 randGraphIndex:  45
+@ NormaltestResult(statistic=8.514203726718652, pvalue=0.01416329013755817) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 734 	elapsed AVG,DEV_STD= (0.04435802144002082, 0.039202932116387354) 	 randGraphIndex:  45 	iteration to reach Optimal AVG,DEV,MAX:  (11.08, 9.801790756837056, 40)
+iteration : 46 
+
+
+@stoer_wagner_minCut	minCutval=  34  graph: Nodes= 40 Edges= 738 	elapsed= 0.02808299000025727 	 randGraphIndex:  46
+@ NormaltestResult(statistic=24.038897402926125, pvalue=6.025869934972912e-06) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 738 	elapsed AVG,DEV_STD= (0.0754532583999935, 0.06551392022846346) 	 randGraphIndex:  46 	iteration to reach Optimal AVG,DEV,MAX:  (18.64, 16.228923537427658, 78)
+iteration : 47 
+
+
+@stoer_wagner_minCut	minCutval=  34  graph: Nodes= 40 Edges= 744 	elapsed= 0.031025874000079057 	 randGraphIndex:  47
+@ NormaltestResult(statistic=21.296005912763643, pvalue=2.3748220505336426e-05) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 744 	elapsed AVG,DEV_STD= (0.13304297642003804, 0.11962723756882937) 	 randGraphIndex:  47 	iteration to reach Optimal AVG,DEV,MAX:  (32.62, 29.405601298988973, 136)
+iteration : 48 
+
+
+@stoer_wagner_minCut	minCutval=  34  graph: Nodes= 40 Edges= 744 	elapsed= 0.028568605000145908 	 randGraphIndex:  48
+@ NormaltestResult(statistic=10.058624060757358, pvalue=0.006543310621352809) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 744 	elapsed AVG,DEV_STD= (0.1240506999399804, 0.11386376642715511) 	 randGraphIndex:  48 	iteration to reach Optimal AVG,DEV,MAX:  (30.54, 28.04239501838862, 103)
+iteration : 49 
+
+
+@stoer_wagner_minCut	minCutval=  34  graph: Nodes= 40 Edges= 744 	elapsed= 0.02921769000022323 	 randGraphIndex:  49
+@ NormaltestResult(statistic=16.358003426722163, pvalue=0.0002804818016495079) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 744 	elapsed AVG,DEV_STD= (0.13252191648000008, 0.12232272810003313) 	 randGraphIndex:  49 	iteration to reach Optimal AVG,DEV,MAX:  (32.5, 30.25756778333753, 128)
+iteration : 50 
+
+
+@stoer_wagner_minCut	minCutval=  35  graph: Nodes= 40 Edges= 749 	elapsed= 0.0259614970000257 	 randGraphIndex:  50
+@ NormaltestResult(statistic=27.07213955441682, pvalue=1.3223900995339806e-06) False
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 749 	elapsed AVG,DEV_STD= (0.0824892326198642, 0.07948922606037005) 	 randGraphIndex:  50 	iteration to reach Optimal AVG,DEV,MAX:  (20.12, 19.402966320663868, 96)
+@@ global until Opt MAX stats on random graphs with nodes:  40 	 NormaltestResult(statistic=7.996636059542942, pvalue=0.018346471170282572) normalTestPassed:  False  (AVG,DEV,MAX) (58.333333333333336, 41.37567723514223, 136)
+@@ global until Opt AVG stats on random graphs with nodes:  40 	 NormaltestResult(statistic=4.824363611505509, pvalue=0.08961954866329001) normalTestPassed:  True  (AVG,DEV,MAX) (12.914117647058823, 8.779961087948076, 32.66)
+(10.444713801231662, 15.383521492885984)

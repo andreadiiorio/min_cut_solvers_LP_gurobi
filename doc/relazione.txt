@@ -1,0 +1,59 @@
+1-INTRO
+In questo progetto mi sono occupato di effettuare uno studio comparativo tra due algoritmi risolutivi per il problema del minimo taglio in un grafo non orientato,connesso.
+Gl'algoritmi che sono andato a confrontare sono l'algoritmo randomizato Karger e un algoritmo iterativo basato sulla risoluzione di un modello di programmazione lineare ottenuto dal duale del problema del massimo flusso.
+Nel seguito, per descrivere un generico grafo G, mi riferirò al suo numero di nodi con n e al suo numero di archi con e
+
+2-NOTE SULL'IMPLEMENTAZIONE
+2.1. Algoritmo iterativo basato sulla programmazione lineare.
+
+Inizialmente viene convertito il grafo non orientato in un equivalente grafo orientato in cui ogni arco non orientato viene sostituito con una coppia di archi orientati.
+successivamente per tutte le possibili (n)(n-1)/2 coppie non ordinate di nodi (s,t) risolvo un modello di programmazione linare ottenuto dal duale di una formulazione del problema del massimo flusso ottenendo dei tagli nel grafo. Verra ritornato il taglio minimo tra tutti quelli trovati
+Di seguito il modello di programmazione lineare [1 -> Agnetis ]
+...
+
+2.2. Algoritmo randomizzato di Karger D.
+	
+L'algoritmo è basato sul concetto di contrazione di un arco.
+Contrarre un generico arco (n1,n2) di un grafo non orientato  comporta la sostituzione dei vertici n1,n2 con un metavertice che ha come vertici incidenti l'unione dei vertici incidenti ad n1,n2....MEGLIO....
+Tramite n-2 contrazioni di archi scelti casualmente nel grafo si ottengono 2 (meta)vertici residui, in cui gl'archi che li connettono  identificano un taglio che può essere minimo
+
+2.3 Scelta uniformemente casuale degl'archi da contrarre.
+
+Ho realizzato due modi distinti per realizzare un meccanismo di estrazione casuale di un arco in un grafo.
+- Uno basato su una banale estrazione casuale all'interno di una lista di archi, che deve essere costruita su necessità nel caso il grafo sia rappresentanto con una lista di adiacenza
+- Uno basato su un semplice algoritmo che:
+	associa ad ogni vertice un intervallo di numeri, la cui lunghezza è proporzionale al grado del vertice
+	[A supporto di questa associazione sfrutto una Hashmap che mappa per ogni nodo, il suo grado, aggiornata dinamicamente ad ogni contrazione di archi]
+	tramite un estrazione casuale uniforme all'interno di un macro intervallo che include tutti gl'intervalli allocati per i nodi, identifico un nodo n1 che sarà un estremo dell'arco casuale.
+	l'altro estremo dell'arco casuale n2  è scelto uniformente tra i nodi adiacenti ad n1.
+
+2.4 Generazione di grafi casuali
+
+Al fine di testare e confrontare gl'algoritmi descritti, ho realizzato un meccanismo per la generazioni di grafi casuali, basato sulla generazione di alberi casuali, che poi vengono progressivamente "infoltiti" tramite l'aggiunta di archi casuali.
+Per creare un albero casuale di n nodi parto da un prufer code casuale, generando n-2 numeri casuali compresi in (0,n) a cui viene associato univocamente un albero tramite l'algoritmo descritto in [2 -> wiki prufercode ]
+Successivamente aggiungo all'albero degl'archi casuali tramite una selezione casuale di coppie di vertici nel grafo che identificano un nuovo arco valido.
+
+3. CONFRONTO TRA GL'ALGORITMI
+
+Ho confrontato questi due algoritmi mediante la loro esecuzione su alcuni grafi generati casualmente in cui ho fatto variare sia il numero di vertici che il numero di archi.
+In particolare Partendo da un albero casuale generato come  descritto in 2.4 ho progressivamente aggiunto nuovi insiemi di archi casuali, e per ognuno di questi grafi ho eseguito gl'algoritmi descritti.
+
+3.1 CONFRONTO TEMPI DI ESECUZIONE 
+< GRAFICO 1 CONFRONTO TEMPI EXE STOER_WAGNERa, LP, RAND_UNTIL_OPT >
+Come è possibile vedere sia aumentando il numero di archi [che di nodi] comporta un maggiore tempo di esecuzione per entrambi gl'algoritmi.
+Tuttavia l'algoritmo randomizzato mantiene sempre delle performance migliori del algoritmo basato sulla programmazione lineare
+
+3.2 VERIFICA PROBABILITÀ D'ERRORE DELL'ALGORITMO RANDOMIZZATO
+la probabiltà d'errore teorica dell'algoritmo randomizzato di non trovare il minimo taglio con dato numero di ripetizioni è approssimabile ad ... con ... ripetizioni dell'algoritmo randomizzato come espresso in [3 -> paper consigliato da pacifici]. 
+In generale si può ottenere il numero di ripetitizioni necessario per ottenere una data probabilità d'errore ... [4 -> wiki o Karger paper ]
+Prendendo come riferimento il numero di iterazioni necessario per ottenere una probabilità d'errore limitata da circa .37 [3], da una serie di esperimenti condotti su vari grafi casuali si può notare come questa implementazione dell'algoritmo randomizzato si mantenga sempre ampiamente sotto la soglia teorica ..MEGLIO..
+< DATA >
+
+4. TEST 
+
+Al fine di testare la validità delle soluzioni trovate, oltre che mediante una rappresentazione grafica dei grafi casuali generati e dei minimi tagli ottenuti su di essi, ho verificato i valori dei tagli ottenuti dagl'algoritmi sopra descritti con un implementazione dell'algoritmo di stoer_wagner [4 -> wiki o paper ], presente nella libreria networkx.
+
+5. RAPPRESENTAZIONE. 
+
+tramite le librerie python networkx e matplot ho realizzato alcune funzioni wrapper utili a rappresentare graficamente un grafo ed un suo taglio dato .
+<3 FIGURE >

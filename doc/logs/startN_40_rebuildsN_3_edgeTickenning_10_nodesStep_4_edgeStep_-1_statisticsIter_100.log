@@ -1,0 +1,47 @@
+
+LOGGING TEST WITH:
+startN_40_rebuildsN_3_edgeTickenning_10_nodesStep_4_edgeStep_-1_statisticsIter_100.log
+
+
+
+exploring min cut solver algoritm with a graph of 40 with variable num of edges
+
+
+1/e fail prob iterations:  780
+graph with num nodes=  40  with this num of iteration of rand Algo:  780
+780.0 78
+iteration : 0 
+
+
+@stoer_wagner_minCut	minCutval=  2  graph: Nodes= 40 Edges= 118 	elapsed= 0.006165935999888461 	 randGraphIndex:  0
+Academic license - for non-commercial use only
+@minCutLPIterative	minCutVal=  2  graph: Nodes= 40 Edges= 118 	elapsed= 5.867763462999392 	 randGraphIndex:  0
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 118 	elapsed AVG,DEV_STD= (0.005877844180013199, 0.005602594793833975) 	 randGraphIndex:  0 	iteration to reach Optimal AVG,DEV,MAX:  (5, 4.788454127303814, 21)
+@randMinCut-fixedIter	minCutVal stats (min,AVG,STDEV,MAX)=  (2, 2, 0.0, 2)  graph: Nodes= 40 Edges= 118 	elapsed AVG,DEV_STD= (0.9069090704200061, 0.0120683575589172) 	 randGraphIndex:  0 	iterations:  780 	delta between founded sol and Opt one (AVG,DEV)  (0, 0.0)  FAILURE_RATE:  0.0
+iteration : 1 
+
+
+@stoer_wagner_minCut	minCutval=  5  graph: Nodes= 40 Edges= 197 	elapsed= 0.00836175699987507 	 randGraphIndex:  1
+@minCutLPIterative	minCutVal=  5  graph: Nodes= 40 Edges= 197 	elapsed= 9.10527558100057 	 randGraphIndex:  1
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 197 	elapsed AVG,DEV_STD= (0.007290265030023875, 0.00599249223422681) 	 randGraphIndex:  1 	iteration to reach Optimal AVG,DEV,MAX:  (4.76, 3.934103673922653, 20)
+@randMinCut-fixedIter	minCutVal stats (min,AVG,STDEV,MAX)=  (5, 5, 0.0, 5)  graph: Nodes= 40 Edges= 197 	elapsed AVG,DEV_STD= (1.187661478550008, 0.00895084197967767) 	 randGraphIndex:  1 	iterations:  780 	delta between founded sol and Opt one (AVG,DEV)  (0, 0.0)  FAILURE_RATE:  0.0
+iteration : 2 
+
+
+@stoer_wagner_minCut	minCutval=  7  graph: Nodes= 40 Edges= 276 	elapsed= 0.011159401000440994 	 randGraphIndex:  2
+@minCutLPIterative	minCutVal=  7  graph: Nodes= 40 Edges= 276 	elapsed= 12.51103825700011 	 randGraphIndex:  2
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 276 	elapsed AVG,DEV_STD= (0.015000787439985288, 0.011631116636059084) 	 randGraphIndex:  2 	iteration to reach Optimal AVG,DEV,MAX:  (7.9, 6.12248711593977, 29)
+@randMinCut-fixedIter	minCutVal stats (min,AVG,STDEV,MAX)=  (7, 7, 0.0, 7)  graph: Nodes= 40 Edges= 276 	elapsed AVG,DEV_STD= (1.4675605295000331, 0.018676377274773746) 	 randGraphIndex:  2 	iterations:  780 	delta between founded sol and Opt one (AVG,DEV)  (0, 0.0)  FAILURE_RATE:  0.0
+iteration : 3 
+
+
+@stoer_wagner_minCut	minCutval=  11  graph: Nodes= 40 Edges= 355 	elapsed= 0.014851111000098172 	 randGraphIndex:  3
+@minCutLPIterative	minCutVal=  11  graph: Nodes= 40 Edges= 355 	elapsed= 16.2532147539996 	 randGraphIndex:  3
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 355 	elapsed AVG,DEV_STD= (0.03187424861991531, 0.026559794008620803) 	 randGraphIndex:  3 	iteration to reach Optimal AVG,DEV,MAX:  (14.06, 11.698070288934346, 50)
+@randMinCut-fixedIter	minCutVal stats (min,AVG,STDEV,MAX)=  (11, 11, 0.0, 11)  graph: Nodes= 40 Edges= 355 	elapsed AVG,DEV_STD= (1.7858624935899206, 0.04754280098855332) 	 randGraphIndex:  3 	iterations:  780 	delta between founded sol and Opt one (AVG,DEV)  (0, 0.0)  FAILURE_RATE:  0.0
+iteration : 4 
+
+
+@stoer_wagner_minCut	minCutval=  15  graph: Nodes= 40 Edges= 434 	elapsed= 0.017731157000525855 	 randGraphIndex:  4
+@minCutLPIterative	minCutVal=  15  graph: Nodes= 40 Edges= 434 	elapsed= 20.52297154900043 	 randGraphIndex:  4
+@randMinCut-untilOpt	graph: Nodes= 40 Edges= 434 	elapsed AVG,DEV_STD= (0.03979350923989841, 0.03816411989566232) 	 randGraphIndex:  4 	iteration to reach Optimal AVG,DEV,MAX:  (14.37, 13.848133739995728, 86)
