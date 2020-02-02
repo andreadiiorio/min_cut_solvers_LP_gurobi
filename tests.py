@@ -5,7 +5,7 @@ main function driverRandGraphIterativellyResized: drive tickening of a given N n
 supported statistics mode during rand algo runnning
 in main func there is code to progressivelly generate new run of driverRandGraphIterativellyResized with increased num of nodes
 
-ENV VAR MAIN OVVERRIDE TESTS
+ENV VAR MAIN OVVERRIDE FOR TESTS
 START_NUM_NODES
 GRAPH_REBUILD_ITERATION			#num of fixed num nooes graph will be created and expanded 	DFLT 1
 GRAPH_NODES_INC_STEP			

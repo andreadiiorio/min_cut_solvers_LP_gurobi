@@ -82,15 +82,17 @@ class Graph:
 		return choice(self.extractEdges())
 
 	def pickUniformRandomEdgeQuick(self,nodesDegree=None,totDegrees=None):
-		#pick uniformiformly a random edge from graph 
-		#nodesDegree is a dict: nodeID -> degree of node
-		#totDegrees is the cumulative sum of all nodes degrees
-		#if nodesDegree,totDegrees are not gived will be computed
-		#uniform random edge selection based on a random weighted edge tail selection
-		#for each node in the graph's adj list will be allocated a range [a,b) accordindly with its degree
-		#a number n uniformly randomly picked in range [RANGE_START,RANGE_END] will discriminate the node N1 ( n is in node's allocated range)
-		#finally will be randomly uniformly selected another node N2 in N1's neighbors list
-		#will be returned the selected edge (N1,N2)
+		"""
+		pick uniformiformly a random edge from graph 
+		nodesDegree is a dict: nodeID -> degree of node
+		totDegrees is the cumulative sum of all nodes degrees
+		if nodesDegree,totDegrees are not gived will be computed
+		uniform random edge selection based on a random weighted edge tail selection
+		for each node in the graph's adj list will be allocated a range [a,b) accordindly with its degree
+		a number n uniformly randomly picked in range [RANGE_START,RANGE_END] will discriminate the node N1 ( n is in ode's allocated range)
+		finally will be randomly uniformly selected another node N2 in N1's neighbors list
+		will be returned the selected edge (N1,N2)
+		"""
 		if nodesDegree==None and totDegrees==None:
 			nodesDegree,totDegrees=_computeNodesDegree(self)
 		rndEdgeTail=rndEdgeHead=None
@@ -118,51 +120,17 @@ class Graph:
 		rndEdgeHead=choice(self.nodes[rndEdgeTail])
 		return (rndEdgeTail,rndEdgeHead,1)
 
-	def contractEdge(self,e):
-		#contract edge e removing the edge and merge Head  and Tail nodes in a new node
-		#old tail and head node with ID X,Y will be deletted and new node with ID like 'X_Y' will be added as a new node
-		#return number of new contracted node's neighboors
-		eTail=e[EDGE_TAIL_INDEX]
-		eHead=e[EDGE_HEAD_INDEX]
-		newNodeID=str(eTail)+CONTRACT_CHR_SEP+str(eHead)
-		
-		#remove old contracted nodes
-		eTailNeigh=self.nodes.pop(eTail,list())
-		eHeadNeigh=self.nodes.pop(eHead,list())
-		
-		#merge contracted nodes adj lists 		#TODO FASTER WITH DICT BUILD ??
-		for neigh2 in eHeadNeigh:
-			if neigh2 not in eTailNeigh:
-				eTailNeigh.append(neigh2)
-		eTailNeigh.remove(eTail)	
-		eTailNeigh.remove(eHead)
 
+	def contractEdgeQuick(self,e):	
+		"""
+		contract edge from current graph.
+		nodes of edge e (n1,n2) will be deletted and new node rappresentted by python tuple (n1,n2) will be created
+		multiple edge keeped so every node incident to the new node was incident to either n1 or n2
+		self edges avoided in the new node
+		if n1 or n2 was already a previously contracted node  during the merge the new node will be renamed as the whole list of contracted nodes
+		so the random algoritm will easily found the partition identified by the founded cut at the end
 
-		#RESTRUCT OTHER NODEs ADJ LIST WITH THE NEW NODE
-		for node,neighboors in self.nodes.items():
-			alreadyRenamed=False
-			if eTail in neighboors:
-				oldContractedNodeIndx=neighboors.index(eTail)
-				self.nodes[node][oldContractedNodeIndx]=newNodeID #IN PLACE ADJ LIST MODIFY TOWRARDS NEW CONTRACTED NODE
-				alreadyRenamed=True
-			if eHead in neighboors:
-				oldContractedNodeIndx=neighboors.index(eHead)
-				if not alreadyRenamed: 
-					self.nodes[node][oldContractedNodeIndx]=newNodeID #IN PLACE ADJ LIST MODIFY TOWRARDS NEW CONTRACTED NODE
-				else:	#avoid dup. incosistence in adj list -> if already renamed old tail Node -> new Node ==> head has to be removed from adj List
-					self.nodes[node].pop(oldContractedNodeIndx)
-		#finally insert the contracted node
-		self.nodes[newNodeID]=eTailNeigh		
-		#debug
-		#print("contracted\t",eTail," ",eHead," -> ",newNodeID\t graphResoult: ",self)	
-		return len(eTailNeigh)
-
-	def contractEdgeQuick(self,e):	#TODO RENAME AND REDOC
-		#only for undirected graph
-		#contract edge e removing the edge and merge Head  and Tail nodes in a new node
-		#old tail and head node with ID X,Y will be deletted and new node with ID like 'X_Y' will be added as a new node
-		#exploited undirecton of graph for other nodes update
-		#return number of new contracted node's neighboors
+		"""
 		eTail=e[EDGE_TAIL_INDEX]
 		eHead=e[EDGE_HEAD_INDEX]
 		#build new node ID as concatenation of composing IDs in tuple
@@ -439,7 +407,7 @@ def graphTickennerRand(graph,edgesN,residualTry=30):
 
 #####	GRAPH WRITE VIEW LOGIC ON GUI OF NETWORKX
 from os import environ
-# GUI_GRAPH=True
+#GUI_GRAPH=True
 GUI_GRAPH=environ.get("GUI_GRAPH")!=None and len(environ["GUI_GRAPH"])>0
 from networkx import stoer_wagner
 from networkx import Graph as Graph_nx
@@ -461,7 +429,7 @@ def getNetworkxGraph(graph):
 	g.add_edges_from(edgesHeadTailList)
 	return g
 	
-if GUI_GRAPH:
+if GUI_GRAPH:	#this flag (settable by env) can trigger the import of (heavy) graphical lib for the graphical rappresentation
 	import matplotlib.pyplot as plt
 	import networkx as nx
 	drawn=0

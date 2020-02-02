@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-#implemementation of solver for min cut problem over a generic undirected,connected graph using gurobi
+#implemementation of solvers for min cut problem over a generic undirected,connected graph using gurobi,kargerD algo (and stoer_wagner wrapped from networkx)
 from gurobipy import *
 from graph_utils import *
 from re import findall
@@ -17,10 +17,9 @@ def _getEdgeFromGurobyVarName(gurobiVarName):
 	return edge
 
 def solveMinCutLP(nodes,edges,s,t):
-	##global mod		#TODO DEBUG
-	
-	#solve min cut problem over graph
+	#solve min cut problem over a directed graph
 	#returned sol: selected edges for the min cut ( subset of input ones)
+	#model used: https://www3.diism.unisi.it/~agnetis/mincut.pdf
 	
 	mod=Model("minCut")
 	mod.setParam(GRB.Param.OutputFlag,0)	#SUPPRESS PART OF DEFAULT GUROBI OUTPU
@@ -68,8 +67,6 @@ def solveMinCutLP(nodes,edges,s,t):
 	return selectedEdges
 
 def solveMinCutLP_trevisan(nodesNoTerminal,edges,s,t):
-	##global mod		#TODO DEBUG
-	
 	#solve min cut problem over graph
 	#returned sol: selected edges for the min cut ( subset of input ones)
 	
@@ -132,16 +129,6 @@ def _dumpAllVarsSolution(model,dumpJustSelected=False):
 			continue
 		print(v.VarName+"\t->\t"+str(v.X))
 	
-#def printSolution(model):	#TODO PRINT SOL TEMPLATE FROM DIET MODEL
-#    if model.status == GRB.Status.OPTIMAL:
-#        print('\nCost: %g' % model.objVal)
-#        buyx = model.getAttr('x', buy)
-#        for f in foods:
-#            if buy[f].x > 0.0001:
-#                print('%s %g' % (f, buyx[f]))
-#    else:
-#        print('No solution')
-
 
 def minCutLPIterative(graph):
 	"""search minimal cut with a LP script runned over a graph in witch has been selected a source and a dest 
@@ -173,10 +160,13 @@ def minCutLPIterative(graph):
 	return minCut
 
 def minCutLPIterative2(graph):
-	"""search minimal cut with a LP script runned over a graph in witch has been selected a source and a dest 
+	"""
+	relaxed model of the above
+	search minimal cut with a LP script runned over a graph in witch has been selected a source and a dest 
 	and undirected edges has been substituited with couple of directed edges
 	iterativelly evaluate min cut relative to all possible nodes pair s,t, where s is fixed and t!=s
-	return min cut as list of edges """
+	return min cut as list of edges
+	"""
 
 	if graph.directed==False:	#make sure the graph has been directized
 		graph=graph.directizeGraph()
@@ -222,12 +212,15 @@ def _computeNodesDegree(graph):
 
 dbgC=0
 def randMinCut(graph,iterations=1,OUTPUT_MODE_PARTITION=True):
-	#get min cut of a undirected graph by rand algo
-	#randomly contract edges in the graph getting a cut
-	#run this algo for  the given num of iteration, returning the best,minimal cost solution
-	#return edge list of the best founded min cut 
-	
-	##print("RAND MIN CUT OVER:\t", graph)
+	"""
+	get min cut of a undirected graph by rand algo of KergerD.
+	randomly contract edges in the graph getting a cut
+	dynamically updated hashmap nodeK->degree to support quick uniform edge selection
+	run this algo for  the given num of iteration, returning the best,minimal cost solution
+	based on OUTPUT_MODE_PARTITION flag the output change 
+	if OUTPUT_MODE_PARTITION is set : returned (nodePartitionCutDiscrimineted,cutValue)
+	if OUTPUT_MODE_PARTITION isn't set : returned cut edgeList
+	"""
 	#global dbgC
 
 	bestCutVal=float("inf")
@@ -325,9 +318,25 @@ def main():				#TODO DEBUG SWITCH
 
 if __name__=="__main__":
 	#main()
-
-	pruferTreeGraph = pruferCodeGenTree(15, True)
-	newNodes, newEdges = graphTickennerRand(pruferTreeGraph, 32)
-	cut=randMinCut(pruferTreeGraph,5,False)
-	drawGraphMinCut(pruferTreeGraph,cut)
-	print("END")
+	nNodes=66
+	randomIterForPerr0_37=nNodes*nNodes*.5
+	pruferTreeGraph = pruferCodeGenTree(nNodes, False)
+	graphTickennerRand(pruferTreeGraph, 162)
+	
+	g= getNetworkxGraph(pruferTreeGraph)
+	minCutStoerWagnerSize,nodesParti=stoer_wagner(g)
+	for x in range(33):
+		i=0
+		cutVal=float("inf")
+		while(cutVal != minCutStoerWagnerSize):
+			cut=randMinCut(pruferTreeGraph,1,False)
+			cutVal=len(cut)
+			i+=1
+		print("@",i,"\tvs\titer needed s.t. Perr =  .37 ",randomIterForPerr0_37)
+		if i >= randomIterForPerr0_37:
+			print("@@!!!!")
+	print("minCut = ",minCutStoerWagnerSize," a node parti: ",nodesParti)
+	print(pruferTreeGraph)
+	
+	try:drawGraphMinCut(pruferTreeGraph,cut,blockingShow=True)		#SET ENVIRON VARIABLE 
+	except: print("set env variable: export GUI_GRAPH=True")
